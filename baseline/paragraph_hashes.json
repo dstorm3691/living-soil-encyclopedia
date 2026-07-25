@@ -31900,5 +31900,5 @@
    "occurrences": 1
   }
  },
- "regenerated_reason": "Phase B Task 3: stripped 128 orphaned citation markers (109 Book 1 + 19 Book 5); baseline regenerated to reflect the deliberate paragraph-text change."
+ "regenerated_reason": "Phase B Task 4: 9 Further Reading sections (78 deduped references) added to Books 1 and 5; metrics regenerated to absorb the deliberate word-count increase (Book 1 +2.08%). Paragraph fingerprints unchanged — Further Reading adds no tracked <p> of 12+ words."
 }
