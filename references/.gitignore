@@ -1,3 +1,7 @@
 # Local CrossRef response cache (~4 MB). Regenerable from the API and not a
 # deliverable — the matched records that matter are captured in verification.json.
 crossref_cache.json
+
+# Throwaway rendered preview of the Further Reading samples (Task 4). Regenerable
+# via `python scripts/build_further_reading.py --samples`.
+further_reading_preview.html
