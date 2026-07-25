@@ -1,0 +1,123 @@
+source,destination,action,words,text_sha256
+v1:h2-chapter-1-from-salts-to-the-soil-food-web,Book 1 Chapter 1,move/restructure,1672,a232d188b11d0a05bad90dfc22c698725efd0e2e5b36ec13292195927ee27b37
+v1:h2-chapter-3-bacteria-decomposers-and-cyclers,Book 1 Chapter 2,move/restructure,1846,57c3c1ae64a3516e9107e5d61b572e22cce94ee5f25133cdcc19bb2054b91ac7
+v1:h2-chapter-4-fungi-networkers-and-translators,Book 1 Chapter 3,move/restructure,1327,34eee2611fa48d4402febebe95633613310136c9092207e9219f70dd6ba16324
+v1:h2-chapter-6-mycorrhizal-symbiosis-and-plant-immune-function,Book 1 Chapter 4,move/restructure,1649,b430b1c68aa7c2876f1b5da2ce3971f71b91b80b72e28f03ec8d0c190036e509
+v1:h1-lse-009-successional-ecology-in-soils,Book 1 Chapter 5,move/nest,1184,cd8ac9a42d21d08550be318763828f221877860fa7d40c2eec7629b347e527ee
+v1:Chapter5 + LSE-009,Book 1 Chapter 5,preserve + nest,2816,581ebfd02096f03b863394477660bccb550d79fc9fa3f6c297ce1e637ef61443
+v1:h1-lse-025-permaculture,Book 1 Chapter 6,move/nest,961,8e484e6d8315487ea04a6eb89f65c788675f555536bc3a10d3b5288a8696db1b
+v1:h1-lse-027-biodynamics,Book 1 Chapter 6,move/nest,978,b04fb8f09d427c35846c7b893b75e65aea326177c98da058e26d073ec9e356e5
+v2:h1-lse-026-coots-mix-clackamas-coot,Book 1 Chapter 6,move/nest,984,d036bfd854c59bd6ede227286bc4c2ab01985c5873af6098ca7fb2dc1c21a3cb
+v1:Schools + trailing references + v2:Coots + practitioner methods,Book 1 Chapter 6,consolidate/nest,9152,d834962f7d26b9fa3223d35fa1ca7bbca9977c446b2c22628a680118635f622f
+v1:h1-site-assessment,Book 1 Chapter 7,move/nest,822,b8f988d90af7f5310f5c0c56e7a0f2ea18e274b236c69c7be9e854fafb8346f1
+v1:Reading Site + Site Assessment,Book 1 Chapter 7,consolidate,2597,43600920684d26d4d7af6566973a420e3b5515872d7a650c487582f063d269a7
+v1:Raised Beds,Book 1 Chapter 8,move/restructure,3298,4d93515a27fe4953da03caf66ed4694085fd80c8b96cdff675594761212e9ef2
+v2:h1-soil-recipes-by-crop-type,Book 1 Chapter 9,move/nest,931,752325bc99a3082689f4934cae5a41a40b4f8c8ce23fdba1bb73f7bdc31f0eef
+v1:Containers/Recipes + v2:Soil Recipes,Book 1 Chapter 9,consolidate,2922,ed67fc4c0004fe42b9d005fb07626808c0ebcae3038a25552ca86714af96c421
+comp:h1-cover-crop-selection,Book 1 Chapter 10,move/nest,797,209f1dc01d226cc7b9e6b7cfde3e09aa3bd93ab659004f481fe5ead2de51f949
+v1:No-till + comp:Cover Crop Selection + SOP mirrors,Book 1 Chapter 10,consolidate + mirror,6422,59cba8f2cb84157152a46dc603ecbecdb0096413dec1d73a8280ca7b9a3eab52
+v1:h1-soil-water-physics,Book 1 Chapter 11,move/nest,750,f4c98fc1e48f8bede154874e106c1238c316f8f97ea7081d4305912a711ce790
+v1:Water Physics + trailing entry,Book 1 Chapter 11,consolidate,4425,057c051ba94fbc9b4c5a5944d2a367b8d7000864d9e8e879e1d0f372c495f250
+v1:Irrigation + M3-3 mirror,Book 1 Chapter 12,preserve + mirror,8512,6081ef93b239bdc0595769b5b12a11d911879756dd89831293c43aa8ef6cbeb3
+v1:h1-rainwater-harvesting-for-irrigation,Book 1 Chapter 13,move/nest,610,376beeabc2b6f3d1fd8b3bb6106c4bdcdf2910327a6ffffa994456266ba6a5e1
+v1:Rainwater/Hard Water + trailing entry,Book 1 Chapter 13,consolidate,3203,2a51800a69f2b247e47ec590830dbb88aab52a60fe59fdf3fd38ff8d83660fa7
+v1:h1-lse-227-greenhouse-hoop-house-design,Book 1 Chapter 14,move/nest,1138,0721ccf332a8a7e5fd671ff87898f4fceba4ace5c6dbcd82b47e67c3af0ec526
+v1:Greenhouse + LSE-227,Book 1 Chapter 14,full merge,2159,eda6d0dfebb79d7358fe054152b56628b8ff5033d87fd99e716cbd4023b39334
+v1:Indoor Growing,Book 1 Chapter 15,move/restructure,1639,21611255de16f51f981198869bfa80044c7b78c051a18e2ae7dddbf17b949fdc
+v1:Tools + M4-1/M4-2 mirrors,Book 1 Chapter 16,strengthen + mirror,3470,9f8e20f774d63cbbb4bfb7167394339fa78fde119288437cfefcccd023a4c852
+v3:h1-soil-microscopy-equipment,Book 1 Chapter 17,move/nest,399,250b97fdb89f288e6366550843da929241033b088e2ae7746085cebdca50d764
+v3:Soil Microscopy + equipment entry,Book 1 Chapter 17,move + consolidate,2174,2a83cc97ec5a3e3e06c64ee25ff6dc18bb9e28aeeb9936d8f23df99bf77bbad7
+v3:Soil Testing,Book 1 Chapter 18,move intact,1339,6cbd6822898380e9eca6de75f7f96f247c91dd7e8773983f55b669d3cdcd40e3
+v2:fig-UC-008,Book 2 Part I opening,preserve/move with Part,24,8d55a20bbb497fb55bc80b15ddb1bf47ece555d7bfd288d11ae4db3d10c6a4e8
+v2:Composts + M1-3 mirror,Book 2 Chapter 1,preserve + mirror,7015,ec262b8f247c9487e636f552984b679f2624d72f72feb0d39a4744b241fc7c9c
+v2:Plant Inputs,Book 2 Chapter 2,reorder,7722,10783d2cd7321fe94b0041da94f4f29b5ee2de040b76a5fdea34321059ecaecb
+v2:Animal Inputs,Book 2 Chapter 3,reorder,11050,270c23fd8cf752880a9c84425044f888173f2bd565929d187d5f598e5ff368a7
+v2:Microbial Inoculants + M2-3 mirror,Book 2 Chapter 4,reorder + mirror,9805,7ad55ae549302d50489eaa9398681c7557626da01cd7c7433b451166f08f61d7
+v2:Brews + M2-1 mirror,Book 2 Chapter 5,reorder + mirror,6183,d75dee2cbebba6fd162f13c154e8e7b141f3e1860aa7ffd8922a28dea6adc99e
+v2:Minerals subset A,Book 2 Chapter 6,split,8955,976d6fa385948408cdaa49fc405942823f1b0a5803c56166e42cfae7c1a0c164
+v2:Minerals subset B,Book 2 Chapter 7,split,4259,0610db5cf6992c22c422112c128829f2a03807d68f2f17be2d704a853399c55d
+v2:Carbon/Humic + Growing Media,Book 2 Chapter 8,merge,4606,56f2d3db764feb0691909c0feb94b6af3825b77bb2d584b9c8aa4dbf7f214bfd
+v3:12 intervention entries,Book 2 Chapter 9,full-text mirrors,10337,baa1b61e8344809e998461a2437bf5d8edc3e2ec8df16e5430922b9d6dfeb42f
+v3:3 disease-control entries,Book 2 Chapter 10,full-text mirrors,2064,9a4b1cb40823fc3430c6d64daac6a5e00b54a3e1a8ad409cff3be468eef3535b
+v3:h1-lse-221-companion-planting-mechanistic-frame,Book 3 Chapter 1,move/nest,1036,a8d2a0651211022001b9098b5518031bb1c426ef0cf12c26fe505dedf6edb5ef
+v3:Companion Planting + LSE-221,Book 3 Chapter 1,preserve + nest,2514,db5d5c208804a077f0898b7c80234ba5273262c977596b1912e764ebe020511f
+v3:Polyculture,Book 3 Chapter 2,move/restructure,1662,289b7528d2e8c1f79b3a270f3f334208f535eeb35b3ca4bcb3b576915ffff970
+v3:h1-lse-192-insectary-guild-design,Book 3 Chapter 3,move/nest,986,bfc9e7cd4cf3f12116d77a616be2a3dce52c782832d324d01813474145a80ab6
+v3:h1-lse-224-cut-flowers-as-functional-cover,Book 3 Chapter 3,move/nest,958,5e89d251fd1db932f224ce82007e612f805ca09977f8901542ebc5f0e6f89fdb
+v3:Insectary/Cut Flowers + LSE-192/LSE-224,Book 3 Chapter 3,preserve + nest,3008,f390249ed777355ea236b6a9a76f3c4e178867c12cce8b07233ffaf764cec8a8
+v3:Rotation + M4-3 mirror,Book 3 Chapter 4,preserve + mirror,3466,9b600db2193220e44ca9acee85f8bf95727f2a2f497316a5e35d06fa80661f78
+v3:Heat/Cool Season narrative,Book 3 Chapter 5,preserve; entries moved to Ch12,492,80d5b15e00407db8d1984db9a0ea1bf742944ce2028a615dc30ac5038ad85fd4
+v3:h1-lse-223-culinary-herb-integration,Book 3 Chapter 6,move/nest,752,1c870b65d2a162e911522797551207793226f8793b302e2231907d5a5dac63ce
+v3:Herb chapter + LSE-223 + parallel design sections,Book 3 Chapter 6,decompose/merge,9039,5d5e951a7dc969ddc65e1eb789b2f2381c3e4a739824036ee009bd998c3c0299
+v3:parallel herb production sections + M3-4 mirror,Book 3 Chapter 7,decompose + mirror,7242,bb25c088c55b124fe97101392f5cc42c1af6cffbc3f72abfb1721b551b5eda2d
+v2:crop profile:Tomato,Book 3 Chapter 8,move profile; remove controlled wrapper,1948,f05de44df48f0ac477d7a285ca4d0812f0681eaf2079290fcfd6c466041a6242
+v2:crop profile:Pepper,Book 3 Chapter 8,move profile; remove controlled wrapper,1865,a431e8b728ba992d7a1e81647f295a48485690743980f4e3366a93cf2a1f4c28
+v2:crop profile:Eggplant,Book 3 Chapter 8,move profile; remove controlled wrapper,1723,fe11fa5d13d7e27aad33c480b44a286e2302625091805927941102b5f32baac6
+v2:crop profile:Tomatillo,Book 3 Chapter 8,move profile; remove controlled wrapper,1701,1df76fa3c5ceda65f9576e574900c0226c7cbede3f148352ccab81b4f6e0b059
+v2 crop profiles group 8,Book 3 Chapter 8,move/group,9390,bb294b695fb76a88d1c8f7b9f5b09df04c3908819b9c36f1553ab5e4d5c96f42
+v2:crop profile:Cucumber,Book 3 Chapter 9,move profile; remove controlled wrapper,1710,ff9ad32f87f64bbf53389c1dfc2277c76c473b75d1a15a80dc976e04b63a629e
+v2:crop profile:Zucchini / Summer Squash,Book 3 Chapter 9,move profile; remove controlled wrapper,1765,8a3c26805819459433e5f1e560665844c7798aaa7c25a59bac23f4c3cf7069c1
+v2:crop profile:Winter Squash / Pumpkin,Book 3 Chapter 9,move profile; remove controlled wrapper,1845,306094f95b58b3babec607d827346c1b42903f086eee2c907196702dccfb7389
+v2:crop profile:Melon / Watermelon,Book 3 Chapter 9,move profile; remove controlled wrapper,1911,5dc4d4882781efdba171f55e265836b3bfdfaa8fd3e2197306d820a107de1112
+v2:crop profile:Bitter Melon,Book 3 Chapter 9,move profile; remove controlled wrapper,1710,3fd37e15887266bf756e8b15c8af5910dab1e05cd0fa5af1428686c3b055936b
+v2 crop profiles group 9,Book 3 Chapter 9,move/group,8947,5803699902fe4683800fa98211a0d08a2d4ab8dd505d247db201ef859bed9ea6
+v2:crop profile:Cowpea,Book 3 Chapter 10,move profile; remove controlled wrapper,1769,cd718bb0ac34daf8accbeaeda0ee450c7212bd4b741f77470abd98bcd958c1ab
+v2:crop profile:Bean (Bush and Pole),Book 3 Chapter 10,move profile; remove controlled wrapper,1681,e4de4030cfd41b673ac34278e6f7d0a83caf32b0138b20894e7710f56d77cffa
+v2:crop profile:Sweet Corn,Book 3 Chapter 10,move profile; remove controlled wrapper,1645,9c7897b29b556507c660e9d1899711bc1a45ba19deb566c90b303f1faa9e5942
+v2:crop profile:Okra,Book 3 Chapter 10,move profile; remove controlled wrapper,1627,9191c6733f9a5a326902bad1d893e1c2bf44d8d3045965bc64ab336e0452f806
+v2:crop profile:Sweet Potato,Book 3 Chapter 10,move profile; remove controlled wrapper,1750,a60be1f692ae010dfd75ed2443bc82c03a1b574ed909f4d7dd2df20d9e81de57
+v2 crop profiles group 10,Book 3 Chapter 10,move/group,8480,3aac6bafef81e93c0c381f93f5f6af5577bf0894a82aea26a962a662510e222a
+v2:crop profile:Broccoli / Cauliflower / Brussels Sprouts,Book 3 Chapter 11,move profile; remove controlled wrapper,1742,bfa58af10dac87e2b497dbd728156c984a55a6dd2b6b321d3e784c58fff33acc
+v2:crop profile:Cabbage,Book 3 Chapter 11,move profile; remove controlled wrapper,1702,71cf786fb71000b9fade2677a9f1da09f640af1f1a5fb502fb1e6927c68bdc68
+v2:crop profile:Kale / Collards,Book 3 Chapter 11,move profile; remove controlled wrapper,1657,e1c131cece23743776dfcb3278ddf259cdb76b7cfa376439aaee70967be48746
+v2:crop profile:Lettuce,Book 3 Chapter 11,move profile; remove controlled wrapper,1735,a60c107502011b119929b8f5f66b039da0e8efdb1681aedd204ecba26117c3dd
+v2:crop profile:Spinach,Book 3 Chapter 11,move profile; remove controlled wrapper,1664,e96247e333f97ab47e1a672c6cd64406206d93a234e3c48dc854ff38c1cd1252
+v2 crop profiles group 11,Book 3 Chapter 11,move/group,8506,dbae7ccaf2e448102b546db20522010542f93a79f5cfc05a2f3775cff1d12f69
+v2:crop profile:Garlic,Book 3 Chapter 12,move profile; remove controlled wrapper,1781,759273b8b2669f584d55df05f5cab6fcfffd15e7e89b58b1542aabe5b0989425
+v2:crop profile:Onion / Shallot,Book 3 Chapter 12,move profile; remove controlled wrapper,1840,67f1c396bbdfd024e20bf8ace836de8272eb2755ad4bc81a59a8cd2063719b07
+v2:crop profile:Carrot / Parsnip,Book 3 Chapter 12,move profile; remove controlled wrapper,1634,a6f21e6b805e55271b0e949e83548d6ffc7ec54c53882332d8326b1ed878e392
+v2 crop profiles group 12 + v3 Radish/Beet,Book 3 Chapter 12,move/group,6658,b2c7ff568a7d2d599142e44f70cb975ce3fc074e1606944779c12db231c40f2f
+v2:crop profile:Basil,Book 3 Chapter 13,move profile; remove controlled wrapper,1686,8843268363e46058fe038b146139648ad6e57bd5853493279640ddc11363172f
+v2:crop profile:Cilantro / Dill / Fennel,Book 3 Chapter 13,move profile; remove controlled wrapper,1780,09786d9987b17aa9027f20787c9907c454967a1feace2218ab7633cb33e1433c
+v2:crop profile:Strawberry — Annual Hill System,Book 3 Chapter 13,move profile; remove controlled wrapper,1771,f1dd2c8735bb46a2c89e699016c140e7d46aee93f97607dc979a740759d830e6
+v2 crop profiles group 13,Book 3 Chapter 13,move/group,5244,57c4a1296e7cf6aa4a2dc537184d0ad0ba9953932613a69a7f303544c009b398
+v3:h1-plant-immunity-as-ipm-layer-2,Book 4 Chapter 1,move/nest,1496,0e136eb26bda951fe62ab6885603e3ba0978b428a7e06920ce2901d8d22b353e
+v3:h1-scouting-protocol-2,Book 4 Chapter 1,move/nest,1504,135b1a1f534521d9d30e0e191b282df6f364378066c7c46ef1fcc12930bc9c39
+v3:IPM + canonical reference entries + SOP mirrors,Book 4 Chapter 1,consolidate + mirror,12122,86d14bd06d9209ac7cbd0a526a753ba9e33733cabbc0f2048852e944c3b1e7bc
+v3:h1-beneficial-predators-generalist-survey-2,Book 4 Chapter 2,move/nest,1518,c9631d9751d34aa90d04eff444d841f7752795ffd9d5f284ce110c1a3ce583a1
+v3:Beneficial Predators + survey,Book 4 Chapter 2,consolidate,2637,75dff47c7fd4ab11701d7ed008c05ceccd0747107063a810d3f102c4d8f94f0d
+v3:Pest Encyclopedia,Book 4 Chapter 3,move intact,7216,71323bb76bc44732407b7ce33f545a1ab3b33a6ea3849c4214b4fd4582adcdd9
+v3:Biological Controls + practitioner reference notes,Book 4 Chapter 4,move + fold unique notes,10283,7d3bac3f61c58776d70544bb69297090dbb668285dc3bb9bc543d3befaa3885c
+v3:Foliar + M2-2 mirror,Book 4 Chapter 5,move + mirror,4948,21579c33772b0422a524746ac268ba59d47258a10f5d63981211c0b479890bde
+v3:Disease Identification,Book 4 Chapter 6,move intact,3759,4ae1472550cc4185daeb0c7e49b265d6fd5dc23b3f2c7e1a9efa2223fcf0f3cb
+v3:Disease Encyclopedia,Book 4 Chapter 7,move intact,8764,f3e87e52fbf546605353078a03f50a0e7bd8f9ff71e08a95843851f19ad2db88
+v3:h1-tissue-testing,Book 4 Chapter 8,move/nest,483,490cc4fe4f1c1c67ec09113d5949bf8bbca19fb5580abd8f143a2894f2b9cae5
+v3:Sap/Tissue + Tissue Testing entry,Book 4 Chapter 8,move + consolidate,1625,f2784abb2deecfc744c6749970342dfb0f0aa94800150503db933ee51763f10e
+v3:Brix/Refractometry,Book 4 Chapter 9,move intact,1362,510df754f5fb7de5ec5dc70df650844efda227567c4c7804e01b0f03a364f55e
+comp:h1-m1-1-no-till-bed-establishment,Book 5 Part I: M1-1: No-Till Bed Establishment,reorder canonical SOP,431,f5e77c64d7ce99f3c5a975431366f7dfd790121b559d957706ab4e16abebfe91
+comp:h1-m1-2-annual-top-dress-protocol,Book 5 Part I: M1-2: Annual Top-Dress Protocol,reorder canonical SOP,440,e4099794c76975abf90d667f6a493262941a24b94c3092796506692886292696
+comp:h1-m1-3-compost-pile-building-and-management,Book 5 Part I: M1-3: Compost Pile Building and Management,reorder canonical SOP,415,713214e35b35d79eab41034354a9a64d467679e39f3a321c12162432b5c2f989
+comp:h1-m3-3-irrigation-system-maintenance-sop,Book 5 Part I: M3-3: Irrigation System Maintenance SOP,reorder canonical SOP,3092,f78fe38ce27e4b69ccd59ba815b4aa58c2aed80bc55077121bcfb94dfc8dd235
+comp:h1-m4-1-garden-sanitation-and-tool-hygiene-sop,Book 5 Part I: M4-1: Garden Sanitation and Tool Hygiene SOP,reorder canonical SOP,1454,48256488d77632d5b146d7a00237f3f2f04285223e725a08e337f748d7a53d1e
+comp:h1-m4-2-tool-maintenance-and-sharpening-sop,Book 5 Part I: M4-2: Tool Maintenance and Sharpening SOP,reorder canonical SOP,1408,23d06d7765c7df5cb3c3628b99f6a6943b7b9230fae453e6cecd6b0ee143e3ae
+comp:h1-m4-4-cover-crop-planting-and-termination-sop,Book 5 Part I: M4-4: Cover Crop Planting and Termination SOP,reorder canonical SOP,2372,d24f5449e591d4a24d21c0b904c78a8272d7c628d2be5f8e8d35f090d724b9a2
+comp:h1-lse-232-sop-seed-starting-and-transplanting,Book 5 Part II: LSE-232 — Seed Starting and Transplanting SOP,reorder canonical SOP,2131,9277ded04f3ea2bcadb6c79bd4559ba99167a5967def0f76318e11e832710de1
+comp:h1-m4-3-seasonal-succession-and-bed-pivoting-sop,Book 5 Part II: M4-3: Seasonal Succession and Bed Pivoting SOP,reorder canonical SOP,1642,f3d35091706ed75915a72841c5b144a657ca74828c387b98099959de6aa28625
+comp:h1-m3-4-harvesting-and-post-harvest-handling-sop,Book 5 Part II: M3-4: Harvesting and Post-Harvest Handling SOP,reorder canonical SOP,1746,de00ecd5902f6fceb0965d0189de8185e5c70e8916a01205811c05c60ca1cdaa
+comp:h1-lse-161-m2-1-aact-brewing-protocol,Book 5 Part III: M2-1: AACT Brewing Protocol,reorder canonical SOP,464,9129ea6376cff262d2653b5a31c97ed15c4de4d8ff1d1a746e6c7f271bdada9b
+comp:h1-lse-162-m2-2-foliar-spray-application-sop,Book 5 Part III: M2-2: Foliar Spray Application SOP,reorder canonical SOP,3086,10ebfc7b120b821d6da93a7ccf5b0317dd5c8e595542fd116a8daf4dc54e6a0c
+comp:h1-lse-163-m2-3-mycorrhizal-inoculation-at-transplant,Book 5 Part III: M2-3: Mycorrhizal Inoculation at Transplant,reorder canonical SOP,1311,80f8549a0dafcec5377cb8f6aa82c5d199beba7e0883089a77e9c793d657fb2d
+comp:h1-m3-1-daily-scouting-sop,Book 5 Part IV: M3-1: Daily Scouting SOP,reorder canonical SOP,3116,420412ced485dd53300c8fd355989cee723f2f3c22da7746229aa63418686a4e
+comp:h1-m3-2-ipm-decision-and-intervention-sop,Book 5 Part IV: M3-2: IPM Decision and Intervention SOP,reorder canonical SOP,3177,601e57d442f158c2ee8d7785c4d0c80bf1db2c63e6839ce1e722c46764041377
+comp:h2-appendix-a-quick-reference-recipe-cards-top-25-inputs-and-brews,Book 5 Part V,retain appendix,3786,69fc8cebeb3658755df0cde80912dbaf59daf8dd79aa0b3bf2b1fceac2deaedb
+comp:h2-appendix-b-troubleshooting-decision-trees,Book 5 Part V,retain appendix,1638,a68fcc48bd8fb4fde3afd9f773292ab35e4c013b1842439d7ef87406ace1c437
+comp:h2-appendix-c-seasonal-calendars-region-neutral-baseline-north-texas-overlay,Book 5 Part V,retain appendix,1067,b4c7fa03f4b6a5df561949f276b6af213c9169e39b05c35aab7e14dfd644f0d9
+comp:h2-appendix-d-conversion-charts,Book 5 Part V,retain appendix,674,ba355f7e1c7c3f1b3f872d32ae50284be74262bfbe0d18b94d4aa04c0446745e
+comp:h2-appendix-e-microscopy-identification-guide,Book 5 Part V,retain appendix,874,ace9eab1f43da63c60da63035d53224034dedb31ac5d29d072f0940317060938
+comp:h2-appendix-f-brix-reference-tables-by-crop,Book 5 Part V,retain appendix,707,3e94d10a2cd2bc47ecf53ad745bdd7ae9c089f5256f49fb4bfa4b701bb14a8ee
+v1:Practitioner evidence/safe trial sections,Book 5 Part VI Chapter 1,decompose,522,f653685b2a12dd61337826323c4f757ae8b406f8e86a9e2422b3951480eecdd4
+v3:h1-lse-130-plant-electrophysiology,Book 5 Experimental Chapter 2,move/nest,1975,a8bce1bc815e4cb22f1e1133801303d692804a0ed9782d2ad002bb5f0d2954ba
+v3:Electroculture chapter + LSE-130 + practitioner notes,Book 5 Part VI Chapter 2,consolidate experimental material,8354,1bdb04bcc61f77c7ea8d61dac4010be52d233966cb38434be8197fbb0c2e39a5
+v3:LSE-131 + v1 practitioner note,Book 5 Part VI Chapter 3,consolidate,2022,680e4652b3aee5f4bf39f48b6f49ff5077bec35c8e4630ab4c73862bb356c490
+v3:LSE-132 + v1 practitioner note,Book 5 Part VI Chapter 4,consolidate,2420,d809eb581e98e7557c37744b0be2a816d5193bc2a0938979a27f9c1a1a10c8fb
+v1:Practitioner future/source sections,Book 5 Part VI Chapter 5,decompose,87,5a62ea5fdb3994d377015da4ad73b4d4da81e5808094f5fb332f21c57092abc5

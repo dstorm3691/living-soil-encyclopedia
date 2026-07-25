@@ -1,0 +1,72 @@
+[
+  {
+    "file": "LSE_APPROVED_ARCHITECTURE_PACKET.md",
+    "bytes": 37517,
+    "sha256": "4c0500700554d980e91b93e9ba1274d1c4a7b40f6ee2e7cb0ca292d7d9a9a8c1"
+  },
+  {
+    "file": "LSE_BOOK_1_THE_LIVING_SOIL_WORKING.html",
+    "bytes": 479204,
+    "sha256": "a9ce291908c8f1466627c581add14bfb34f3d70463ad697abda5709658a881ec"
+  },
+  {
+    "file": "LSE_BOOK_2_INPUTS_AND_AMENDMENTS_WORKING.html",
+    "bytes": 586834,
+    "sha256": "017219b12fe40eea75edec61a261ee8ff6f8c4125fb33846dc979b52f83fe79b"
+  },
+  {
+    "file": "LSE_BOOK_3_CROPS_AND_GUILDS_WORKING.html",
+    "bytes": 564746,
+    "sha256": "bdb538e2c60bfc9530ab33b0bdd8afe4b7ffee9bc2174d1d0409fc7b61c50c69"
+  },
+  {
+    "file": "LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html",
+    "bytes": 441657,
+    "sha256": "0b4d6c4d9b9642bcabe1242b9dbeb462574f06dee098d019f1a6d187a44053c8"
+  },
+  {
+    "file": "LSE_BOOK_5_FIELD_COMPANION_WORKING.html",
+    "bytes": 398911,
+    "sha256": "73c7dd6b0889362c3f3973cc89e3023d4081ad7e0abc3d2281bd725c7f6acec2"
+  },
+  {
+    "file": "LSE_FIVE_BOOK_INTEGRITY_DATA.json",
+    "bytes": 1932,
+    "sha256": "29ce5d2a811bd8eabdb6dcf9a8baaeb3e0e05c75c42930b796c75c9c8f885241"
+  },
+  {
+    "file": "LSE_FIVE_BOOK_INTEGRITY_REPORT.md",
+    "bytes": 4321,
+    "sha256": "3191c7a8d8fc939a5a932ea713a6bfe0c4ee7370897ef1445faa3c53794c74a9"
+  },
+  {
+    "file": "LSE_INTERNAL_PRODUCTION_HOLD.html",
+    "bytes": 64848,
+    "sha256": "708e27472466fc273c45f2e03ea76d2a0ea924a8aff9c22a0f6e4ce5dac8cce9"
+  },
+  {
+    "file": "LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv",
+    "bytes": 7720,
+    "sha256": "facbad3a906a11cd4fb8d058ba9d63fe33e2f89d200084490b9879d6c4f1b62a"
+  },
+  {
+    "file": "LSE_MOVEMENT_LEDGER.csv",
+    "bytes": 18267,
+    "sha256": "462f141b8dbdf1d41f4dd9b3ee284d0153e72e641ca222ea58d4e017b35140c6"
+  },
+  {
+    "file": "MANIFEST.json",
+    "bytes": 2098,
+    "sha256": "df51074e805ccbf48a7cc2995e36b85e203dcf04566996c3b7dc2cea9c4c070e"
+  },
+  {
+    "file": "build_lse_five_book_set.py",
+    "bytes": 61819,
+    "sha256": "bfd2254f82ac372376fd8a87c58d9eaf7bad08a95e2475626598678fdd250a94"
+  },
+  {
+    "file": "lse_five_book_working.css",
+    "bytes": 24438,
+    "sha256": "228488408ad7f2c844fcad18159b17700a332478eaf20b6a16b716b10b77b12f"
+  }
+]
