@@ -14,9 +14,11 @@ This is licensing basis (who, if anyone, must be contacted), independent of whet
 | **unresolved** | 14 | rights unverified (VERIFY) — investigate before use |
 | **TOTAL** | 60 | |
 
-**Cleanly licensed and usable now: 35** of 60 (public domain 7 + CC attribution 28).
+**Rights-clean: 35** of 60 (public domain 7 + CC attribution 28). **Print-shippable now: 34** — 1 rights-clean row is LOWRES and cannot print at figure size (`PersleyCooke_CC-BY-SA-3.0`).
 
-**Needs action before this can ship as a sold book: 25** — 9 need institutional permission, 14 are rights-unverified, and **2 are CC-BY-NC (NonCommercial) — NOT usable in a sold book** (both already marked REJECT). Separately, 1 is LOWRES (a resolution flag, not a rights flag).
+**Needs action before this can ship as a sold book: 25** — 9 need institutional permission, 14 are rights-unverified, and **2 are CC-BY-NC (NonCommercial) — NOT usable in a sold book** (both already marked REJECT).
+
+> ⚠ **Share-alike (copyleft) — the likeliest thing to bite at publication.** **8 of the 34 shippable rows are CC-BY-SA**, currently indistinguishable from plain CC-BY in the usable bucket (`share_alike` column in `licenses.csv` flags them). Share-alike scope for an image embedded in a sold book is unsettled; the conservative reading is that its copyleft can propagate to the surrounding work. **These 8 need attorney review before commercial use.** (11 of all 60 carry CC-BY-SA; the other 3 are already held out — 2 CC-BY-NC-SA/REJECT + 1 LOWRES.)
 
 **Who to contact (permission + unresolved rows), by holder:**
 

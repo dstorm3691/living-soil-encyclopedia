@@ -1,61 +1,61 @@
-expected_filename,rights_basis,license_canonical,license_token_raw,attributed_creator,contact,status_flag,copied_or_proposed,determination
-B30_001__LSE_FOUND_B26_ABIOTIC_Pepper_Sunscald_ExposedFruit_DonFerrin_Bugwood_CC-BY-3.jpg,cc_license,CC-BY-3,CC-BY-3,Don Ferrin / Bugwood.org (Univ. of Georgia),,,yes,propose-tier4
-B30_002__LSE_FOUND_B26_ABIOTIC_Tomato_FruitCracking_IrregularIrrigationCue_Fructibus_CC0.jpg,public_domain,CC0,CC0,Fructibus,,,no,unresolved
-B30_003__LSE_FOUND_B26_ABIOTIC_Tomato_Catfacing_FruitDeformity_ParthasarathySeethapathy_CC-BY-SA-4.jpg,cc_license,CC-BY-SA-4,CC-BY-SA-4,Parthasarathy Seethapathy,,,no,unresolved
-B30_004__LSE_FOUND_B26_ABIOTIC_Tomato_HailDamage_BruisedBrokenStems_DwightSipler_CC-BY-2.jpg,cc_license,CC-BY-2,CC-BY-2,Dwight Sipler,,,no,unresolved
-B30_005__LSE_FOUND_B26_ROOTS_Container_Rootbound_CirclingRoots_B137_CC0.jpg,public_domain,CC0,CC0,B137,,,no,unresolved
-B30_006__LSE_FOUND_B26_ROOTS_Tomato_RootKnotNematode_GalledRoots_PlantPestsDiseases_CC0.jpg,public_domain,CC0,CC0,Plant Pests Diseases,,,no,unresolved
-B30_007__LSE_FOUND_B26_COMPOST_Compost_MaturityContamination_TemperatureInspection_StephenAusmus_USDA-PD.jpg,public_domain,PD/USDA,USDA-PD,Stephen Ausmus / USDA,,,no,unresolved
-B30_008__LSE_FOUND_B26_SOIL_AggregateStability_SlakeComparison_LanceCheung_USDA-PD.jpg,public_domain,PD/USDA,USDA-PD,Lance Cheung / USDA,,,no,unresolved
-B30_009__LSE_FOUND_B26_WATER_DripIrrigation_WettingPattern_PeggyGreb_USDA-PD.jpg,public_domain,PD/USDA,USDA-PD,Peggy Greb / USDA,,,yes,propose-tier4
-B30_010__LSE_FOUND_B26_PEST_SquashBug_EggCluster_UndersidePumpkinLeaf_Bdm25_CC-BY-SA-4.jpg,cc_license,CC-BY-SA-4,CC-BY-SA-4,Bdm25,,,no,unresolved
-B30_011__LSE_FOUND_B26_PEST_SquashBug_EggCluster_AnasaTristis_BeatrizMoisset_CC-BY-SA-4.jpg,cc_license,CC-BY-SA-4,CC-BY-SA-4,Beatriz Moisset,,,no,unresolved
-B30_012__LSE_FOUND_B26_PEST_SquashBug_Nymphs_OnSummerSquash_Pollinator_CC-BY-2-5.jpg,cc_license,CC-BY-2.5,CC-BY-2-5,Pollinator,,,yes,collision
-B30_013__LSE_FOUND_B26_PEST_SquashBug_Adult_MarginalResolution_Downtowngal_CC0.jpg,public_domain,CC0,CC0,Downtowngal,,,no,unresolved
-B30_022__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DDrift_CuppedNewGrowth_MaryAnnHansen-Bugwood_CONDITIONAL.jpg,institutional_permission,,,Mary Ann Hansen / Bugwood.org (Univ. of Georgia),Mary Ann Hansen / Bugwood.org (Univ. of Georgia),CONDITIONAL,no,unresolved
-B30_023__LSE_FOUND_B27_ABIOTIC_Tomato_GlyphosateInjury_YellowDistortedNewGrowth_NathanHoward-Bugwood_VERIFY.jpg,unresolved,,,Nathan Howard / Bugwood.org (Univ. of Georgia),Nathan Howard / Bugwood.org (Univ. of Georgia),VERIFY,no,unresolved
-B30_024__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DInjury_TwistedCurlingShoot_PBacchi-Bugwood_VERIFY.png,unresolved,,,PBacchi / Bugwood.org (Univ. of Georgia),PBacchi / Bugwood.org (Univ. of Georgia),VERIFY,no,unresolved
-B30_025__LSE_FOUND_B27_ROOTS_Tomato_FusariumWilt_VascularBrowningStemSplit_NCSU-IngaMeadows_VERIFY.jpg,unresolved,,,Inga Meadows / North Carolina State University,Inga Meadows / North Carolina State University,VERIFY,no,unresolved
-B30_026__LSE_FOUND_B27_ROOTS_Pepper_DampingOff_StemCankerSoilLine_UMass-TSmith_VERIFY.jpg,unresolved,,,TSmith / University of Massachusetts,TSmith / University of Massachusetts,VERIFY,no,unresolved
-B30_027__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_PodCrossSectionLarvaAdult_UGA_VERIFY.jpg,unresolved,,,University of Georgia,University of Georgia,VERIFY,no,unresolved
-B30_028__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_LarvaInsidePodRisk_UGA_VERIFY.jpg,unresolved,,,University of Georgia,University of Georgia,VERIFY,no,unresolved
-B30_029__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_AdultScouting_UGA_VERIFY.jpg,unresolved,,,University of Georgia,University of Georgia,VERIFY,no,unresolved
-B30_030__LSE_FOUND_B27_PEST_Eggplant_FleaBeetle_ShotHolePittedLeaf_DavidCappaert-Bugwood_VERIFY.jpg,unresolved,,,David Cappaert / Bugwood.org (Univ. of Georgia),David Cappaert / Bugwood.org (Univ. of Georgia),VERIFY,no,unresolved
-B30_031__LSE_FOUND_B27_PEST_Corn_BlackCutworm_SeveredSeedlingDamage_WM-Hantsbarger_CC-BY-3.0-US.jpg,cc_license,CC-BY-3,CC-BY-3.0-US,WM / Hantsbarger,,,no,unresolved
-B30_032__LSE_FOUND_B27_EXCLUSION_Seedlings_CutwormCollars_CardboardBarrier_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Kathleen Moore,,,no,unresolved
-B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg,institutional_permission,,,Scot Nelson,Scot Nelson,CONDITIONAL,no,unresolved
-B30_034__LSE_FOUND_B27_EXCLUSION_Containers_SlugBarrier_CopperTape_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Kathleen Moore,,,no,unresolved
-B30_035__LSE_FOUND_B27_ABIOTIC_Squash_PesticideBurn_SoapPyrethrinLeafScorch_UMD_VERIFY.jpg,unresolved,,,University of Maryland,University of Maryland,VERIFY,no,unresolved
-B30_036__LSE_FOUND_B27_ABIOTIC_Bean_PesticideBurn_LeafScorch_UMD_VERIFY.png,unresolved,,,University of Maryland,University of Maryland,VERIFY,no,unresolved
-B30_037__LSE_FOUND_B27_ABIOTIC_VegetableTransplant_ColdFreezeDamage_WhiteLeaves_UMD_VERIFY.jpg,unresolved,,,University of Maryland,University of Maryland,VERIFY,no,unresolved
-B30_038__LSE_FOUND_B27_ABIOTIC_Tomato_FertilizerBurn_YoungLeafScorch_UMD_VERIFY.jpg,unresolved,,,University of Maryland,University of Maryland,VERIFY,no,unresolved
-B30_039__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FruitNecrosis_NCSU-CC-BY-NC-SA_REJECT.png,cc_license,CC-BY-NC-SA,NCSU-CC-BY-NC-SA,North Carolina State University,,REJECT,no,unresolved
-B30_040__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FoliageStemNecrosis_NCSU-CC-BY-NC-SA_REJECT.png,cc_license,CC-BY-NC-SA,NCSU-CC-BY-NC-SA,North Carolina State University,,REJECT,no,unresolved
-B30_045__LSE_FOUND_B28_ABIOTIC_Tomato_HailDamage_FruitBruisesHoles_DwightSipler_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Dwight Sipler,,,no,unresolved
-B30_046__LSE_FOUND_B28_ROOTS_Tomato_BacterialWilt_StemCrossSection_ClemsonUSDA_CC-BY-3.0.jpg,cc_license,CC-BY-3,CC-BY-3.0,Clemson USDA,,,no,unresolved
-B30_047__LSE_FOUND_B28_DISEASE_Tomato_RhizoctoniaSolani_FruitRotBlackLesions_JGK_hn_CC-BY-3.0.jpg,cc_license,CC-BY-3,CC-BY-3.0,hn,,,no,unresolved
-B30_048__LSE_FOUND_B28_PEST_Brassica_CabbageFlyMaggot_RootDamage_Kohlrabi_SchlagheckenJosef_CC-BY-4.0.jpg,cc_license,CC-BY-4,CC-BY-4.0,Schlaghecken Josef,,,no,unresolved
-B30_049__LSE_FOUND_B28_SOIL_DroughtDrySoil_CrackingScale_VladislavNekrasov_CC-BY-4.0.jpg,cc_license,CC-BY-4,CC-BY-4.0,Vladislav Nekrasov,,,no,unresolved
-B30_050__LSE_FOUND_B28_ABIOTIC_Tomato_FrostDamage_LeafFruitBurn_AmroBinKulthoum_CC-BY-SA-3.0.jpg,cc_license,CC-BY-SA-3,CC-BY-SA-3.0,Amro Bin Kulthoum,,,no,unresolved
-B30_051__LSE_FOUND_B28_DISEASE_Tomato_SouthernBlight_SclerotiaAtCrown_PersleyCooke_CC-BY-SA-3.0_LOWRES.jpg,cc_license,CC-BY-SA-3,CC-BY-SA-3.0,Persley Cooke,,LOWRES,no,unresolved
-B30_052__LSE_FOUND_B28_PEST_Brassica_CabbageFlyLarva_StalkDamage_PakChoi_SchlagheckenJosef_CC-BY-SA-4.0.jpg,cc_license,CC-BY-SA-4,CC-BY-SA-4.0,Schlaghecken Josef,,,no,unresolved
-B30_053__LSE_FOUND_B28_PEST_Brassica_DeliaRadicum_MaggotPupaLifeStages_Rasbak_CC-BY-SA-GFDL.jpg,cc_license,CC-BY-SA-GFDL,CC-BY-SA-GFDL,Rasbak,,,no,unresolved
-B30_054__LSE_FOUND_B28_PEST_SquashVineBorer_FrassAtStem_Pollinator_CC-BY-2.5_CONDITIONAL.jpg,cc_license,CC-BY-2.5,CC-BY-2.5,Pollinator,,CONDITIONAL,yes,collision
-B30_055__LSE_FOUND_B28_PEST_SquashVineBorer_LarvaeSplitStemFrass_Pollinator_CC-BY-2.5_CONDITIONAL.jpg,cc_license,CC-BY-2.5,CC-BY-2.5,Pollinator,,CONDITIONAL,yes,collision
-B30_056__LSE_FOUND_B28_ABIOTIC_FertilizerBurn_LeafScorchPattern_CannabisCropMismatch_Fenrisulfir_CC-BY-SA-GFDL.jpg,cc_license,CC-BY-SA-GFDL,CC-BY-SA-GFDL,Fenrisulfir,,,yes,propose-tier4
-B30_067__LSE_FOUND_B29_ABIOTIC_ContainerHerbs_SaltBuildup_WhiteSaltCrust_DianeMays_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Diane Mays,,,no,unresolved
-B30_068__LSE_FOUND_B29_PRACTICAL_ContainerVegetables_ReservoirSpace_WateringDepth_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Kathleen Moore,,,no,unresolved
-B30_069__LSE_FOUND_B29_PRACTICAL_SmallSpaceVegetables_OutdoorRailingContainers_LucyBradley_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Lucy Bradley,,,no,unresolved
-B30_070__LSE_FOUND_B29_ABIOTIC_Tomato_HerbicideResidue_CuppedNewGrowth_VCE_PublicUse.jpg,institutional_permission,,,Virginia Cooperative Extension,Virginia Cooperative Extension,PublicUse,no,unresolved
-B30_071__LSE_FOUND_B29_ABIOTIC_Bean_HerbicideInjury_EpinastySwollenStems_VCE_PublicUse.jpg,institutional_permission,,,Virginia Cooperative Extension,Virginia Cooperative Extension,PublicUse,no,unresolved
-B30_072__LSE_FOUND_B29_ABIOTIC_Squash_HerbicideResidue_FieldEpinastyTwisting_VCE_PublicUse.jpg,institutional_permission,,,Virginia Cooperative Extension,Virginia Cooperative Extension,PublicUse,no,unresolved
-B30_073__LSE_FOUND_B29_PRACTICAL_RowCover_LowTunnel_FabricOverHoops_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Kathleen Moore,,,no,unresolved
-B30_074__LSE_FOUND_B29_PRACTICAL_HighTunnel_Vegetables_RollUpVentilation_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Kathleen Moore,,,no,unresolved
-B30_075__LSE_FOUND_B29_PRACTICAL_HerbsLettuce_ColdFrame_OpenLid_ChrisAlberti_CC-BY-2.0.jpg,cc_license,CC-BY-2,CC-BY-2.0,Chris Alberti,,,no,unresolved
-B30_076__LSE_FOUND_B29_ROOTS_ContainerRootbound_GirdledRoots_BrendanLandis_CC-BY-SA-2.0.jpg,cc_license,CC-BY-SA-2,CC-BY-SA-2.0,Brendan Landis,,,no,unresolved
-B30_077__LSE_FOUND_B29_HOLD_ABIOTIC_Squash_PesticideBurn_Phytotoxicity_UMD_VERIFY.jpg,unresolved,,,University of Maryland,University of Maryland,VERIFY,no,unresolved
-B30_078__LSE_FOUND_B29_HOLD_ABIOTIC_Bean_PesticideBurn_ScorchedLeaves_UMD_VERIFY.png,unresolved,,,University of Maryland,University of Maryland,VERIFY,no,unresolved
-B30_079__LSE_FOUND_B29_HOLD_PEST_Okra_StinkBugDamage_TwistedPods_Clemson_PERMISSION.jpg,institutional_permission,,,Clemson University,Clemson University,PERMISSION,no,unresolved
-B30_080__LSE_FOUND_B29_HOLD_ROOTS_Basil_RhizoctoniaRootRot_DarkRoots_MSU_PERMISSION.jpg,institutional_permission,,,Michigan State University,Michigan State University,PERMISSION,no,unresolved
-B30_081__LSE_FOUND_B29_HOLD_ROOTS_Strawberry_BlackRootRot_HealthyVsDiseased_NCSU_PERMISSION.jpg,institutional_permission,,,North Carolina State University,North Carolina State University,PERMISSION,no,unresolved
-B30_082__LSE_FOUND_B29_HOLD_DISEASE_Tomato_BacterialWilt_StreamingTest_UAEX_PERMISSION.jpg,institutional_permission,,,University of Arkansas Coop. Extension,University of Arkansas Coop. Extension,PERMISSION,no,unresolved
+expected_filename,rights_basis,license_canonical,share_alike,license_token_raw,attributed_creator,contact,status_flag,copied_or_proposed,determination
+B30_001__LSE_FOUND_B26_ABIOTIC_Pepper_Sunscald_ExposedFruit_DonFerrin_Bugwood_CC-BY-3.jpg,cc_license,CC-BY-3,false,CC-BY-3,Don Ferrin / Bugwood.org (Univ. of Georgia),,,yes,propose-tier4
+B30_002__LSE_FOUND_B26_ABIOTIC_Tomato_FruitCracking_IrregularIrrigationCue_Fructibus_CC0.jpg,public_domain,CC0,false,CC0,Fructibus,,,no,unresolved
+B30_003__LSE_FOUND_B26_ABIOTIC_Tomato_Catfacing_FruitDeformity_ParthasarathySeethapathy_CC-BY-SA-4.jpg,cc_license,CC-BY-SA-4,true,CC-BY-SA-4,Parthasarathy Seethapathy,,,no,unresolved
+B30_004__LSE_FOUND_B26_ABIOTIC_Tomato_HailDamage_BruisedBrokenStems_DwightSipler_CC-BY-2.jpg,cc_license,CC-BY-2,false,CC-BY-2,Dwight Sipler,,,no,unresolved
+B30_005__LSE_FOUND_B26_ROOTS_Container_Rootbound_CirclingRoots_B137_CC0.jpg,public_domain,CC0,false,CC0,B137,,,no,unresolved
+B30_006__LSE_FOUND_B26_ROOTS_Tomato_RootKnotNematode_GalledRoots_PlantPestsDiseases_CC0.jpg,public_domain,CC0,false,CC0,Plant Pests Diseases,,,no,unresolved
+B30_007__LSE_FOUND_B26_COMPOST_Compost_MaturityContamination_TemperatureInspection_StephenAusmus_USDA-PD.jpg,public_domain,PD/USDA,false,USDA-PD,Stephen Ausmus / USDA,,,no,unresolved
+B30_008__LSE_FOUND_B26_SOIL_AggregateStability_SlakeComparison_LanceCheung_USDA-PD.jpg,public_domain,PD/USDA,false,USDA-PD,Lance Cheung / USDA,,,no,unresolved
+B30_009__LSE_FOUND_B26_WATER_DripIrrigation_WettingPattern_PeggyGreb_USDA-PD.jpg,public_domain,PD/USDA,false,USDA-PD,Peggy Greb / USDA,,,yes,propose-tier4
+B30_010__LSE_FOUND_B26_PEST_SquashBug_EggCluster_UndersidePumpkinLeaf_Bdm25_CC-BY-SA-4.jpg,cc_license,CC-BY-SA-4,true,CC-BY-SA-4,Bdm25,,,no,unresolved
+B30_011__LSE_FOUND_B26_PEST_SquashBug_EggCluster_AnasaTristis_BeatrizMoisset_CC-BY-SA-4.jpg,cc_license,CC-BY-SA-4,true,CC-BY-SA-4,Beatriz Moisset,,,no,unresolved
+B30_012__LSE_FOUND_B26_PEST_SquashBug_Nymphs_OnSummerSquash_Pollinator_CC-BY-2-5.jpg,cc_license,CC-BY-2.5,false,CC-BY-2-5,Pollinator,,,yes,collision
+B30_013__LSE_FOUND_B26_PEST_SquashBug_Adult_MarginalResolution_Downtowngal_CC0.jpg,public_domain,CC0,false,CC0,Downtowngal,,,no,unresolved
+B30_022__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DDrift_CuppedNewGrowth_MaryAnnHansen-Bugwood_CONDITIONAL.jpg,institutional_permission,,false,,Mary Ann Hansen / Bugwood.org (Univ. of Georgia),Mary Ann Hansen / Bugwood.org (Univ. of Georgia),CONDITIONAL,no,unresolved
+B30_023__LSE_FOUND_B27_ABIOTIC_Tomato_GlyphosateInjury_YellowDistortedNewGrowth_NathanHoward-Bugwood_VERIFY.jpg,unresolved,,false,,Nathan Howard / Bugwood.org (Univ. of Georgia),Nathan Howard / Bugwood.org (Univ. of Georgia),VERIFY,no,unresolved
+B30_024__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DInjury_TwistedCurlingShoot_PBacchi-Bugwood_VERIFY.png,unresolved,,false,,PBacchi / Bugwood.org (Univ. of Georgia),PBacchi / Bugwood.org (Univ. of Georgia),VERIFY,no,unresolved
+B30_025__LSE_FOUND_B27_ROOTS_Tomato_FusariumWilt_VascularBrowningStemSplit_NCSU-IngaMeadows_VERIFY.jpg,unresolved,,false,,Inga Meadows / North Carolina State University,Inga Meadows / North Carolina State University,VERIFY,no,unresolved
+B30_026__LSE_FOUND_B27_ROOTS_Pepper_DampingOff_StemCankerSoilLine_UMass-TSmith_VERIFY.jpg,unresolved,,false,,TSmith / University of Massachusetts,TSmith / University of Massachusetts,VERIFY,no,unresolved
+B30_027__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_PodCrossSectionLarvaAdult_UGA_VERIFY.jpg,unresolved,,false,,University of Georgia,University of Georgia,VERIFY,no,unresolved
+B30_028__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_LarvaInsidePodRisk_UGA_VERIFY.jpg,unresolved,,false,,University of Georgia,University of Georgia,VERIFY,no,unresolved
+B30_029__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_AdultScouting_UGA_VERIFY.jpg,unresolved,,false,,University of Georgia,University of Georgia,VERIFY,no,unresolved
+B30_030__LSE_FOUND_B27_PEST_Eggplant_FleaBeetle_ShotHolePittedLeaf_DavidCappaert-Bugwood_VERIFY.jpg,unresolved,,false,,David Cappaert / Bugwood.org (Univ. of Georgia),David Cappaert / Bugwood.org (Univ. of Georgia),VERIFY,no,unresolved
+B30_031__LSE_FOUND_B27_PEST_Corn_BlackCutworm_SeveredSeedlingDamage_WM-Hantsbarger_CC-BY-3.0-US.jpg,cc_license,CC-BY-3,false,CC-BY-3.0-US,WM / Hantsbarger,,,no,unresolved
+B30_032__LSE_FOUND_B27_EXCLUSION_Seedlings_CutwormCollars_CardboardBarrier_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Kathleen Moore,,,no,unresolved
+B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg,institutional_permission,,false,,Scot Nelson,Scot Nelson,CONDITIONAL,no,unresolved
+B30_034__LSE_FOUND_B27_EXCLUSION_Containers_SlugBarrier_CopperTape_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Kathleen Moore,,,no,unresolved
+B30_035__LSE_FOUND_B27_ABIOTIC_Squash_PesticideBurn_SoapPyrethrinLeafScorch_UMD_VERIFY.jpg,unresolved,,false,,University of Maryland,University of Maryland,VERIFY,no,unresolved
+B30_036__LSE_FOUND_B27_ABIOTIC_Bean_PesticideBurn_LeafScorch_UMD_VERIFY.png,unresolved,,false,,University of Maryland,University of Maryland,VERIFY,no,unresolved
+B30_037__LSE_FOUND_B27_ABIOTIC_VegetableTransplant_ColdFreezeDamage_WhiteLeaves_UMD_VERIFY.jpg,unresolved,,false,,University of Maryland,University of Maryland,VERIFY,no,unresolved
+B30_038__LSE_FOUND_B27_ABIOTIC_Tomato_FertilizerBurn_YoungLeafScorch_UMD_VERIFY.jpg,unresolved,,false,,University of Maryland,University of Maryland,VERIFY,no,unresolved
+B30_039__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FruitNecrosis_NCSU-CC-BY-NC-SA_REJECT.png,cc_license,CC-BY-NC-SA,true,NCSU-CC-BY-NC-SA,North Carolina State University,,REJECT,no,unresolved
+B30_040__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FoliageStemNecrosis_NCSU-CC-BY-NC-SA_REJECT.png,cc_license,CC-BY-NC-SA,true,NCSU-CC-BY-NC-SA,North Carolina State University,,REJECT,no,unresolved
+B30_045__LSE_FOUND_B28_ABIOTIC_Tomato_HailDamage_FruitBruisesHoles_DwightSipler_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Dwight Sipler,,,no,unresolved
+B30_046__LSE_FOUND_B28_ROOTS_Tomato_BacterialWilt_StemCrossSection_ClemsonUSDA_CC-BY-3.0.jpg,cc_license,CC-BY-3,false,CC-BY-3.0,Clemson USDA,,,no,unresolved
+B30_047__LSE_FOUND_B28_DISEASE_Tomato_RhizoctoniaSolani_FruitRotBlackLesions_JGK_hn_CC-BY-3.0.jpg,cc_license,CC-BY-3,false,CC-BY-3.0,hn,,,no,unresolved
+B30_048__LSE_FOUND_B28_PEST_Brassica_CabbageFlyMaggot_RootDamage_Kohlrabi_SchlagheckenJosef_CC-BY-4.0.jpg,cc_license,CC-BY-4,false,CC-BY-4.0,Schlaghecken Josef,,,no,unresolved
+B30_049__LSE_FOUND_B28_SOIL_DroughtDrySoil_CrackingScale_VladislavNekrasov_CC-BY-4.0.jpg,cc_license,CC-BY-4,false,CC-BY-4.0,Vladislav Nekrasov,,,no,unresolved
+B30_050__LSE_FOUND_B28_ABIOTIC_Tomato_FrostDamage_LeafFruitBurn_AmroBinKulthoum_CC-BY-SA-3.0.jpg,cc_license,CC-BY-SA-3,true,CC-BY-SA-3.0,Amro Bin Kulthoum,,,no,unresolved
+B30_051__LSE_FOUND_B28_DISEASE_Tomato_SouthernBlight_SclerotiaAtCrown_PersleyCooke_CC-BY-SA-3.0_LOWRES.jpg,cc_license,CC-BY-SA-3,true,CC-BY-SA-3.0,Persley Cooke,,LOWRES,no,unresolved
+B30_052__LSE_FOUND_B28_PEST_Brassica_CabbageFlyLarva_StalkDamage_PakChoi_SchlagheckenJosef_CC-BY-SA-4.0.jpg,cc_license,CC-BY-SA-4,true,CC-BY-SA-4.0,Schlaghecken Josef,,,no,unresolved
+B30_053__LSE_FOUND_B28_PEST_Brassica_DeliaRadicum_MaggotPupaLifeStages_Rasbak_CC-BY-SA-GFDL.jpg,cc_license,CC-BY-SA-GFDL,true,CC-BY-SA-GFDL,Rasbak,,,no,unresolved
+B30_054__LSE_FOUND_B28_PEST_SquashVineBorer_FrassAtStem_Pollinator_CC-BY-2.5_CONDITIONAL.jpg,cc_license,CC-BY-2.5,false,CC-BY-2.5,Pollinator,,CONDITIONAL,yes,collision
+B30_055__LSE_FOUND_B28_PEST_SquashVineBorer_LarvaeSplitStemFrass_Pollinator_CC-BY-2.5_CONDITIONAL.jpg,cc_license,CC-BY-2.5,false,CC-BY-2.5,Pollinator,,CONDITIONAL,yes,collision
+B30_056__LSE_FOUND_B28_ABIOTIC_FertilizerBurn_LeafScorchPattern_CannabisCropMismatch_Fenrisulfir_CC-BY-SA-GFDL.jpg,cc_license,CC-BY-SA-GFDL,true,CC-BY-SA-GFDL,Fenrisulfir,,,yes,propose-tier4
+B30_067__LSE_FOUND_B29_ABIOTIC_ContainerHerbs_SaltBuildup_WhiteSaltCrust_DianeMays_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Diane Mays,,,no,unresolved
+B30_068__LSE_FOUND_B29_PRACTICAL_ContainerVegetables_ReservoirSpace_WateringDepth_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Kathleen Moore,,,no,unresolved
+B30_069__LSE_FOUND_B29_PRACTICAL_SmallSpaceVegetables_OutdoorRailingContainers_LucyBradley_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Lucy Bradley,,,no,unresolved
+B30_070__LSE_FOUND_B29_ABIOTIC_Tomato_HerbicideResidue_CuppedNewGrowth_VCE_PublicUse.jpg,institutional_permission,,false,,Virginia Cooperative Extension,Virginia Cooperative Extension,PublicUse,no,unresolved
+B30_071__LSE_FOUND_B29_ABIOTIC_Bean_HerbicideInjury_EpinastySwollenStems_VCE_PublicUse.jpg,institutional_permission,,false,,Virginia Cooperative Extension,Virginia Cooperative Extension,PublicUse,no,unresolved
+B30_072__LSE_FOUND_B29_ABIOTIC_Squash_HerbicideResidue_FieldEpinastyTwisting_VCE_PublicUse.jpg,institutional_permission,,false,,Virginia Cooperative Extension,Virginia Cooperative Extension,PublicUse,no,unresolved
+B30_073__LSE_FOUND_B29_PRACTICAL_RowCover_LowTunnel_FabricOverHoops_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Kathleen Moore,,,no,unresolved
+B30_074__LSE_FOUND_B29_PRACTICAL_HighTunnel_Vegetables_RollUpVentilation_KathleenMoore_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Kathleen Moore,,,no,unresolved
+B30_075__LSE_FOUND_B29_PRACTICAL_HerbsLettuce_ColdFrame_OpenLid_ChrisAlberti_CC-BY-2.0.jpg,cc_license,CC-BY-2,false,CC-BY-2.0,Chris Alberti,,,no,unresolved
+B30_076__LSE_FOUND_B29_ROOTS_ContainerRootbound_GirdledRoots_BrendanLandis_CC-BY-SA-2.0.jpg,cc_license,CC-BY-SA-2,true,CC-BY-SA-2.0,Brendan Landis,,,no,unresolved
+B30_077__LSE_FOUND_B29_HOLD_ABIOTIC_Squash_PesticideBurn_Phytotoxicity_UMD_VERIFY.jpg,unresolved,,false,,University of Maryland,University of Maryland,VERIFY,no,unresolved
+B30_078__LSE_FOUND_B29_HOLD_ABIOTIC_Bean_PesticideBurn_ScorchedLeaves_UMD_VERIFY.png,unresolved,,false,,University of Maryland,University of Maryland,VERIFY,no,unresolved
+B30_079__LSE_FOUND_B29_HOLD_PEST_Okra_StinkBugDamage_TwistedPods_Clemson_PERMISSION.jpg,institutional_permission,,false,,Clemson University,Clemson University,PERMISSION,no,unresolved
+B30_080__LSE_FOUND_B29_HOLD_ROOTS_Basil_RhizoctoniaRootRot_DarkRoots_MSU_PERMISSION.jpg,institutional_permission,,false,,Michigan State University,Michigan State University,PERMISSION,no,unresolved
+B30_081__LSE_FOUND_B29_HOLD_ROOTS_Strawberry_BlackRootRot_HealthyVsDiseased_NCSU_PERMISSION.jpg,institutional_permission,,false,,North Carolina State University,North Carolina State University,PERMISSION,no,unresolved
+B30_082__LSE_FOUND_B29_HOLD_DISEASE_Tomato_BacterialWilt_StreamingTest_UAEX_PERMISSION.jpg,institutional_permission,,false,,University of Arkansas Coop. Extension,University of Arkansas Coop. Extension,PERMISSION,no,unresolved
