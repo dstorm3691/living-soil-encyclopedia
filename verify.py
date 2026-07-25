@@ -155,6 +155,23 @@ def iter_paragraph_records(soup):
         yield digest, readable[:150], len(readable.split())
 
 
+def section_heading_text(soup, element_id):
+    """Whitespace-collapsed text of the heading element itself (the id anchor)."""
+    el = soup.find(id=element_id)
+    if el is None:
+        return None
+    return re.sub(r"\s+", " ", el.get_text(" ", strip=True)).strip()
+
+
+def load_mirror_rows():
+    """Read the mirror ledger, or return None if it is missing."""
+    ledger_path = os.path.join(BASE_DIR, MIRROR_LEDGER)
+    if not os.path.exists(ledger_path):
+        return None
+    with open(ledger_path, encoding="utf-8") as fh:
+        return list(csv.DictReader(fh))
+
+
 def section_body_text(soup, element_id):
     """
     Return the normalized (whitespace-collapsed) text of a section body.
@@ -377,14 +394,11 @@ def _short_diff(canonical, mirror):
 
 
 def check_mirror_sync(report, soups):
-    ledger_path = os.path.join(BASE_DIR, MIRROR_LEDGER)
-    if not os.path.exists(ledger_path):
+    rows = load_mirror_rows()
+    if rows is None:
         report.check("Mirror synchronization", Report.FAIL,
                      "ledger missing: {}".format(MIRROR_LEDGER))
         return
-
-    with open(ledger_path, encoding="utf-8") as fh:
-        rows = list(csv.DictReader(fh))
 
     offenders = []
     compared = 0
@@ -470,6 +484,42 @@ def report_tracking_metrics(report, soups):
                 .format(WORD_DRIFT_WARN_PCT))
 
 
+def report_mirror_heading_divergence(report, soups):
+    """
+    Tracking metric (NEVER a failure): a mirror section and its canonical source can
+    carry different heading titles (e.g. the mirror adds an "LSE-NNN —" code prefix, or
+    orders the "SOP" token differently). The bodies are in sync — this is purely a
+    title-mismatch that surfaces the same section under two names depending on the book.
+    It is a Phase E problem (TOC rebuild), not a sync error, so it is reported here and
+    does not affect the exit code.
+    """
+    rows = load_mirror_rows()
+    if rows is None:
+        return
+
+    divergences = []
+    for row in rows:
+        cfile = row["canonical_file"]
+        mfile = MIRROR_BOOK_FILE.get(row["mirror_book"])
+        if cfile not in soups or mfile not in soups:
+            continue
+        canon = section_heading_text(soups[cfile], row["canonical_id"])
+        mirror = section_heading_text(soups[mfile], row["mirror_id"])
+        if canon is None or mirror is None:
+            continue
+        if canon != mirror:
+            divergences.append((row["mirror_book"], canon, mirror))
+
+    report.note("")
+    report.note("MIRROR HEADING DIVERGENCE (tracking only — Phase E TOC concern, not a sync error)")
+    report.note("-" * 72)
+    report.note("{} of {} mirror pair(s) show the same section under two different titles:"
+                .format(len(divergences), len(rows)))
+    for mbook, canon, mirror in divergences:
+        report.note("  - canonical: \"{}\"".format(canon))
+        report.note("    mirror   : \"{}\"  (book {})".format(mirror, mbook))
+
+
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
@@ -490,6 +540,7 @@ def main():
     check_cross_book_links(report, soups, ids)
     check_mirror_sync(report, soups)
     report_tracking_metrics(report, soups)
+    report_mirror_heading_divergence(report, soups)
 
     print(report.render())
     return 1 if report.failed else 0
