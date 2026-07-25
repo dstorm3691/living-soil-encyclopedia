@@ -1,0 +1,3 @@
+# Local CrossRef response cache (~4 MB). Regenerable from the API and not a
+# deliverable — the matched records that matter are captured in verification.json.
+crossref_cache.json
