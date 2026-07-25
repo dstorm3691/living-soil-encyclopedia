@@ -22,7 +22,7 @@ HARD checks (any failure => nonzero exit, commit blocked by the pre-commit hook)
 TRACKING metrics (reported, never fail the build):
   - Word count per file (BeautifulSoup get_text(' ', strip=True) split on whitespace).
     Word-count drift over 1% vs. baseline is flagged as a WARN, not a FAIL.
-  - Orphaned citation markers: count of [n] bracket patterns in body text.
+  - Orphaned citation markers: count of [n] / [n,m] / [n-m] bracket patterns in body text.
   - <img> tag count and rights-marker (diamond) count per file.
 
 Design notes:
@@ -95,7 +95,9 @@ HEADING_LEVEL = {"h1": 1, "h2": 2, "h3": 3, "h4": 4, "h5": 5, "h6": 6}
 MIN_PARA_WORDS = 12
 WORD_DRIFT_WARN_PCT = 1.0
 RIGHTS_MARKER = "◆"          # ◆
-ORPHAN_CITATION_RE = re.compile(r"\[\d+\]")
+# Orphaned citation markers: single [n] plus comma-lists and ranges ([4,5], [12,13],
+# [4-6], en/em-dash variants). A bare [n] metric read 0 while [4,5]-style orphans survived.
+ORPHAN_CITATION_RE = re.compile(r"\[\d{1,3}(?:\s*[,–—-]\s*\d{1,3})*\]")
 
 
 # --------------------------------------------------------------------------- #
