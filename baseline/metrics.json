@@ -1,0 +1,42 @@
+{
+ "schema": "lse-metrics/1",
+ "source_tag": "baseline-five-book-v1",
+ "files": {
+  "LSE_BOOK_1_THE_LIVING_SOIL_WORKING.html": {
+   "words": 60994,
+   "images": 60,
+   "rights_markers": 19,
+   "orphan_citations": 106
+  },
+  "LSE_BOOK_2_INPUTS_AND_AMENDMENTS_WORKING.html": {
+   "words": 72459,
+   "images": 10,
+   "rights_markers": 14,
+   "orphan_citations": 0
+  },
+  "LSE_BOOK_3_CROPS_AND_GUILDS_WORKING.html": {
+   "words": 74674,
+   "images": 26,
+   "rights_markers": 3,
+   "orphan_citations": 0
+  },
+  "LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html": {
+   "words": 53276,
+   "images": 63,
+   "rights_markers": 31,
+   "orphan_citations": 0
+  },
+  "LSE_BOOK_5_FIELD_COMPANION_WORKING.html": {
+   "words": 48604,
+   "images": 10,
+   "rights_markers": 16,
+   "orphan_citations": 19
+  },
+  "LSE_INTERNAL_PRODUCTION_HOLD.html": {
+   "words": 7409,
+   "images": 1,
+   "rights_markers": 5,
+   "orphan_citations": 0
+  }
+ }
+}

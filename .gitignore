@@ -1,0 +1,4 @@
+# Python bytecode / caches — tooling artifacts, never part of the manuscript set.
+__pycache__/
+*.pyc
+*.pyo

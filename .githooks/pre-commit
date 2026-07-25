@@ -1,0 +1,41 @@
+#!/bin/sh
+# LSE five-book content-preservation pre-commit hook.
+#
+# Runs verify.py and blocks the commit on any FAIL (nonzero exit). This is the
+# net: no commit can silently drop a paragraph, desync a mirror, orphan a link,
+# or duplicate an id. Tracked in the repo and activated via:
+#     git config core.hooksPath .githooks
+#
+# Per CLAUDE.md: if verify.py fails, stop and fix. Do not bypass with --no-verify
+# and do not edit the checker to make a failure disappear.
+
+# Pick an available Python interpreter (Git-for-Windows and *nix both covered).
+if command -v python >/dev/null 2>&1; then
+    PY=python
+elif command -v python3 >/dev/null 2>&1; then
+    PY=python3
+elif command -v py >/dev/null 2>&1; then
+    PY="py -3"
+else
+    echo "pre-commit: no Python interpreter found on PATH; cannot run verify.py." >&2
+    exit 1
+fi
+
+# Run from the repo top level so verify.py finds the manuscript files.
+ROOT=$(git rev-parse --show-toplevel)
+cd "$ROOT" || exit 1
+
+$PY verify.py
+status=$?
+
+if [ "$status" -ne 0 ]; then
+    echo "" >&2
+    echo "===============================================================" >&2
+    echo " COMMIT BLOCKED — verify.py failed (exit $status)." >&2
+    echo " A content check did not pass. Fix it before committing." >&2
+    echo " Do not bypass with --no-verify; do not weaken the checker." >&2
+    echo "===============================================================" >&2
+    exit 1
+fi
+
+exit 0
