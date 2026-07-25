@@ -2,3 +2,7 @@
 __pycache__/
 *.pyc
 *.pyo
+
+# Windows Explorer / OneDrive folder-metadata artifact (stores localized display
+# names for the source HTML files) — never manuscript content.
+desktop.ini
