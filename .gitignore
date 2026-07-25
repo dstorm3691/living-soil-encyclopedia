@@ -6,3 +6,15 @@ __pycache__/
 # Windows Explorer / OneDrive folder-metadata artifact (stores localized display
 # names for the source HTML files) — never manuscript content.
 desktop.ini
+
+# Image binaries copied into place from the source library (Task 3). ~235 MB for the
+# deterministic set alone; too heavy for the repo. Tracked outside git / via LFS.
+# The manuscript <img src> paths point here, but the bytes are not committed.
+assets/
+
+# Regenerable JSON scratch behind the asset-resolution reports (16k+ lines). The
+# human-readable outputs (match_report.csv, copy_plan.csv, gaps.md, licenses.csv) ARE
+# committed; these intermediates are not.
+assets_report/_*.json
+# Nested unrelated project — the seam-sweep repo. Never part of the book.
+sweep/

@@ -520,6 +520,41 @@ def report_mirror_heading_divergence(report, soups):
         report.note("    mirror   : \"{}\"  (book {})".format(mirror, mbook))
 
 
+def report_asset_resolution(report, soups):
+    """
+    TRACKING METRIC (report only — NEVER fails the build): for each file, how many <img>
+    src values resolve to a file that exists on disk, relative to this file's directory.
+    Reads 0/169 before image assets are copied into place and climbs as they land. The
+    hard checks above are untouched; this metric never affects the exit code.
+    """
+    report.note("")
+    report.note("ASSET RESOLUTION (tracking only — <img src> that resolve to a file on disk)")
+    report.note("-" * 72)
+    report.note("{:<32}{:>8}{:>12}".format("file", "img", "resolved"))
+
+    total_imgs = total_res = 0
+    unique_expected = set()
+    unique_resolved = set()
+    for fn in FILES:
+        imgs = [i.get("src") for i in soups[fn].find_all("img") if i.get("src")]
+        res = 0
+        for src in imgs:
+            unique_expected.add(src)
+            path = os.path.join(BASE_DIR, src.replace("/", os.sep))
+            if os.path.isfile(path):
+                res += 1
+                unique_resolved.add(src)
+        total_imgs += len(imgs)
+        total_res += res
+        report.note("{:<32}{:>8}{:>12}".format(DISPLAY[fn], len(imgs),
+                                               "{}/{}".format(res, len(imgs))))
+    report.note("-" * 72)
+    report.note("{:<32}{:>8}{:>12}".format("TOTAL (tags)", total_imgs,
+                                           "{}/{}".format(total_res, total_imgs)))
+    report.note("{:<32}{:>8}{:>12}".format("UNIQUE paths", len(unique_expected),
+                "{}/{}".format(len(unique_resolved), len(unique_expected))))
+
+
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
@@ -541,6 +576,7 @@ def main():
     check_mirror_sync(report, soups)
     report_tracking_metrics(report, soups)
     report_mirror_heading_divergence(report, soups)
+    report_asset_resolution(report, soups)
 
     print(report.render())
     return 1 if report.failed else 0
