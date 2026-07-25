@@ -145,3 +145,31 @@ This is written as the standing guardrail file for all formatting and editing wo
 the repo — the Claude Code equivalent of project instructions. If you instead wanted a
 one-shot task prompt for a specific next editing job, say which job and I'll write that
 separately; this file would still be worth dropping in either way.
+
+---
+
+## Phase B is complete — what the next session must know
+
+**The baseline was deliberately regenerated, twice.** Once at commit `2b2cab5` after
+stripping 128 orphaned `[n]` citation markers from Books 1 and 5, and again after Task 4
+added the Further Reading blocks. **The pre-strip fingerprints are gone.**
+`baseline/paragraph_hashes.json` and `baseline/metrics.json` carry the reason inline
+(`regenerated_reason`). This is expected, not corruption.
+
+**Never re-baseline silently.** `generate_baseline.py` now requires **`--force` and
+`--reason`** to overwrite an existing baseline, and refuses otherwise. The baseline is the
+only thing that detects silent content loss — regenerating it discards that protection, so
+it happens only for an owner-approved, deliberate change, with the reason recorded.
+
+**The harness has blind spots — green is not proof of preservation for structured content.**
+`verify.py` fingerprints only `<p>` elements of 12+ words. A change confined to **`<li>`,
+`<td>`, or the Further Reading blocks will pass every hard check.** 45 of the 128 stripped
+markers lived in list items and table cells; the Further Reading `<li>` items are not tracked
+at all. Do **not** treat a green run as proof that list/table/reference content was preserved
+— review structured content by eye after any pass. Extending the fingerprint to `<li>`/`<td>`
+is Phase E work.
+
+**Open items live in `references/EXCEPTION_REPORT.md`** — held references (Epstein 1997 and
+the three `verified_weak` entries), chapters with markers but no recoverable references
+(bacteria/fungi/protozoa/ratios), the Book 5 electroculture heading-order problems, and the
+deferred placeholder/TOC items. Read it before touching Books 1 or 5.
