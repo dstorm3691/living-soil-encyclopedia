@@ -8,31 +8,41 @@ Source: `references/extracted.json` (98 entries, 9 blocks). Verified via the Cro
 |---|---:|
 | MISMATCH (author to resolve) | 0 |
 | NOT FOUND | 0 |
-| VERIFIED | 52 |
+| VERIFIED_WEAK (moderate title + author only, no DOI — stays visible) | 3 |
+| VERIFIED (resolved DOI or high title ratio) | 49 |
 | BOOK / NOT INDEXED (expected — not a failure) | 46 |
 | **Total** | **98** |
 
-## Verification path breakdown (of the 52 verified)
+## Verification path breakdown (of the 52 verified + verified_weak)
 
 | Path | Count |
 |---|---:|
 | resolved DOI (author/year/title consistent) | 18 |
 | high title ratio (>=0.60) + author/year | 31 |
-| MODERATE title (0.45–0.60) + author only — REVIEW | 3 |
+| MODERATE title (0.45–0.60) + author only — verified_weak | 3 |
 
-**Weak path (moderate title + author only, matcher is load-bearing): 3**
+**verified_weak (moderate title + author only, no DOI — matcher is load-bearing): 3**
 
-- **volume_1-b4-n13** · Chapter 8. Regenerative and Permaculture Foundations
+- **volume_1-b4-n13** — released · Chapter 8. Regenerative and Permaculture Foundations
   - Source: `Wardle, D. A. (2002). Communities and Ecosystems: Linking the Aboveground and Belowground Components. Princeton University Press.`
   - CrossRef best: `Communities and Ecosystems` (2013) DOI `10.1515/9781400847297` [title_ratio=0.505 author_match=True year_match=False]
 
-- **volume_1-b5-n4** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
+- **volume_1-b5-n4** — **HELD (excluded from Further Reading)** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
   - Source: `Epstein, E. (1997). The science of composting. CRC press.`
   - CrossRef best: `Industrial Composting` (2011) DOI `10.1201/b10726` [title_ratio=0.565 author_match=True year_match=False]
 
-- **volume_1-b5-n5** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
+- **volume_1-b5-n5** — released · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
   - Source: `Ryckeboer, J., et al. (2003). A survey of bacteria and fungi occurring during composting and self-heating processes. Annals of microbiology.`
   - CrossRef best: `Microbiological aspects of biowaste during composting in a monitored compost bin` (2003) DOI `10.1046/j.1365-2672.2003.01800.x` [title_ratio=0.473 author_match=True year_match=True]
+
+## Held for manual confirmation (owner decision) — 1
+
+Excluded from Further Reading and carried into the exception report.
+
+- **volume_1-b5-n4** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
+  - Source: `Epstein, E. (1997). The science of composting. CRC press.`
+  - CrossRef best: `Industrial Composting` (2011) DOI `10.1201/b10726`
+  - Reason held: CrossRef matched a DIFFERENT book by the same author (Epstein 2011, Industrial Composting), not the cited 1997 'The Science of Composting'; existence of the 1997 title is unconfirmed.
 
 ## ⚠️ Fabrication signature — DOI resolves to an unrelated paper
 
@@ -46,7 +56,24 @@ _None._
 
 _None._
 
-## VERIFIED — 52
+## VERIFIED_WEAK (moderate title + author only, no DOI — stays visible) — 3
+
+- **volume_1-b4-n13** · Chapter 8. Regenerative and Permaculture Foundations
+  - Source: `Wardle, D. A. (2002). Communities and Ecosystems: Linking the Aboveground and Belowground Components. Princeton University Press.`
+  - CrossRef best: `Communities and Ecosystems` (2013) DOI `10.1515/9781400847297` [title_ratio=0.505 author_match=True year_match=False]
+  - Note: Moderate title match corroborated by author only, no resolved DOI — author matcher is load-bearing here; kept visible for scrutiny.
+
+- **volume_1-b5-n4** **[HELD]** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
+  - Source: `Epstein, E. (1997). The science of composting. CRC press.`
+  - CrossRef best: `Industrial Composting` (2011) DOI `10.1201/b10726` [title_ratio=0.565 author_match=True year_match=False]
+  - Note: Moderate title match corroborated by author only, no resolved DOI — author matcher is load-bearing here; kept visible for scrutiny.
+
+- **volume_1-b5-n5** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
+  - Source: `Ryckeboer, J., et al. (2003). A survey of bacteria and fungi occurring during composting and self-heating processes. Annals of microbiology.`
+  - CrossRef best: `Microbiological aspects of biowaste during composting in a monitored compost bin` (2003) DOI `10.1046/j.1365-2672.2003.01800.x` [title_ratio=0.473 author_match=True year_match=True]
+  - Note: Moderate title match corroborated by author only, no resolved DOI — author matcher is load-bearing here; kept visible for scrutiny.
+
+## VERIFIED (resolved DOI or high title ratio) — 49
 
 - **volume_1-b1-n1** · Chapter 1. From Salts to Symbiosis: Why Living Soil Outperforms Liquid Feeding
   - Source: `Tripathi et al. (2020). https://doi.org/10.1016/B978-0-08-103017-2.00002-7`
@@ -178,25 +205,10 @@ _None._
   - CrossRef best: `EFFECTS OF BIODIVERSITY ON ECOSYSTEM FUNCTIONING: A CONSENSUS OF CURRENT KNOWLEDGE` (2005) DOI `10.1890/04-0922` [title_ratio=1.0 author_match=True year_match=True]
   - Note: Bibliographic query returned a closely-matching record (title + author/year).
 
-- **volume_1-b4-n13** · Chapter 8. Regenerative and Permaculture Foundations
-  - Source: `Wardle, D. A. (2002). Communities and Ecosystems: Linking the Aboveground and Belowground Components. Princeton University Press.`
-  - CrossRef best: `Communities and Ecosystems` (2013) DOI `10.1515/9781400847297` [title_ratio=0.505 author_match=True year_match=False]
-  - Note: Moderate title match corroborated by author only — review (author matcher is load-bearing here).
-
 - **volume_1-b4-n14** · Chapter 8. Regenerative and Permaculture Foundations
   - Source: `Blagodatskaya, E. V., & Anderson, T.-H. (1998). Interactive effects of pH and substrate quality on the fungal-to-bacterial ratio and qCO2 of microbial communities in forest soils. Soil Biology and Biochemistry. https://doi.org/10.1016/S0038-0717(98)00050-9`
   - CrossRef best: `Interactive effects of pH and substrate quality on the fungal-to-bacterial ratio and qCO2 of microbial communities in forest soils` (1998) DOI `10.1016/s0038-0717(98)00050-9` [title_ratio=1.0 author_match=True year_match=True]
   - Note: DOI resolves; author/title/year consistent.
-
-- **volume_1-b5-n4** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
-  - Source: `Epstein, E. (1997). The science of composting. CRC press.`
-  - CrossRef best: `Industrial Composting` (2011) DOI `10.1201/b10726` [title_ratio=0.565 author_match=True year_match=False]
-  - Note: Moderate title match corroborated by author only — review (author matcher is load-bearing here).
-
-- **volume_1-b5-n5** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
-  - Source: `Ryckeboer, J., et al. (2003). A survey of bacteria and fungi occurring during composting and self-heating processes. Annals of microbiology.`
-  - CrossRef best: `Microbiological aspects of biowaste during composting in a monitored compost bin` (2003) DOI `10.1046/j.1365-2672.2003.01800.x` [title_ratio=0.473 author_match=True year_match=True]
-  - Note: Moderate title match corroborated by author only — review (author matcher is load-bearing here).
 
 - **volume_1-b5-n7** · Chapter 9. The Soil Food Web (Dr. Elaine Ingham)
   - Source: `Scheuerell, S., & Mahaffee, W. (2002). Compost tea: principles and prospects for plant disease control. Compost science & utilization.`

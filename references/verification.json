@@ -4,15 +4,20 @@
  "counts": {
   "mismatch": 0,
   "not_found": 0,
-  "verified": 52,
+  "verified_weak": 3,
+  "verified": 49,
   "book_or_unindexed": 46
  },
+ "publishable_count": 97,
+ "held_ids": [
+  "volume_1-b5-n4"
+ ],
  "verified_by_path": {
   "doi_resolved": 18,
   "title_ratio>=0.60": 31,
   "title0.45+author": 3
  },
- "weak_path_verified_ids": [
+ "verified_weak_ids": [
   "volume_1-b4-n13",
   "volume_1-b5-n4",
   "volume_1-b5-n5"
@@ -47,7 +52,10 @@
    "title_ratio": null,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n2",
@@ -82,7 +90,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n3",
@@ -109,7 +120,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n4",
@@ -136,7 +150,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n5",
@@ -163,7 +180,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n6",
@@ -198,7 +218,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n7",
@@ -225,7 +248,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n8",
@@ -259,7 +285,10 @@
    "title_ratio": 0.733,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n9",
@@ -291,7 +320,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n10",
@@ -321,7 +353,10 @@
    "title_ratio": 0.833,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b1-n11",
@@ -348,7 +383,10 @@
    "title_ratio": 0.34,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n1",
@@ -375,7 +413,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n2",
@@ -402,7 +443,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n3",
@@ -430,7 +474,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n4",
@@ -461,7 +508,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n5",
@@ -491,7 +541,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n6",
@@ -521,7 +574,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n7",
@@ -553,7 +609,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b2-n8",
@@ -587,7 +646,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b3-n1",
@@ -616,7 +678,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b3-n2",
@@ -649,7 +714,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b3-n3",
@@ -676,7 +744,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b3-n4",
@@ -710,7 +781,10 @@
    "title_ratio": 0.733,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b3-n5",
@@ -740,7 +814,10 @@
    "title_ratio": 0.833,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b3-n6",
@@ -772,7 +849,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b3-n7",
@@ -800,7 +880,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n1",
@@ -830,7 +913,10 @@
    "title_ratio": 0.571,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n2",
@@ -860,7 +946,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n3",
@@ -887,7 +976,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n4",
@@ -914,7 +1006,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n5",
@@ -942,7 +1037,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n6",
@@ -983,7 +1081,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n7",
@@ -1013,7 +1114,10 @@
    "title_ratio": 0.571,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n8",
@@ -1031,7 +1135,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n9",
@@ -1049,7 +1156,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n10",
@@ -1067,7 +1177,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n11",
@@ -1085,7 +1198,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n12",
@@ -1103,7 +1219,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n13",
@@ -1114,7 +1233,7 @@
    "source_author": "Wardle, D. A",
    "source_year": "2002",
    "source_title": "Communities and Ecosystems: Linking the Aboveground and Belowground Components",
-   "status": "verified",
+   "status": "verified_weak",
    "reason": "title0.45+author",
    "fabrication_flag": false,
    "matched": {
@@ -1130,7 +1249,10 @@
    "title_ratio": 0.505,
    "author_match": true,
    "year_match": false,
-   "note": "Moderate title match corroborated by author only — review (author matcher is load-bearing here)."
+   "note": "Moderate title match corroborated by author only, no resolved DOI — author matcher is load-bearing here; kept visible for scrutiny.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b4-n14",
@@ -1158,7 +1280,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n1",
@@ -1185,7 +1310,10 @@
    "title_ratio": 0.34,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n2",
@@ -1203,7 +1331,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n3",
@@ -1230,7 +1361,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n4",
@@ -1241,7 +1375,7 @@
    "source_author": "Epstein, E",
    "source_year": "1997",
    "source_title": "The science of composting",
-   "status": "verified",
+   "status": "verified_weak",
    "reason": "title0.45+author",
    "fabrication_flag": false,
    "matched": {
@@ -1257,7 +1391,10 @@
    "title_ratio": 0.565,
    "author_match": true,
    "year_match": false,
-   "note": "Moderate title match corroborated by author only — review (author matcher is load-bearing here)."
+   "note": "Moderate title match corroborated by author only, no resolved DOI — author matcher is load-bearing here; kept visible for scrutiny.",
+   "held": true,
+   "held_reason": "CrossRef matched a DIFFERENT book by the same author (Epstein 2011, Industrial Composting), not the cited 1997 'The Science of Composting'; existence of the 1997 title is unconfirmed.",
+   "publishable": false
   },
   {
    "id": "volume_1-b5-n5",
@@ -1268,7 +1405,7 @@
    "source_author": "Ryckeboer, J., et al",
    "source_year": "2003",
    "source_title": "A survey of bacteria and fungi occurring during composting and self-heating processes",
-   "status": "verified",
+   "status": "verified_weak",
    "reason": "title0.45+author",
    "fabrication_flag": false,
    "matched": {
@@ -1288,7 +1425,10 @@
    "title_ratio": 0.473,
    "author_match": true,
    "year_match": true,
-   "note": "Moderate title match corroborated by author only — review (author matcher is load-bearing here)."
+   "note": "Moderate title match corroborated by author only, no resolved DOI — author matcher is load-bearing here; kept visible for scrutiny.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n6",
@@ -1306,7 +1446,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n7",
@@ -1334,7 +1477,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n8",
@@ -1361,7 +1507,10 @@
    "title_ratio": 0.34,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n9",
@@ -1388,7 +1537,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n10",
@@ -1415,7 +1567,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b5-n11",
@@ -1442,7 +1597,10 @@
    "title_ratio": 0.34,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n1",
@@ -1469,7 +1627,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n2",
@@ -1496,7 +1657,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n3",
@@ -1523,7 +1687,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n4",
@@ -1550,7 +1717,10 @@
    "title_ratio": 0.5,
    "author_match": false,
    "year_match": true,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n5",
@@ -1577,7 +1747,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n6",
@@ -1604,7 +1777,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n7",
@@ -1631,7 +1807,10 @@
    "title_ratio": 0.985,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n8",
@@ -1658,7 +1837,10 @@
    "title_ratio": 0.5,
    "author_match": false,
    "year_match": true,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n9",
@@ -1683,7 +1865,10 @@
    "title_ratio": 0.385,
    "author_match": false,
    "year_match": true,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n10",
@@ -1710,7 +1895,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b6-n11",
@@ -1737,7 +1925,10 @@
    "title_ratio": 0.5,
    "author_match": false,
    "year_match": true,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n1",
@@ -1755,7 +1946,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n2",
@@ -1783,7 +1977,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n3",
@@ -1813,7 +2010,10 @@
    "title_ratio": 0.833,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n4",
@@ -1842,7 +2042,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n5",
@@ -1869,7 +2072,10 @@
    "title_ratio": 1.0,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n6",
@@ -1899,7 +2105,10 @@
    "title_ratio": 0.8,
    "author_match": false,
    "year_match": false,
-   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected)."
+   "note": "Book/organizational work; no same-work journal match (any title hit is a review/different work — expected).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n7",
@@ -1928,7 +2137,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n8",
@@ -1958,7 +2170,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "Bibliographic query returned a closely-matching record (title + author/year)."
+   "note": "Bibliographic query returned a closely-matching record (title + author/year).",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n9",
@@ -1976,7 +2191,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n10",
@@ -1994,7 +2212,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n11",
@@ -2012,7 +2233,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n12",
@@ -2030,7 +2254,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b7-n13",
@@ -2048,7 +2275,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n1",
@@ -2066,7 +2296,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n2",
@@ -2084,7 +2317,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n3",
@@ -2102,7 +2338,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n4",
@@ -2120,7 +2359,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n5",
@@ -2138,7 +2380,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n6",
@@ -2156,7 +2401,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n7",
@@ -2174,7 +2422,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n8",
@@ -2192,7 +2443,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n9",
@@ -2210,7 +2464,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n10",
@@ -2228,7 +2485,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n11",
@@ -2246,7 +2506,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n12",
@@ -2276,7 +2539,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n13",
@@ -2303,7 +2569,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_1-b8-n14",
@@ -2321,7 +2590,10 @@
    "title_ratio": null,
    "author_match": null,
    "year_match": null,
-   "note": "Source carries a [Practitioner ...] annotation — not indexed literature."
+   "note": "Source carries a [Practitioner ...] annotation — not indexed literature.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n1",
@@ -2349,7 +2621,10 @@
    "title_ratio": 0.667,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n2",
@@ -2377,7 +2652,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n3",
@@ -2407,7 +2685,10 @@
    "title_ratio": 0.667,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n4",
@@ -2434,7 +2715,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n5",
@@ -2461,7 +2745,10 @@
    "title_ratio": 0.877,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n6",
@@ -2490,7 +2777,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n7",
@@ -2525,7 +2815,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n8",
@@ -2552,7 +2845,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   },
   {
    "id": "volume_3-b1-n9",
@@ -2582,7 +2878,10 @@
    "title_ratio": 1.0,
    "author_match": true,
    "year_match": true,
-   "note": "DOI resolves; author/title/year consistent."
+   "note": "DOI resolves; author/title/year consistent.",
+   "held": false,
+   "held_reason": null,
+   "publishable": true
   }
  ]
 }
