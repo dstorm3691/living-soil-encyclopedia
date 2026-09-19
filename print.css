@@ -1,0 +1,157 @@
+/* ============================================================
+   LSE print stylesheet
+
+   TUNING KNOB: --figure-max-height, first rule below.
+
+   Why !important is all over the image rules: the book's HTML carries
+   inline style attributes on the img tags. An inline style beats a
+   normal external stylesheet rule, which is why the first version of
+   this file changed nothing. An external rule marked !important does
+   beat an inline style, so the caps below are forced.
+
+   If a figure genuinely needs a whole page, add class="plate" to it.
+   ============================================================ */
+
+:root {
+  --figure-max-height: 5.2in;   /* <<< tune this */
+  --plate-max-height: 8.0in;
+  --body-font: Georgia, "Times New Roman", serif;
+  --ui-font: "Segoe UI", Arial, sans-serif;
+}
+
+/* ---------- page ---------- */
+
+@page {
+  size: Letter;
+  margin: 0.85in 0.8in 1in 0.8in;
+  @bottom-center {
+    content: counter(page);
+    font: 9pt Georgia, serif;
+    color: #555;
+  }
+}
+
+@page :first { @bottom-center { content: ""; } }
+
+/* ---------- text ---------- */
+
+html { font-size: 11pt; }
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.45;
+  color: #111;
+}
+
+p { orphans: 3; widows: 3; margin: 0 0 0.7em; }
+
+h1 { break-before: page; break-after: avoid; font-size: 20pt; line-height: 1.2; margin: 0 0 0.8em; }
+h2 { break-after: avoid; font-size: 15pt; margin: 1.5em 0 0.5em; }
+h3, h4, h5 { break-after: avoid; margin: 1.1em 0 0.4em; }
+
+h1 + *, h2 + *, h3 + *, h4 + * { break-before: avoid; }
+
+ul, ol { orphans: 2; widows: 2; }
+li { break-inside: avoid; }
+
+/* ============================================================
+   IMAGES: forced, because inline styles are present
+   ============================================================ */
+
+img {
+  max-width: 100% !important;
+  max-height: var(--figure-max-height) !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* any wrapper that might be pinning a height */
+figure,
+.figure,
+.image,
+.img-wrap,
+.image-container,
+div:has(> img) {
+  height: auto !important;
+  max-height: none !important;
+  min-height: 0 !important;
+}
+
+figure, .figure {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin: 1.1em auto;
+  text-align: center;
+}
+
+figcaption, .caption {
+  break-before: avoid;
+  font-size: 9pt;
+  line-height: 1.35;
+  color: #333;
+  margin-top: 0.45em;
+  text-align: left;
+}
+
+/* opt-in full page plate */
+figure.plate img,
+img.plate {
+  max-height: var(--plate-max-height) !important;
+}
+
+/* ---------- tables ---------- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9.5pt;
+  margin: 1em 0;
+  break-inside: avoid;
+}
+
+thead { display: table-header-group; }
+tfoot { display: table-footer-group; }
+tr { break-inside: avoid; }
+
+th, td {
+  border: 0.5pt solid #bbb;
+  padding: 4pt 6pt;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { background: #f2f2f2; font-family: var(--ui-font); font-size: 9pt; }
+
+table.long, table.long tr { break-inside: auto; }
+
+/* ---------- callouts ---------- */
+
+blockquote {
+  break-inside: avoid;
+  margin: 1em 0;
+  padding: 0.6em 0.9em;
+  border-left: 2.5pt solid #8a8a8a;
+  background: #f7f7f5;
+  font-size: 10pt;
+}
+
+/* ---------- misc ---------- */
+
+a { color: inherit; text-decoration: none; }
+
+.no-print,
+nav.functional-navigation,
+.functional-navigation,
+.screen-only { display: none !important; }
+
+.title-page { break-after: page; text-align: center; }
+.title-page h1 { break-before: avoid; font-size: 30pt; margin-top: 2.5in; }
+
+.copyright-page { break-after: page; font-size: 9.5pt; }
+
+.toc { break-after: page; }
+
