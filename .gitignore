@@ -22,3 +22,10 @@ sweep/
 .build/
 dist/
 *.tmp
+
+INVENTORY/files.csv
+INVENTORY/excluded_by_relevance.csv
+INVENTORY/references.csv
+INVENTORY/images.csv
+
+upload_for_research/
