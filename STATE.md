@@ -1,25 +1,28 @@
 # LSE State
 
 **Last session:** 2026-09-19
-**Current phase:** 2 complete, ready for 1 (canonicalization)
+**Current phase:** rights closeout
 
-## Completed this session
-- Census run across repo + 3 external roots (Invoke-LseCensus.ps1)
-- Imported 169 missing images into assets/, assets/lse_figures/, assets/user_created_web/
-- Repo image references: 322 total, 0 missing (was 322 missing)
-- assets/ removed from .gitignore so GitHub Pages can serve them
+## Completed
+- Five books build clean: 915 pages, verify.py PASS on all five hard checks
+- Images converted and optimised: assets 263MB -> 74MB, 170/170 refs resolve
+- print.css layout fix, figure cap at 5.2in
+- README written, repo pushed to GitHub (private)
+- Rights parsed from filenames: 32 clear, 109 author-created, 14 needing work
 
 ## Open
-- CANONICAL.md has 38 rulings unfilled
-- The five BOOK_N_WORKING.html files are the canonical set; the VOLUME_N lineage is superseded
-- 3 images flagged REVIEW in asset_import_manifest.csv (largest-by-area pick, unverified)
-- One CC-BY-SA-GFDL image in the set needs a share-alike decision
+- NC State email sent 2026-09-19 to fjlouws@ncsu.edu, 4 images, kill date 2026-10-03
+- ChatGPT deep research running on 14 image lookups
+- MSU / UGA / UMass emails held pending the Bugwood search results
+- UMD retrieval date not yet chosen, blocks 6 credits
+- 4 mirror pairs have divergent headings (verify.py tracking, not a failure)
 
 ## Open approval gates
-- GATE 0: fill in every RULING in INVENTORY/CANONICAL.md
+- None. Waiting on external replies and the research run.
 
 ## Next action
-Render Book 1 to PDF and look at it.
+Read the deep research results. Rename any image whose licence it confirms,
+re-run Get-LseRights.ps1, then Build-LseFrontBack.ps1 and check the TODO count.
 
 ## Questions for me
-- none
+- What date did I retrieve the three UMD pages? Needed for six credits.
