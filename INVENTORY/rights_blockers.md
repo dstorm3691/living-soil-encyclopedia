@@ -1,6 +1,6 @@
 # Rights, Parsed From Filenames
 
-Generated: 2026-09-19 18:15:51Z
+Generated: 2026-09-19 18:18:02Z
 
 Publication model: **free, non-commercial, unpaywalled**. CC BY-NC and
 CC BY-NC-SA are therefore permitted. ShareAlike applies to the image,
@@ -113,8 +113,6 @@ Rename these so the filename stops contradicting the rights position.
 
 | file | licence | stale flag |
 |---|---|---|
-| `B30_054__LSE_FOUND_B28_PEST_SquashVineBorer_FrassAtStem_Pollinator_CC-BY-2.5_CONDITIONAL.jpg` | CC-BY-2 | CONDITIONAL |
-| `B30_055__LSE_FOUND_B28_PEST_SquashVineBorer_LarvaeSplitStemFrass_Pollinator_CC-BY-2.5_CONDITIONAL.jpg` | CC-BY-2 | CONDITIONAL |
 
 ## ShareAlike images
 

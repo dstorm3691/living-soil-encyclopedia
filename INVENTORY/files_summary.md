@@ -1,6 +1,6 @@
 # File Summary
 
-Generated: 2026-09-19 18:10:23Z
+Generated: 2026-09-19 18:17:48Z
 
 Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€” skim it once to confirm nothing real was cut.
 
@@ -127,7 +127,7 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `assets\lse_figures\LSE_B09_Compost_Extract_vs_AACT_Ch09_19.jpg` | 456 | yes | 2026-09-19T21:22:30Z |
 | `assets\B30_001__LSE_FOUND_B26_ABIOTIC_Pepper_Sunscald_ExposedFruit_DonFerrin_Bugwood_CC-BY-3.jpg` | 439 | yes | 2026-09-19T21:08:07Z |
 | `assets\user_created_web\UCI_011_AACT_Brewing_Setup.jpg` | 435 | yes | 2026-09-19T21:22:39Z |
-| `LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html` | 433 | yes | 2026-09-19T23:08:46Z |
+| `LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html` | 433 | yes | 2026-09-19T23:17:21Z |
 | `assets\B30_056__LSE_FOUND_B28_ABIOTIC_FertilizerBurn_LeafScorchPattern_CannabisCropMismatch_Fenrisulfir_CC-BY-SA-GFDL.jpg` | 432 | yes | 2026-05-27T23:03:31Z |
 | `assets\user_created_web\UCI_008_Soil_Input_Categories_Overview.jpg` | 397 | yes | 2026-09-19T21:22:39Z |
 | `LSE_BOOK_5_FIELD_COMPANION_WORKING.html` | 394 | yes | 2026-09-19T22:56:58Z |
@@ -139,9 +139,9 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `assets\B30_050__LSE_FOUND_B28_ABIOTIC_Tomato_FrostDamage_LeafFruitBurn_AmroBinKulthoum_CC-BY-SA-3.0.jpg` | 169 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_053__LSE_FOUND_B28_PEST_Brassica_DeliaRadicum_MaggotPupaLifeStages_Rasbak_CC-BY-SA-GFDL.jpg` | 152 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_006__LSE_FOUND_B26_ROOTS_Tomato_RootKnotNematode_GalledRoots_PlantPestsDiseases_CC0.jpg` | 151 | yes | 2026-06-04T14:56:26Z |
-| `assets\B30_054__LSE_FOUND_B28_PEST_SquashVineBorer_FrassAtStem_Pollinator_CC-BY-2.5_CONDITIONAL.jpg` | 132 | yes | 2026-06-04T14:56:26Z |
+| `assets\B30_054__LSE_FOUND_B28_PEST_SquashVineBorer_FrassAtStem_Pollinator_CC-BY-2.5.jpg` | 132 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_004__LSE_FOUND_B26_ABIOTIC_Tomato_HailDamage_BruisedBrokenStems_DwightSipler_CC-BY-2.jpg` | 128 | yes | 2026-06-04T14:56:26Z |
-| `assets\B30_055__LSE_FOUND_B28_PEST_SquashVineBorer_LarvaeSplitStemFrass_Pollinator_CC-BY-2.5_CONDITIONAL.jpg` | 122 | yes | 2026-06-04T14:56:26Z |
+| `assets\B30_055__LSE_FOUND_B28_PEST_SquashVineBorer_LarvaeSplitStemFrass_Pollinator_CC-BY-2.5.jpg` | 122 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_072__LSE_FOUND_B29_ABIOTIC_Squash_HerbicideResidue_FieldEpinastyTwisting_VCE_PublicUse.jpg` | 122 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_031__LSE_FOUND_B27_PEST_Corn_BlackCutworm_SeveredSeedlingDamage_WM-Hantsbarger_CC-BY-3.0-US.jpg` | 116 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_005__LSE_FOUND_B26_ROOTS_Container_Rootbound_CirclingRoots_B137_CC0.jpg` | 108 | yes | 2026-06-04T14:56:26Z |
@@ -211,7 +211,7 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `find_umd_date.py` | 8 | yes | 2026-09-19T22:57:36Z |
 | `README.md` | 8 | yes | 2026-09-19T22:40:47Z |
 | `LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv` | 8 | yes | 2026-09-19T02:06:21Z |
-| `LSE_RIGHTS_LEDGER.md` | 5 | yes | 2026-09-19T19:54:41Z |
+| `LSE_RIGHTS_LEDGER.md` | 6 | yes | 2026-09-19T23:16:15Z |
 | `generate_baseline.py` | 5 | yes | 2026-09-19T02:06:21Z |
 | `scripts\extract_references.py` | 5 | yes | 2026-09-19T02:06:21Z |
 | `print.css` | 4 | yes | 2026-09-19T21:07:12Z |
