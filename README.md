@@ -68,29 +68,60 @@ manifest recording page count, file size, and stylesheet for every book.
 ### Repository layout
 
 ```
-LSE_BOOK_[1-5]_*_WORKING.html      the five books, source of truth
-assets/                            169 figures and photographs
-print.css                          print stylesheet, page geometry and figure sizing
-build.py                           build pipeline
-verify.py                          content fingerprinting
-LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv
-LSE_RIGHTS_LEDGER.md               image permissions, authoritative
-INVENTORY/                         audit reports
+LSE_BOOK_[1-5]_*_WORKING.html          the five books, source of truth
+LSE_INTERNAL_PRODUCTION_HOLD.html      staging for material not yet placed
+assets/                                169 figures and photographs
+
+build.py                               PDF build pipeline
+print.css                              print stylesheet: page geometry, figure sizing
+lse_five_book_working.css              working stylesheet
+
+verify.py                              content-preservation harness
+generate_baseline.py                   captures the fingerprint baseline
+MANIFEST.json                          set manifest
+
+LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv  30 deliberately mirrored sections
+LSE_MOVEMENT_LEDGER.csv                record of content moved between books
+LSE_RIGHTS_LEDGER.md                   image permissions, authoritative
+
+CLAUDE.md                              working contract for AI-assisted editing
+INVENTORY/                             audit reports
 ```
 
 ### Content verification
 
-A long reference assembled over months across multiple tools has two failure
-modes that are easy to miss and expensive to discover late: text drifting
-between revisions, and duplicated sections falling out of sync.
+A long reference assembled over months across multiple tools has failure modes
+that are easy to introduce and expensive to find late: text silently dropped
+during a revision, duplicated sections drifting apart, links decaying into
+nothing.
 
-`verify.py` fingerprints the document's paragraphs so unintended changes surface
-as a diff rather than as a surprise in the finished PDF.
+`verify.py` is the contract that guards against those. It runs standalone, exits
+nonzero on any failure, and is wired to a pre-commit hook so a broken set cannot
+be committed.
+
+Five hard checks:
+
+1. **Paragraph preservation.** Every paragraph fingerprint captured at baseline
+   still exists somewhere in the current set. This is the important one. It
+   means content cannot quietly disappear during an edit.
+2. **Duplicate IDs.** Zero duplicate `id` attributes per file.
+3. **Dead internal links.** Every `href="#..."` resolves to an `id` in the same
+   file.
+4. **Cross-book links.** Every link to another book resolves to a file in the
+   set, and to a real `id` if it carries a fragment.
+5. **Mirror synchronization.** For each row of the mirror ledger, the canonical
+   section text matches the mirror text once the mirror notice is stripped.
+
+It also tracks metrics that warn rather than fail: word-count drift per file
+against baseline, orphaned citation markers, and image and rights-marker counts.
 
 Thirty sections are deliberately mirrored across books, because a grower reading
 the pest chapter should not have to flip to the soil chapter for a definition.
-Those are tracked in `LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv`. The canonical copy
-is edited and the mirror regenerated, never the other way around.
+The canonical copy is edited and the mirror regenerated, never the reverse.
+Check 5 is what makes that safe.
+
+HTML is parsed with BeautifulSoup rather than regex. Regex is applied only to
+already-extracted plain text.
 
 ### Reproducibility
 
