@@ -73,6 +73,10 @@ $Agreed = @(
        Credit = 'Photo: Jerry Brust, University of Maryland Extension, Cold Damage to High Tunnel and Greenhouse Vegetables, retrieved June 4, 2026.'
        Holder = 'University of Maryland Extension'; Status = 'granted' }
 
+    @{ Match = 'FlumioxazinDrift.*NCSU'
+       Credit = 'Photo: B. Lassiter, NC State Extension, Protoporphyrinogen Oxidase Inhibitors. CC BY-NC-SA 4.0.'
+       Holder = 'NC State Extension'; Status = 'open licence' }
+
     @{ Match = 'Basil_RhizoctoniaRootRot.*MSU'
        Credit = 'TODO: no permission on record for this image. Confirm or remove.'
        Holder = 'Michigan State University Extension'; Status = 'NOT GRANTED' }
@@ -291,4 +295,5 @@ Write-Host "Output: $out" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Nothing was injected. Read the files, fix the TODOs, then paste." -ForegroundColor Cyan
 Write-Host ""
+
 

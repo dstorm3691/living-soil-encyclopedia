@@ -102,3 +102,20 @@ Agreed placement: inline with the image, repeated in the image credits section w
 3. **Commercial use voids all of this.** Any change in publication model triggers a full re-ask to every holder above.
 4. **This file is authoritative** for these nine images. If any other ledger in the repo disagrees, this one wins and the other gets corrected.
 5. These nine are the **known** third-party images. The inventory pass will reveal how many others exist with no permission trail at all.
+
+## Confirmed Source Pages (deep research, 2026-09-19)
+
+| File | Source | Licence on page | Credit |
+|---|---|---|---|
+| B30_039 | content.ces.ncsu.edu/protoporphyrinogen-oxidase-inhibitors | CC BY-NC-SA 4.0 | B. Lassiter |
+| B30_040 | content.ces.ncsu.edu/protoporphyrinogen-oxidase-inhibitors | CC BY-NC-SA 4.0 | B. Lassiter |
+| B30_025 | content.ces.ncsu.edu/fusarium-wilt-of-tomato | none stated | Inga Meadows |
+| B30_081 | content.ces.ncsu.edu/black-root-rot-of-strawberry-1 | none stated | Leandro, Abad, Louws |
+
+UMD pages all resolve as of 2026-09-19:
+- extension.umd.edu/resource/fertilizer-or-pesticide-burn-vegetable-leaves (upd. 2023-02-20)
+- extension.umd.edu/resource/cold-damage-high-tunnel-and-greenhouse-vegetables (upd. 2024-10-16)
+- extension.umd.edu/resource/key-common-problems-tomatoes
+
+NC State has no blanket reuse licence. Rule: use the displayed image-level
+licence where one exists; where none is stated, seek permission or replace.
