@@ -14,8 +14,8 @@ Fix these before pasting anything into the books.
 - Book 4: B30_029__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_AdultScouting_UGA_VERIFY.jpg  ->  no licence in filename, needs a credit
 - Book 4: B30_030__LSE_FOUND_B27_PEST_Eggplant_FleaBeetle_ShotHolePittedLeaf_DavidCappaert-Bugwood_VERIFY.jpg  ->  no licence in filename, needs a credit
 - Book 4: B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg  ->  no licence in filename, needs a credit
-- Book 4: B30_039__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FruitNecrosis_NCSU-CC-BY-NC-SA_REJECT.jpg  ->  TODO: flagged REJECT under the old commercial plan. Re-rule now that the book is free, then write the credit.
-- Book 4: B30_040__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FoliageStemNecrosis_NCSU-CC-BY-NC-SA_REJECT.jpg  ->  TODO: flagged REJECT under the old commercial plan. Re-rule now that the book is free, then write the credit.
+- Book 4: B30_039__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FruitNecrosis_NCSU-CC-BY-NC-SA.jpg  ->  TODO: flagged REJECT under the old commercial plan. Re-rule now that the book is free, then write the credit.
+- Book 4: B30_040__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FoliageStemNecrosis_NCSU-CC-BY-NC-SA.jpg  ->  TODO: flagged REJECT under the old commercial plan. Re-rule now that the book is free, then write the credit.
 
 ## Known blanks
 

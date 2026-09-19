@@ -125,7 +125,7 @@ Write-Log "Relevance filter: $(if ($NoRelevanceFilter) { 'OFF' } else { 'ON' })"
 
 $ExcludeDirNames = @(
     '.git', 'node_modules', '__pycache__', '.venv', 'venv', 'INVENTORY', 'dist',
-    '_ARCHIVE', 'anaconda3', '.ipynb_checkpoints', '.vscode', '.idea', '.cache',
+    '_ARCHIVE', '.build', 'frontback', 'tools', 'upload_for_research', 'anaconda3', '.ipynb_checkpoints', '.vscode', '.idea', '.cache',
     'site-packages', 'AppData', '.conda', '.npm', '.nuget'
 )
 $ExcludeDirPatterns = @(
@@ -1004,3 +1004,4 @@ $log = @(
 Write-Host ""
 Write-Host "Done in $([math]::Round($dur.TotalMinutes, 1)) minutes. Output in $OutputDir" -ForegroundColor Green
 Write-Host ""
+
