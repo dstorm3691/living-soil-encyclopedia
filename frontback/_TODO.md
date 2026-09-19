@@ -14,18 +14,12 @@ Fix these before pasting anything into the books.
 - Book 4: B30_029__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_AdultScouting_UGA_VERIFY.jpg  ->  no licence in filename, needs a credit
 - Book 4: B30_030__LSE_FOUND_B27_PEST_Eggplant_FleaBeetle_ShotHolePittedLeaf_DavidCappaert-Bugwood_VERIFY.jpg  ->  no licence in filename, needs a credit
 - Book 4: B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg  ->  no licence in filename, needs a credit
-- Book 4: B30_035__LSE_FOUND_B27_ABIOTIC_Squash_PesticideBurn_SoapPyrethrinLeafScorch_UMD_VERIFY.jpg  ->  Photo: Jon Traunfeld, University of Maryland Extension &mdash; Home &amp; Garden Information Center, Fertilizer or Pesticide Burn on Vegetable Leaves, retrieved TODO_DATE.
-- Book 4: B30_036__LSE_FOUND_B27_ABIOTIC_Bean_PesticideBurn_LeafScorch_UMD_VERIFY.jpg  ->  Photo: HGIC, University of Maryland Extension &mdash; Home &amp; Garden Information Center, Fertilizer or Pesticide Burn on Vegetable Leaves, retrieved TODO_DATE.
-- Book 4: B30_037__LSE_FOUND_B27_ABIOTIC_VegetableTransplant_ColdFreezeDamage_WhiteLeaves_UMD_VERIFY.jpg  ->  Photo: Jon Traunfeld, University of Maryland Extension &mdash; Home &amp; Garden Information Center, Key to Common Problems of Tomatoes, retrieved TODO_DATE.
-- Book 4: B30_038__LSE_FOUND_B27_ABIOTIC_Tomato_FertilizerBurn_YoungLeafScorch_UMD_VERIFY.jpg  ->  Photo: Jon Traunfeld, University of Maryland Extension &mdash; Home &amp; Garden Information Center, Key to Common Problems of Tomatoes, retrieved TODO_DATE.
 - Book 4: B30_039__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FruitNecrosis_NCSU-CC-BY-NC-SA_REJECT.jpg  ->  TODO: flagged REJECT under the old commercial plan. Re-rule now that the book is free, then write the credit.
 - Book 4: B30_040__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FoliageStemNecrosis_NCSU-CC-BY-NC-SA_REJECT.jpg  ->  TODO: flagged REJECT under the old commercial plan. Re-rule now that the book is free, then write the credit.
-- Book 4: B30_077__LSE_FOUND_B29_HOLD_ABIOTIC_Squash_PesticideBurn_Phytotoxicity_UMD_VERIFY.jpg  ->  Photo: Jon Traunfeld, University of Maryland Extension &mdash; Home &amp; Garden Information Center, Fertilizer or Pesticide Burn on Vegetable Leaves, retrieved TODO_DATE.
-- Book 4: B30_078__LSE_FOUND_B29_HOLD_ABIOTIC_Bean_PesticideBurn_ScorchedLeaves_UMD_VERIFY.jpg  ->  Photo: HGIC, University of Maryland Extension &mdash; Home &amp; Garden Information Center, Fertilizer or Pesticide Burn on Vegetable Leaves, retrieved TODO_DATE.
 
 ## Known blanks
 
-- **TODO_DATE** appears in every UMD credit. UMD asked for page title plus
+- **June 4, 2026** appears in every UMD credit. UMD asked for page title plus
   retrieval date instead of a live URL, because their URLs change. Pick the
   date you retrieved them and use it everywhere.
 - **MSU basil root rot** has no permission on record. Send the request or remove.
