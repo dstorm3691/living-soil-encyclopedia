@@ -1,6 +1,6 @@
 # File Summary
 
-Generated: 2026-09-21 20:11:51Z
+Generated: 2026-09-21 20:12:46Z
 
 Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` — skim it once to confirm nothing real was cut.
 

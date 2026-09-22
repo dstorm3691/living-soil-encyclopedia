@@ -1,6 +1,6 @@
 # Rights, Parsed From Filenames
 
-Generated: 2026-09-21 20:12:05Z
+Generated: 2026-09-21 20:13:01Z
 
 Publication model: **free, non-commercial, unpaywalled**. CC BY-NC and
 CC BY-NC-SA are therefore permitted. ShareAlike applies to the image,
