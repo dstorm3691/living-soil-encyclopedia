@@ -1,6 +1,6 @@
 # Rights, Parsed From Filenames
 
-Generated: 2026-09-19 18:18:02Z
+Generated: 2026-09-21 20:12:05Z
 
 Publication model: **free, non-commercial, unpaywalled**. CC BY-NC and
 CC BY-NC-SA are therefore permitted. ShareAlike applies to the image,
@@ -12,20 +12,13 @@ authoritative where this disagrees with it.
 
 | verdict | count |
 |---|---:|
-| BLOCKER | 10 |
-| check | 5 |
-| clear | 45 |
+| BLOCKER | 5 |
+| check | 4 |
+| clear | 51 |
 | self-created | 109 |
 | **total** | **169** |
 
 ## BLOCKERS
-
-### `B30_023__LSE_FOUND_B27_ABIOTIC_Tomato_GlyphosateInjury_YellowDistortedNewGrowth_NathanHoward-Bugwood_VERIFY.jpg`
-
-- **Why:** VERIFY — Rights not confirmed at filing time.
-- **Institution:** Bugwood
-- **Used by:** Book 4
-- **Decision:** [ ]
 
 ### `B30_024__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DInjury_TwistedCurlingShoot_PBacchi-Bugwood_VERIFY.jpg`
 
@@ -50,37 +43,6 @@ authoritative where this disagrees with it.
 - **Used by:** Book 4
 - **Decision:** [ ]
 
-### `B30_027__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_PodCrossSectionLarvaAdult_UGA_VERIFY.jpg`
-
-- **Why:** VERIFY — Rights not confirmed at filing time.
-- **Ledger:** PENDING - no reply on record
-- **Institution:** UGA
-- **Used by:** Book 4
-- **Decision:** [ ]
-
-### `B30_028__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_LarvaInsidePodRisk_UGA_VERIFY.jpg`
-
-- **Why:** VERIFY — Rights not confirmed at filing time.
-- **Ledger:** PENDING - no reply on record
-- **Institution:** UGA
-- **Used by:** Book 4
-- **Decision:** [ ]
-
-### `B30_029__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_AdultScouting_UGA_VERIFY.jpg`
-
-- **Why:** VERIFY — Rights not confirmed at filing time.
-- **Ledger:** PENDING - no reply on record
-- **Institution:** UGA
-- **Used by:** Book 4
-- **Decision:** [ ]
-
-### `B30_030__LSE_FOUND_B27_PEST_Eggplant_FleaBeetle_ShotHolePittedLeaf_DavidCappaert-Bugwood_VERIFY.jpg`
-
-- **Why:** VERIFY — Rights not confirmed at filing time.
-- **Institution:** Bugwood
-- **Used by:** Book 4
-- **Decision:** [ ]
-
 ### `B30_080__LSE_FOUND_B29_HOLD_ROOTS_Basil_RhizoctoniaRootRot_DarkRoots_MSU_PERMISSION.jpg`
 
 - **Why:** PERMISSION — Depends on an individual permission grant.
@@ -101,7 +63,6 @@ authoritative where this disagrees with it.
 
 | file | licence | flag | attribution | used by |
 |---|---|---|---|---|
-| `B30_022__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DDrift_CuppedNewGrowth_MaryAnnHansen-Bugwood_CONDITIONAL.jpg` |  | CONDITIONAL | Mary Ann Hansen-Bugwood | Book 4 |
 | `B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg` |  | CONDITIONAL | Scot Nelson | Book 4 |
 | `B30_070__LSE_FOUND_B29_ABIOTIC_Tomato_HerbicideResidue_CuppedNewGrowth_VCE_PublicUse.jpg` | PublicUse |  | VCE | Book 4 |
 | `B30_071__LSE_FOUND_B29_ABIOTIC_Bean_HerbicideInjury_EpinastySwollenStems_VCE_PublicUse.jpg` | PublicUse |  | VCE | Book 4 |
@@ -134,13 +95,15 @@ Rename these so the filename stops contradicting the rights position.
 
 | licence | class | count |
 |---|---|---:|
-| (none in filename) |  | 129 |
+| (none in filename) |  | 123 |
 | CC-BY-2 | BY | 13 |
+| BW194930 | GRANTED | 4 |
 | CC-BY-3 | BY | 4 |
 | CC-BY-SA-4 | SA | 4 |
 | CC0 | CC0 | 4 |
 | PublicUse | PD? | 3 |
 | USDA-PD | PD | 3 |
+| BW194939 | GRANTED | 2 |
 | CC-BY-4 | BY | 2 |
 | CC-BY-NC-SA | NC-SA | 2 |
 | CC-BY-SA-3 | SA | 2 |

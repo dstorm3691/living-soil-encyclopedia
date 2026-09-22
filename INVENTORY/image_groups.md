@@ -7,7 +7,7 @@
 
 | location | images | MB |
 |---|---:|---:|
-| repo | 169 | 74.3 |
+| repo | 169 | 81 |
 | Downloads | 11 | 1.5 |
 
 ## Exact duplicates
