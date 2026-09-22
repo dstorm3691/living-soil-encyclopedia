@@ -160,3 +160,19 @@ photo and provide credit as you suggested."
 
 Credit: Photo: Jan Byrne, MSU Plant & Pest Diagnostics, Michigan State
 University Extension. Used by permission.
+
+## Bugwood Image Request 194941 — APPROVED 2026-09-22
+
+| Image | Bugwood ID | Used | Citation |
+|---|---|---|---|
+| B30_026 seedling damping off | 1402049 | Yes, replaces UMass photo | R.J. Reynolds Tobacco Company, Bugwood.org |
+| (none) Fusarium wilt, whole plant | 1568003 | No. Shows whole-plant wilt; figure needs split stem with vascular browning | Edward Sikora, Auburn University, Bugwood.org |
+| (none) basil downy mildew | 5458611 | No. Leaf disease; figure is root rot | Bruce Watt, University of Maine, Bugwood.org |
+
+B30_026 alt text corrected to seedling damping off, Rhizoctonia solani;
+the replacement is most likely tobacco, not pepper.
+
+UMass request withdrawn 2026-09-22.
+
+Still pending, kill date 2026-10-03, attribution only if no reply:
+B30_025 and B30_081 (Frank Louws, NC State).
