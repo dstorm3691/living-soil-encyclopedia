@@ -45,6 +45,18 @@ $refs = @(Import-Csv -LiteralPath $refsCsv | Where-Object { $_.from_loc -eq 'rep
 # ------------------------------------------------------------
 
 $Agreed = @(
+    @{ Match = 'Basil_RhizoctoniaRootRot.*GRANTED-MSU'
+       Credit = 'Photo: Jan Byrne, MSU Plant & Pest Diagnostics, Michigan State University Extension. Used by permission.'
+       Holder = 'Michigan State University Extension'; Status = 'granted' }
+    @{ Match = 'DampingOff.*GRANTED-UMass'
+       Credit = 'Photo: Tina Smith, University of Massachusetts Extension. Used by permission.'
+       Holder = 'University of Massachusetts Extension'; Status = 'granted' }
+    @{ Match = 'Strawberry_BlackRootRot.*GRANTED-NCSU'
+       Credit = 'Photo: Leonor Leandro, Gloria Abad, and Frank J. Louws, NC State Extension, Black Root Rot of Strawberry. Used by permission.'
+       Holder = 'NC State Extension'; Status = 'granted' }
+    @{ Match = 'FusariumWilt.*GRANTED-NCSU'
+       Credit = 'Photo: Inga Meadows, NC State Extension, Fusarium Wilt of Tomato. Used by permission.'
+       Holder = 'NC State Extension'; Status = 'granted' }
     @{ Match = 'GlyphosateInjury.*BW194939'
        Credit = 'Photo: Nathan Howard, University of Kentucky, Bugwood.org. Used by permission (Bugwood image request 194939).'
        Holder = 'Bugwood Image Database, University of Georgia'; Status = 'granted' }
@@ -308,6 +320,7 @@ Write-Host "Output: $out" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Nothing was injected. Read the files, fix the TODOs, then paste." -ForegroundColor Cyan
 Write-Host ""
+
 
 
 

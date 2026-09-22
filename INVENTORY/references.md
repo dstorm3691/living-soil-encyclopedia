@@ -4,14 +4,14 @@
 
 | repo file | refs | resolved | missing | recoverable |
 |---|---:|---:|---:|---:|
-| `LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html` | 63 | 63 | 0 | 0 |
+| `LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html` | 62 | 62 | 0 | 0 |
 | `LSE_BOOK_1_THE_LIVING_SOIL_WORKING.html` | 60 | 60 | 0 | 0 |
 | `LSE_BOOK_3_CROPS_AND_GUILDS_WORKING.html` | 26 | 26 | 0 | 0 |
 | `LSE_BOOK_2_INPUTS_AND_AMENDMENTS_WORKING.html` | 10 | 10 | 0 | 0 |
 | `LSE_BOOK_5_FIELD_COMPANION_WORKING.html` | 10 | 10 | 0 | 0 |
 | `LSE_INTERNAL_PRODUCTION_HOLD.html` | 1 | 1 | 0 | 0 |
 
-**Repo references total:** 170. **Missing:** 0. **Recoverable from another root:** 0.
+**Repo references total:** 169. **Missing:** 0. **Recoverable from another root:** 0.
 
 ## Repo missing references, in full
 
@@ -22,8 +22,8 @@
 
 | location | resolved | broken-recoverable | broken-nomatch |
 |---|---:|---:|---:|
-| Downloads | 0 | 384 | 266 |
-| repo | 170 | 0 | 0 |
+| Downloads | 0 | 364 | 286 |
+| repo | 169 | 0 | 0 |
 
 ## Orphans in [repo] (0)
 
