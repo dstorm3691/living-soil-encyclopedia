@@ -7,7 +7,6 @@ Fix these before pasting anything into the books.
 - Book 4: B30_024__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DInjury_TwistedCurlingShoot_PBacchi-Bugwood_VERIFY.jpg  ->  no licence in filename, needs a credit
 - Book 4: B30_025__LSE_FOUND_B27_ROOTS_Tomato_FusariumWilt_VascularBrowningStemSplit_NCSU-IngaMeadows_VERIFY.jpg  ->  TODO: rights never confirmed. Include in the NC State follow-up.
 - Book 4: B30_026__LSE_FOUND_B27_ROOTS_Pepper_DampingOff_StemCankerSoilLine_UMass-TSmith_VERIFY.jpg  ->  no licence in filename, needs a credit
-- Book 4: B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg  ->  no licence in filename, needs a credit
 
 ## Known blanks
 

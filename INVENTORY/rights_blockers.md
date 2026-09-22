@@ -1,6 +1,6 @@
 # Rights, Parsed From Filenames
 
-Generated: 2026-09-21 20:13:01Z
+Generated: 2026-09-21 20:34:06Z
 
 Publication model: **free, non-commercial, unpaywalled**. CC BY-NC and
 CC BY-NC-SA are therefore permitted. ShareAlike applies to the image,
@@ -13,8 +13,8 @@ authoritative where this disagrees with it.
 | verdict | count |
 |---|---:|
 | BLOCKER | 5 |
-| check | 4 |
-| clear | 51 |
+| check | 3 |
+| clear | 52 |
 | self-created | 109 |
 | **total** | **169** |
 
@@ -63,7 +63,6 @@ authoritative where this disagrees with it.
 
 | file | licence | flag | attribution | used by |
 |---|---|---|---|---|
-| `B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg` |  | CONDITIONAL | Scot Nelson | Book 4 |
 | `B30_070__LSE_FOUND_B29_ABIOTIC_Tomato_HerbicideResidue_CuppedNewGrowth_VCE_PublicUse.jpg` | PublicUse |  | VCE | Book 4 |
 | `B30_071__LSE_FOUND_B29_ABIOTIC_Bean_HerbicideInjury_EpinastySwollenStems_VCE_PublicUse.jpg` | PublicUse |  | VCE | Book 4 |
 | `B30_072__LSE_FOUND_B29_ABIOTIC_Squash_HerbicideResidue_FieldEpinastyTwisting_VCE_PublicUse.jpg` | PublicUse |  | VCE | Book 4 |
@@ -95,8 +94,8 @@ Rename these so the filename stops contradicting the rights position.
 
 | licence | class | count |
 |---|---|---:|
-| (none in filename) |  | 123 |
-| CC-BY-2 | BY | 13 |
+| (none in filename) |  | 122 |
+| CC-BY-2 | BY | 14 |
 | BW194930 | GRANTED | 4 |
 | CC-BY-3 | BY | 4 |
 | CC-BY-SA-4 | SA | 4 |

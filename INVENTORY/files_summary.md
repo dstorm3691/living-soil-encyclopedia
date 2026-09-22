@@ -1,6 +1,6 @@
 # File Summary
 
-Generated: 2026-09-21 20:12:46Z
+Generated: 2026-09-21 20:33:52Z
 
 Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€” skim it once to confirm nothing real was cut.
 
@@ -126,13 +126,13 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `assets\user_created_web\UCI_014_No_Till_Top_Dressing_Cycle.jpg` | 500 | yes | 2026-09-19T21:22:40Z |
 | `assets\lse_figures\LSE_E16_Light_Metrics_PPFD_DLI_Concept_Ch37.jpg` | 490 | yes | 2026-09-19T21:22:38Z |
 | `assets\user_created_web\UCI_010_Biochar_Charging_Process.jpg` | 489 | yes | 2026-09-19T21:22:39Z |
-| `LSE_BOOK_1_THE_LIVING_SOIL_WORKING.html` | 480 | yes | 2026-09-19T22:43:52Z |
+| `LSE_BOOK_1_THE_LIVING_SOIL_WORKING.html` | 480 | yes | 2026-09-22T01:33:48Z |
 | `assets\B30_028__LSE_FOUND_B27_PEST_Cowpea_CowpeaCurculio_LarvaInPod_BrantleeSpakesRichter-UF-Bugwood_BW194930.jpg` | 465 | yes | 2026-09-22T00:56:15Z |
 | `assets\lse_figures\LSE_C17_Basil_Pruning_Downy_Mildew_Scouting_Ch31_42.jpg` | 463 | yes | 2026-09-19T21:22:35Z |
 | `assets\lse_figures\LSE_B09_Compost_Extract_vs_AACT_Ch09_19.jpg` | 456 | yes | 2026-09-19T21:22:30Z |
 | `assets\B30_001__LSE_FOUND_B26_ABIOTIC_Pepper_Sunscald_ExposedFruit_DonFerrin_Bugwood_CC-BY-3.jpg` | 439 | yes | 2026-09-19T21:08:07Z |
 | `assets\user_created_web\UCI_011_AACT_Brewing_Setup.jpg` | 435 | yes | 2026-09-19T21:22:39Z |
-| `LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html` | 434 | yes | 2026-09-22T01:11:29Z |
+| `LSE_BOOK_4_PLANT_HEALTH_AND_DEFENSE_WORKING.html` | 434 | yes | 2026-09-22T01:33:48Z |
 | `assets\B30_056__LSE_FOUND_B28_ABIOTIC_FertilizerBurn_LeafScorchPattern_CannabisCropMismatch_Fenrisulfir_CC-BY-SA-GFDL.jpg` | 432 | yes | 2026-05-27T23:03:31Z |
 | `assets\user_created_web\UCI_008_Soil_Input_Categories_Overview.jpg` | 397 | yes | 2026-09-19T21:22:39Z |
 | `LSE_BOOK_5_FIELD_COMPANION_WORKING.html` | 394 | yes | 2026-09-19T22:56:58Z |
@@ -158,7 +158,7 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `assets\B30_070__LSE_FOUND_B29_ABIOTIC_Tomato_HerbicideResidue_CuppedNewGrowth_VCE_PublicUse.jpg` | 102 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_049__LSE_FOUND_B28_SOIL_DroughtDrySoil_CrackingScale_VladislavNekrasov_CC-BY-4.0.jpg` | 94 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_007__LSE_FOUND_B26_COMPOST_Compost_MaturityContamination_TemperatureInspection_StephenAusmus_USDA-PD.jpg` | 94 | yes | 2026-06-04T14:56:26Z |
-| `assets\B30_026__LSE_FOUND_B27_ROOTS_Pepper_DampingOff_StemCankerSoilLine_UMass-TSmith_VERIFY.jpg` | 92 | yes | 2026-06-04T14:56:26Z |
+| `assets\B30_026__LSE_FOUND_B27_ROOTS_Pepper_DampingOff_StemCankerSoilLine_UMass-TSmith_VERIFY.jpg` | 92 | yes | 2026-09-22T01:33:48Z |
 | `assets\B30_045__LSE_FOUND_B28_ABIOTIC_Tomato_HailDamage_FruitBruisesHoles_DwightSipler_CC-BY-2.0.jpg` | 90 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_082__LSE_FOUND_B29_HOLD_DISEASE_Tomato_BacterialWilt_StreamingTest_UAEX_PERMISSION.jpg` | 88 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_008__LSE_FOUND_B26_SOIL_AggregateStability_SlakeComparison_LanceCheung_USDA-PD.jpg` | 84 | yes | 2026-06-04T14:56:26Z |
@@ -170,11 +170,11 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `assets\B30_003__LSE_FOUND_B26_ABIOTIC_Tomato_Catfacing_FruitDeformity_ParthasarathySeethapathy_CC-BY-SA-4.jpg` | 68 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_032__LSE_FOUND_B27_EXCLUSION_Seedlings_CutwormCollars_CardboardBarrier_KathleenMoore_CC-BY-2.0.jpg` | 64 | yes | 2026-06-04T14:56:26Z |
 | `LSE_INTERNAL_PRODUCTION_HOLD.html` | 64 | yes | 2026-09-19T22:56:58Z |
-| `assets\B30_081__LSE_FOUND_B29_HOLD_ROOTS_Strawberry_BlackRootRot_HealthyVsDiseased_NCSU_PERMISSION.jpg` | 63 | yes | 2026-06-04T14:56:26Z |
+| `assets\B30_081__LSE_FOUND_B29_HOLD_ROOTS_Strawberry_BlackRootRot_HealthyVsDiseased_NCSU_PERMISSION.jpg` | 63 | yes | 2026-09-22T01:33:48Z |
 | `assets\B30_010__LSE_FOUND_B26_PEST_SquashBug_EggCluster_UndersidePumpkinLeaf_Bdm25_CC-BY-SA-4.jpg` | 62 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_074__LSE_FOUND_B29_PRACTICAL_HighTunnel_Vegetables_RollUpVentilation_KathleenMoore_CC-BY-2.0.jpg` | 62 | yes | 2026-06-04T14:56:26Z |
 | `build_lse_five_book_set.py` | 61 | yes | 2026-09-19T02:06:21Z |
-| `assets\B30_024__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DInjury_TwistedCurlingShoot_PBacchi-Bugwood_VERIFY.jpg` | 61 | yes | 2026-09-19T21:22:27Z |
+| `assets\B30_024__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DInjury_TwistedCurlingShoot_PBacchi-Bugwood_VERIFY.jpg` | 61 | yes | 2026-09-22T01:33:48Z |
 | `assets\B30_051__LSE_FOUND_B28_DISEASE_Tomato_SouthernBlight_SclerotiaAtCrown_PersleyCooke_CC-BY-SA-3.0_LOWRES.jpg` | 60 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_034__LSE_FOUND_B27_EXCLUSION_Containers_SlugBarrier_CopperTape_KathleenMoore_CC-BY-2.0.jpg` | 60 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_073__LSE_FOUND_B29_PRACTICAL_RowCover_LowTunnel_FabricOverHoops_KathleenMoore_CC-BY-2.0.jpg` | 60 | yes | 2026-06-04T14:56:26Z |
@@ -186,12 +186,12 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `references\marker_removal_log.md` | 54 | yes | 2026-09-19T02:06:21Z |
 | `references\verification_report.md` | 49 | yes | 2026-09-19T02:06:21Z |
 | `assets\B30_002__LSE_FOUND_B26_ABIOTIC_Tomato_FruitCracking_IrregularIrrigationCue_Fructibus_CC0.jpg` | 47 | yes | 2026-06-04T14:56:26Z |
-| `assets\B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CONDITIONAL.jpg` | 43 | yes | 2026-06-04T14:56:26Z |
+| `assets\B30_033__LSE_FOUND_B27_EXCLUSION_VegetableBeds_FloatingRowCover_PhysicalBarrier_ScotNelson_CC-BY-2.0.jpg` | 43 | no | 2026-06-04T14:56:26Z |
 | `assets\B30_068__LSE_FOUND_B29_PRACTICAL_ContainerVegetables_ReservoirSpace_WateringDepth_KathleenMoore_CC-BY-2.0.jpg` | 41 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_013__LSE_FOUND_B26_PEST_SquashBug_Adult_MarginalResolution_Downtowngal_CC0.jpg` | 41 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_075__LSE_FOUND_B29_PRACTICAL_HerbsLettuce_ColdFrame_OpenLid_ChrisAlberti_CC-BY-2.0.jpg` | 39 | yes | 2026-06-04T14:56:26Z |
 | `assets_report\gaps.md` | 39 | yes | 2026-09-19T02:06:21Z |
-| `assets\B30_025__LSE_FOUND_B27_ROOTS_Tomato_FusariumWilt_VascularBrowningStemSplit_NCSU-IngaMeadows_VERIFY.jpg` | 37 | yes | 2026-06-04T14:56:26Z |
+| `assets\B30_025__LSE_FOUND_B27_ROOTS_Tomato_FusariumWilt_VascularBrowningStemSplit_NCSU-IngaMeadows_VERIFY.jpg` | 37 | yes | 2026-09-22T01:33:48Z |
 | `assets\B30_039__LSE_FOUND_B27_ABIOTIC_Tomato_FlumioxazinDrift_FruitNecrosis_NCSU-CC-BY-NC-SA.jpg` | 31 | yes | 2026-09-19T21:22:27Z |
 | `assets\B30_067__LSE_FOUND_B29_ABIOTIC_ContainerHerbs_SaltBuildup_WhiteSaltCrust_DianeMays_CC-BY-2.0.jpg` | 27 | yes | 2026-06-04T14:56:26Z |
 | `lse_five_book_working.css` | 25 | yes | 2026-09-19T02:06:21Z |
@@ -199,7 +199,7 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `scripts\verify_references_crossref.py` | 22 | yes | 2026-09-19T02:06:21Z |
 | `assets\B30_037__LSE_FOUND_B27_ABIOTIC_VegetableTransplant_ColdFreezeDamage_WhiteLeaves_UMD_VERIFY.jpg` | 21 | yes | 2026-06-04T14:56:26Z |
 | `assets\B30_038__LSE_FOUND_B27_ABIOTIC_Tomato_FertilizerBurn_YoungLeafScorch_UMD_VERIFY.jpg` | 19 | yes | 2026-06-04T14:56:26Z |
-| `assets\B30_080__LSE_FOUND_B29_HOLD_ROOTS_Basil_RhizoctoniaRootRot_DarkRoots_MSU_PERMISSION.jpg` | 18 | yes | 2026-06-04T14:56:26Z |
+| `assets\B30_080__LSE_FOUND_B29_HOLD_ROOTS_Basil_RhizoctoniaRootRot_DarkRoots_MSU_PERMISSION.jpg` | 18 | yes | 2026-09-22T01:33:48Z |
 | `LSE_MOVEMENT_LEDGER.csv` | 18 | yes | 2026-09-19T02:06:21Z |
 | `assets_report\copy_plan.csv` | 18 | yes | 2026-09-19T02:06:21Z |
 | `scripts\strip_markers.py` | 16 | yes | 2026-09-19T02:06:21Z |
@@ -211,8 +211,8 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | `CLAUDE.md` | 8 | yes | 2026-09-19T02:06:21Z |
 | `find_umd_date.py` | 8 | yes | 2026-09-19T22:57:36Z |
 | `README.md` | 8 | yes | 2026-09-19T22:40:47Z |
+| `LSE_RIGHTS_LEDGER.md` | 8 | yes | 2026-09-22T01:28:42Z |
 | `LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv` | 8 | yes | 2026-09-19T02:06:21Z |
-| `LSE_RIGHTS_LEDGER.md` | 6 | yes | 2026-09-19T23:16:15Z |
 | `generate_baseline.py` | 5 | yes | 2026-09-19T02:06:21Z |
 | `scripts\extract_references.py` | 5 | yes | 2026-09-19T02:06:21Z |
 | `print.css` | 4 | yes | 2026-09-19T21:07:12Z |
@@ -227,7 +227,7 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 
 | location | files | total MB |
 |---|---:|---:|
-| Downloads | 362 | 171.5 |
+| Downloads | 363 | 171.5 |
 | repo | 207 | 85.2 |
 
 ## By extension
@@ -240,7 +240,7 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 | .png | 48 | 28.8 | 38 | 10 |
 | .docx | 27 | 17.9 | 0 | 27 |
 | .html | 18 | 17.9 | 6 | 12 |
-| .ps1 | 15 | 0.2 | 0 | 15 |
+| .ps1 | 16 | 0.2 | 0 | 16 |
 | .pdf | 14 | 99.3 | 0 | 14 |
 | .csv | 10 | 0.4 | 5 | 5 |
 | .py | 9 | 0.2 | 9 | 0 |
@@ -254,7 +254,7 @@ Relevance filter: ON. Dropped files are listed in `excluded_by_relevance.csv` â€
 
 | files | MB | imgs | bigdocs | directory |
 |---:|---:|---:|---:|---|
-| 338 | 164.4 | 2 | 46 | `C:\Users\dstor\Downloads` |
+| 339 | 164.4 | 2 | 46 | `C:\Users\dstor\Downloads` |
 | 80 | 50.6 | 80 | 0 | `C:\Users\dstor\lse-repo\assets\lse_figures` |
 | 29 | 18.2 | 29 | 0 | `C:\Users\dstor\lse-repo\assets\user_created_web` |
 | 60 | 12.2 | 60 | 0 | `C:\Users\dstor\lse-repo\assets` |

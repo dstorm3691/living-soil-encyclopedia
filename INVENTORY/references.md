@@ -22,7 +22,7 @@
 
 | location | resolved | broken-recoverable | broken-nomatch |
 |---|---:|---:|---:|
-| Downloads | 0 | 384 | 266 |
+| Downloads | 0 | 378 | 272 |
 | repo | 170 | 0 | 0 |
 
 ## Orphans in [repo] (0)
