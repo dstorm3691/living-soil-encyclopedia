@@ -1,8 +1,12 @@
 # The Living Soil Encyclopedia
 
-A five-book regenerative gardening reference written for North Texas: Zone 8b,
-Blackland Prairie clay, alkaline pH, and chloraminated municipal water. 915
-pages, 169 figures and photographs, free to read and free to redistribute.
+A five-book regenerative gardening reference built around soil biology: how the
+living system under your feet works, how to feed it, what to grow in it, and how
+to protect it. Free to read and free to redistribute.
+
+Many sections close with a North Texas note that applies the topic to hot
+summers, alkaline clay, and chloraminated municipal water. Those notes extend
+the general material; they are not the premise of it.
 
 **Status:** final rights closeout in progress. PDFs will be attached to the
 first tagged release.
@@ -11,13 +15,13 @@ first tagged release.
 
 ## The books
 
-| # | Title | Pages | What it covers |
-|---|---|---:|---|
-| 1 | The Living Soil | 197 | Soil biology, the soil food web, mycorrhizal relationships, compost |
-| 2 | Inputs and Amendments | 191 | Minerals, microbial inoculants, biochar, brews and ferments, soil recipes |
-| 3 | Crops and Guilds | 199 | Rotation, companion planting, guild design, herbs, season extension |
-| 4 | Plant Health and Defense | 183 | IPM, diagnostics, pest and disease identification, abiotic disorders |
-| 5 | The Field Companion | 145 | Calendars, checklists, protocols, and reference cards for the garden |
+| # | Title | What it covers |
+|---|---|---|
+| 1 | The Living Soil | Soil biology, the soil food web, mycorrhizal relationships, compost |
+| 2 | Inputs and Amendments | Minerals, microbial inoculants, biochar, brews and ferments, soil recipes |
+| 3 | Crops and Guilds | Rotation, companion planting, guild design, herbs, season extension |
+| 4 | Plant Health and Defense | IPM, diagnostics, pest and disease identification, abiotic disorders |
+| 5 | The Field Companion | Calendars, checklists, protocols, and reference cards for the garden |
 
 Books 1 through 4 are the reference. Book 5 is the part you carry outside.
 
@@ -25,10 +29,14 @@ Books 1 through 4 are the reference. Book 5 is the part you carry outside.
 
 ## Who it is for
 
-Home growers and small-scale market gardeners working clay soil in a hot,
-alkaline, long-season climate. Most regenerative gardening writing assumes the
-Pacific Northwest or the Northeast. Very little of it survives contact with
-Blackland Prairie clay in August.
+Home growers and small-scale market gardeners who want to understand why a
+practice works, not just follow it. The books explain the biology first and the
+method second, so the reader can adapt a practice to their own soil and climate
+instead of copying a recipe written for someone else's.
+
+Growers in hot, alkaline, clay-soil regions get something extra: the North
+Texas notes work through what changes when summer heat, high pH, and heavy clay
+are the starting conditions.
 
 The diagnostic chapters are built around a specific problem: distinguishing
 abiotic injury from pest and disease damage. Cupped foliage gets blamed on
@@ -66,27 +74,6 @@ Requires Python 3.10+ and WeasyPrint. Output lands in `dist/`, with a build
 manifest recording page count, file size, and stylesheet for every book.
 
 ### Repository layout
-
-```
-LSE_BOOK_[1-5]_*_WORKING.html          the five books, source of truth
-LSE_INTERNAL_PRODUCTION_HOLD.html      staging for material not yet placed
-assets/                                169 figures and photographs
-
-build.py                               PDF build pipeline
-print.css                              print stylesheet: page geometry, figure sizing
-lse_five_book_working.css              working stylesheet
-
-verify.py                              content-preservation harness
-generate_baseline.py                   captures the fingerprint baseline
-MANIFEST.json                          set manifest
-
-LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv  30 deliberately mirrored sections
-LSE_MOVEMENT_LEDGER.csv                record of content moved between books
-LSE_RIGHTS_LEDGER.md                   image permissions, authoritative
-
-CLAUDE.md                              working contract for AI-assisted editing
-INVENTORY/                             audit reports
-```
 
 ### Content verification
 
@@ -133,29 +120,35 @@ fresh clone builds the identical set of PDFs.
 
 ## Images and rights
 
-109 of the 169 figures were created by the author. The remainder are third-party
-photographs, and each one is documented.
+Most figures were created by the author. The rest are third-party photographs,
+and every one is documented in `LSE_RIGHTS_LEDGER.md`, which is the
+authoritative record.
 
-Photographs fall into three groups:
+Each book's Image Credits section sorts photographs into four groups:
 
-**Used by permission.** Photographs from Clemson Extension HGIC, the University
-of Arkansas Division of Agriculture, and the University of Maryland Extension
-Home and Garden Information Center, granted specifically for free
-non-commercial educational use. The credit wording for each was agreed with the
-rights holder and is reproduced exactly as agreed.
+**Used by permission.** Granted specifically for free non-commercial educational
+use by Clemson Extension HGIC, the University of Arkansas Division of
+Agriculture, the University of Maryland Extension Home and Garden Information
+Center, MSU Plant & Pest Diagnostics, and the Bugwood Image Database at the
+University of Georgia. Credit wording is reproduced exactly as agreed with each
+holder.
+
+**Reproduced with attribution.** Where a permission request went unanswered by
+publication, the photograph is credited to its source in a separate section,
+with an offer to remove it on request.
 
 **Open licence.** Creative Commons and public domain photographs, credited to
 the photographer with the licence named.
 
 **Author-created.** Diagrams, decision trees, calendars, and reference cards.
 
-`LSE_RIGHTS_LEDGER.md` is the authoritative record. Where a photograph could not
-be cleared, it was replaced or removed rather than used on an assumption.
+Photographs that could not be cleared on any of those terms were replaced or
+removed.
 
-For pest and disease photography, correct species identification was treated as
+For pest and disease photography, correct identification was treated as
 non-negotiable. A misidentified organism in a diagnostic reference is worse than
-a missing photograph, so every organism-identifying image was confirmed before
-use.
+a missing photograph, so replacements were chosen only where the source names
+the confirmed cause, not just the symptom.
 
 ---
 
@@ -182,9 +175,11 @@ revenue. Several permissions depend on that remaining true.
 ## Thanks
 
 To Barbara H. Smith at Clemson Extension HGIC, Taylor Klass and Jason Pavel at
-the Arkansas Plant Health Clinic, and Miri at the University of Maryland
-Extension Home and Garden Information Center, who tracked down retired
-photographers on my behalf rather than pointing me at a policy page.
+the Arkansas Plant Health Clinic, Miri at the University of Maryland Extension
+Home and Garden Information Center, who tracked down retired photographers on my
+behalf rather than pointing me at a policy page, and Jan Byrne at MSU Plant &
+Pest Diagnostics. And to the Bugwood Center at the University of Georgia, whose
+image database made several diagnostic plates possible.
 
 Extension services are one of the few remaining sources of plant pathology
 photography that names the cause rather than just the symptom. That distinction
