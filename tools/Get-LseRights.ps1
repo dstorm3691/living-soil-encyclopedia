@@ -57,6 +57,7 @@ foreach ($r in $refs) {
 # ------------------------------------------------------------
 
 $LicenseTokens = [ordered]@{
+    'BW194930'      = @{ Class = 'GRANTED'; Note = 'Bugwood image request 194930, approved' }
     'CC-BY-NC-SA'   = @{ Class = 'NC-SA'; Note = 'NonCommercial + ShareAlike' }
     'CC-BY-NC'      = @{ Class = 'NC';    Note = 'NonCommercial' }
     'CC-BY-SA-GFDL' = @{ Class = 'SA';    Note = 'ShareAlike + GFDL dual licence' }
@@ -164,6 +165,7 @@ foreach ($im in $imgs) {
     elseif ($license -and $lclass -ne 'PD?') {
         # carries its own licence
         if ($lclass -eq 'SA' -or $lclass -eq 'NC-SA') { $verdict = 'clear'; $ledger = 'open licence, ShareAlike noted' }
+        elseif ($lclass -eq 'GRANTED') { $verdict = 'clear'; $ledger = 'granted, ' + $lnote }
         else { $verdict = 'clear'; $ledger = 'open licence' }
         if ($status -and $status -ne 'HOLD' -and $status -ne 'LOWRES') {
             $ledger += ", filename still flagged $status"
@@ -303,3 +305,4 @@ if ($stale.Count -gt 0) {
 }
 Write-Host "Report: $InventoryDir\rights_blockers.md" -ForegroundColor Cyan
 Write-Host ""
+
