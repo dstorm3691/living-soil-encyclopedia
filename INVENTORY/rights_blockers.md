@@ -1,6 +1,6 @@
 # Rights, Parsed From Filenames
 
-Generated: 2026-09-21 20:30:55Z
+Generated: 2026-09-21 20:13:01Z
 
 Publication model: **free, non-commercial, unpaywalled**. CC BY-NC and
 CC BY-NC-SA are therefore permitted. ShareAlike applies to the image,
@@ -12,15 +12,53 @@ authoritative where this disagrees with it.
 
 | verdict | count |
 |---|---:|
-| BLOCKER | 0 |
+| BLOCKER | 5 |
 | check | 4 |
-| clear | 55 |
+| clear | 51 |
 | self-created | 109 |
-| **total** | **168** |
+| **total** | **169** |
 
 ## BLOCKERS
 
-None.
+### `B30_024__LSE_FOUND_B27_ABIOTIC_Tomato_2-4DInjury_TwistedCurlingShoot_PBacchi-Bugwood_VERIFY.jpg`
+
+- **Why:** VERIFY — Rights not confirmed at filing time.
+- **Institution:** Bugwood
+- **Used by:** Book 4
+- **Decision:** [ ]
+
+### `B30_025__LSE_FOUND_B27_ROOTS_Tomato_FusariumWilt_VascularBrowningStemSplit_NCSU-IngaMeadows_VERIFY.jpg`
+
+- **Why:** VERIFY — Rights not confirmed at filing time.
+- **Ledger:** PENDING - no reply on record
+- **Institution:** NCSU
+- **Used by:** Book 4
+- **Decision:** [ ]
+
+### `B30_026__LSE_FOUND_B27_ROOTS_Pepper_DampingOff_StemCankerSoilLine_UMass-TSmith_VERIFY.jpg`
+
+- **Why:** VERIFY — Rights not confirmed at filing time.
+- **Ledger:** PENDING - no reply on record
+- **Institution:** UMass
+- **Used by:** Book 4
+- **Decision:** [ ]
+
+### `B30_080__LSE_FOUND_B29_HOLD_ROOTS_Basil_RhizoctoniaRootRot_DarkRoots_MSU_PERMISSION.jpg`
+
+- **Why:** PERMISSION — Depends on an individual permission grant.
+- **Ledger:** PENDING - no reply on record
+- **Institution:** MSU
+- **Used by:** Book 1
+- **Decision:** [ ]
+
+### `B30_081__LSE_FOUND_B29_HOLD_ROOTS_Strawberry_BlackRootRot_HealthyVsDiseased_NCSU_PERMISSION.jpg`
+
+- **Why:** PERMISSION — Depends on an individual permission grant.
+- **Ledger:** PENDING - no reply on record
+- **Institution:** NCSU
+- **Used by:** Book 1
+- **Decision:** [ ]
+
 ## CHECK
 
 | file | licence | flag | attribution | used by |
@@ -57,22 +95,19 @@ Rename these so the filename stops contradicting the rights position.
 
 | licence | class | count |
 |---|---|---:|
-| (none in filename) |  | 118 |
+| (none in filename) |  | 123 |
 | CC-BY-2 | BY | 13 |
 | BW194930 | GRANTED | 4 |
-| CC0 | CC0 | 4 |
 | CC-BY-3 | BY | 4 |
 | CC-BY-SA-4 | SA | 4 |
+| CC0 | CC0 | 4 |
 | PublicUse | PD? | 3 |
 | USDA-PD | PD | 3 |
-| CC-BY-NC-SA | NC-SA | 2 |
-| CC-BY-4 | BY | 2 |
-| CC-BY-SA-GFDL | SA | 2 |
 | BW194939 | GRANTED | 2 |
-| GRANTED-NCSU | GRANTED | 2 |
+| CC-BY-4 | BY | 2 |
+| CC-BY-NC-SA | NC-SA | 2 |
 | CC-BY-SA-3 | SA | 2 |
-| GRANTED-MSU | GRANTED | 1 |
-| GRANTED-UMass | GRANTED | 1 |
+| CC-BY-SA-GFDL | SA | 2 |
 | CC-BY-SA-2 | SA | 1 |
 
 
