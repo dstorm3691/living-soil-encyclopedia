@@ -75,6 +75,27 @@ manifest recording page count, file size, and stylesheet for every book.
 
 ### Repository layout
 
+```
+LSE_BOOK_[1-5]_*_WORKING.html          the five books, source of truth
+LSE_INTERNAL_PRODUCTION_HOLD.html      staging for material not yet placed
+assets/                                figures and photographs
+
+build.py                               PDF build pipeline
+print.css                              print stylesheet: page geometry, figure sizing
+lse_five_book_working.css              working stylesheet
+
+verify.py                              content-preservation harness
+MANIFEST.json                          set manifest
+
+LSE_MIRROR_SYNCHRONIZATION_LEDGER.csv  30 deliberately mirrored sections
+LSE_MOVEMENT_LEDGER.csv                record of content moved between books
+LSE_RIGHTS_LEDGER.md                   image permissions, authoritative
+
+tools/                                 PowerShell tooling: census, rights, credits, image swaps
+CLAUDE.md                              working contract for AI-assisted editing
+INVENTORY/                             audit reports and image sourcing logs
+```
+
 ### Content verification
 
 A long reference assembled over months across multiple tools has failure modes
