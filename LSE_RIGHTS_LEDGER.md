@@ -151,3 +151,12 @@ B30_024 (P. Bacchi, 2,4-D twisted shoot) dropped. Not available on
 Bugwood; B30_022 (Hansen, 2,4-D) covers the same diagnosis.
 
 Kill date for all outstanding requests: 2026-10-03.
+
+## MSU permission GRANTED 2026-09-22
+
+B30_080 basil Rhizoctonia root rot. Jan Byrne, Director, MSU Plant & Pest
+Diagnostics, replied by email 2026-09-22: "Yes, you are welcome to use the
+photo and provide credit as you suggested."
+
+Credit: Photo: Jan Byrne, MSU Plant & Pest Diagnostics, Michigan State
+University Extension. Used by permission.
