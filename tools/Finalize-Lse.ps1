@@ -1,47 +1,50 @@
 <#
 .SYNOPSIS
-    Finishes the book. One run closes rights, drops what never cleared,
-    injects front and back matter, and builds the five final PDFs.
+    Finishes the book. Resolves the pending images, injects front and back
+    matter, and builds the five final PDFs.
 
 .DESCRIPTION
-    Pass the institutions that said yes. Everything pending that is not in
-    that list gets dropped, along with B30_024 (Bacchi), which could not be
-    obtained.
+    Each pending image resolves one of three ways:
 
-    Approved images are renamed to carry a GRANTED token and get their
-    credit registered. Dropped images have their figure removed from the
-    book and their file moved to the archive.
+      -Approved   they said yes       credited "Used by permission"
+      -Declined   they said no        figure removed from the book
+      neither     no reply            credited with attribution only, in a
+                                      separate section with a takedown offer
 
-    If figures were dropped, verify.py will report their caption paragraphs
-    as missing from the baseline. That removal is intentional, so the script
-    re-baselines with generate_baseline.py and verifies again. If anything
-    still fails, every change is rolled back.
+    Images already replaced with a Bugwood-approved photo are skipped; they
+    no longer depend on anyone's reply. B30_024 (Bacchi) is always dropped.
+
+    Re-runnable. If someone replies after publication:
+      a yes upgrades their image from attribution to permission
+      a no removes it
 
     Dry run by default.
 
 .EXAMPLE
-    # everyone said yes
-    .\tools\Finalize-Lse.ps1 -Approved NCSU,UMass,MSU
-
-.EXAMPLE
-    # only NC State answered by the deadline
-    .\tools\Finalize-Lse.ps1 -Approved NCSU -Execute
-
-.EXAMPLE
-    # nobody answered: drop all five
     .\tools\Finalize-Lse.ps1 -Execute
+
+.EXAMPLE
+    .\tools\Finalize-Lse.ps1 -Approved NCSU -Declined MSU -Execute
 #>
 
 [CmdletBinding()]
 param(
     [ValidateSet('NCSU', 'UMass', 'MSU')]
     [string[]]$Approved = @(),
+    [ValidateSet('NCSU', 'UMass', 'MSU')]
+    [string[]]$Declined = @(),
     [string]$RepoRoot,
     [string]$ArchiveDir = "D:\LSE_ARCHIVE\dropped_images",
     [switch]$Execute
 )
 
 $ErrorActionPreference = 'Stop'
+
+$overlap = @($Approved | Where-Object { $Declined -contains $_ })
+if ($overlap.Count -gt 0) {
+    Write-Host "Listed as both approved and declined: $($overlap -join ', ')" -ForegroundColor Red
+    exit 1
+}
 
 if (-not $RepoRoot) {
     $d = (& git rev-parse --show-toplevel 2>$null)
@@ -52,45 +55,13 @@ $RepoRoot = (Resolve-Path -LiteralPath $RepoRoot).Path
 $assets = Join-Path $RepoRoot 'assets'
 $tools  = Join-Path $RepoRoot 'tools'
 
-# ------------------------------------------------------------
-# Pending images. Credit text is the wording proposed in each
-# permission email. If a holder replies asking for different
-# wording, change that one Credit line before running.
-# ------------------------------------------------------------
-
 $Pending = @(
-    @{ Id = 'B30_025'; Inst = 'NCSU'; Token = 'GRANTED-NCSU'
-       Match = 'FusariumWilt.*GRANTED-NCSU'
-       Credit = 'Photo: Inga Meadows, NC State Extension, Fusarium Wilt of Tomato. Used by permission.'
-       Holder = 'NC State Extension' }
-
-    @{ Id = 'B30_081'; Inst = 'NCSU'; Token = 'GRANTED-NCSU'
-       Match = 'Strawberry_BlackRootRot.*GRANTED-NCSU'
-       Credit = 'Photo: Leonor Leandro, Gloria Abad, and Frank J. Louws, NC State Extension, Black Root Rot of Strawberry. Used by permission.'
-       Holder = 'NC State Extension' }
-
-    @{ Id = 'B30_026'; Inst = 'UMass'; Token = 'GRANTED-UMass'
-       Match = 'DampingOff.*GRANTED-UMass'
-       Credit = 'Photo: Tina Smith, University of Massachusetts Extension. Used by permission.'
-       Holder = 'University of Massachusetts Extension' }
-
-    @{ Id = 'B30_080'; Inst = 'MSU'; Token = 'GRANTED-MSU'
-       Match = 'Basil_RhizoctoniaRootRot.*GRANTED-MSU'
-       Credit = 'Photo: Jan Byrne, MSU Plant & Pest Diagnostics, Michigan State University Extension. Used by permission.'
-       Holder = 'Michigan State University Extension' }
+    @{ Id = 'B30_025'; Inst = 'NCSU';  Who = 'Frank Louws, NC State Extension';          Asked = '2026-09-19' }
+    @{ Id = 'B30_081'; Inst = 'NCSU';  Who = 'Frank Louws, NC State Extension';          Asked = '2026-09-19' }
+    @{ Id = 'B30_026'; Inst = 'UMass'; Who = 'Jason Lanier, UMass Extension';            Asked = '2026-09-22' }
+    @{ Id = 'B30_080'; Inst = 'MSU';   Who = 'Jan Byrne, MSU Plant & Pest Diagnostics';  Asked = '2026-09-22' }
 )
-
 $AlwaysDrop = @('B30_024')
-
-$TokenNotes = @{
-    'GRANTED-NCSU'  = 'NC State Extension permission, via Frank Louws'
-    'GRANTED-UMass' = 'UMass Extension permission, via Jason Lanier'
-    'GRANTED-MSU'   = 'MSU Plant & Pest Diagnostics permission, via Jan Byrne'
-}
-
-# ------------------------------------------------------------
-# Plan
-# ------------------------------------------------------------
 
 function Find-Asset {
     param([string]$Id)
@@ -98,39 +69,66 @@ function Find-Asset {
         Where-Object { $_.Name -like "${Id}__*" } | Select-Object -First 1
 }
 
-$keep = New-Object System.Collections.Generic.List[object]
-$drop = New-Object System.Collections.Generic.List[object]
+function Get-CleanBase {
+    param([string]$Name)
+    $b = [IO.Path]::GetFileNameWithoutExtension($Name)
+    return ($b -replace '_(VERIFY|PERMISSION|CONDITIONAL)$', '' -replace '_(GRANTED|ATTRIB)-(NCSU|UMass|MSU)$', '')
+}
+
+$actions = New-Object System.Collections.Generic.List[object]
+$skippedBugwood = New-Object System.Collections.Generic.List[string]
 
 foreach ($p in $Pending) {
     $f = Find-Asset $p.Id
     if (-not $f) { continue }
-    if ($f.Name -match [regex]::Escape($p.Token)) { continue }   # already finalised
-    if ($Approved -contains $p.Inst) {
-        $base  = [IO.Path]::GetFileNameWithoutExtension($f.Name)
-        $clean = $base -replace '_(VERIFY|PERMISSION|CONDITIONAL)$', ''
-        $keep.Add([pscustomobject]@{ Spec = $p; File = $f; NewName = "${clean}_$($p.Token)$($f.Extension)" })
-    }
-    else {
-        $drop.Add([pscustomobject]@{ Id = $p.Id; File = $f; Why = "$($p.Inst) did not approve" })
-    }
+
+    # replaced with a Bugwood-approved image: no longer pending
+    if ($f.Name -match '_BW\d{6}\.') { $skippedBugwood.Add($p.Id); continue }
+
+    $target = if ($Declined -contains $p.Inst) { 'drop' }
+              elseif ($Approved -contains $p.Inst) { 'GRANTED' }
+              else { 'ATTRIB' }
+
+    $current = if ($f.Name -match "_GRANTED-$($p.Inst)\.") { 'GRANTED' }
+               elseif ($f.Name -match "_ATTRIB-$($p.Inst)\.") { 'ATTRIB' }
+               else { 'pending' }
+
+    if ($current -eq 'GRANTED' -and $target -eq 'ATTRIB') { continue }
+    if ($current -eq $target) { continue }
+
+    $newName = if ($target -eq 'drop') { '' }
+               else { "$(Get-CleanBase $f.Name)_$target-$($p.Inst)$($f.Extension)" }
+
+    $actions.Add([pscustomobject]@{
+        Id = $p.Id; Inst = $p.Inst; Who = $p.Who; Asked = $p.Asked
+        File = $f; From = $current; To = $target; NewName = $newName
+    })
 }
 foreach ($id in $AlwaysDrop) {
     $f = Find-Asset $id
-    if ($f) { $drop.Add([pscustomobject]@{ Id = $id; File = $f; Why = 'not obtainable' }) }
+    if ($f) {
+        $actions.Add([pscustomobject]@{
+            Id = $id; Inst = ''; Who = ''; Asked = ''
+            File = $f; From = 'pending'; To = 'drop'; NewName = ''
+        })
+    }
 }
 
 Write-Host ""
 Write-Host "Repo:     $RepoRoot"
 Write-Host "Approved: $(if ($Approved.Count) { $Approved -join ', ' } else { '(none)' })"
+Write-Host "Declined: $(if ($Declined.Count) { $Declined -join ', ' } else { '(none)' })"
 Write-Host "Mode:     $(if ($Execute) { 'EXECUTE' } else { 'DRY RUN' })" -ForegroundColor $(if ($Execute) { 'Yellow' } else { 'Cyan' })
+if ($skippedBugwood.Count) { Write-Host "Resolved by Bugwood, skipped: $($skippedBugwood -join ', ')" -ForegroundColor DarkGray }
 Write-Host ""
-Write-Host "KEEP and credit ($($keep.Count)):" -ForegroundColor Green
-foreach ($k in $keep) { Write-Host "  $($k.Spec.Id)  ->  $($k.NewName)" }
-if ($keep.Count -eq 0) { Write-Host "  none" }
-Write-Host ""
-Write-Host "DROP ($($drop.Count)):" -ForegroundColor Yellow
-foreach ($x in $drop) { Write-Host "  $($x.Id)  ($($x.Why))  $($x.File.Name)" }
-if ($drop.Count -eq 0) { Write-Host "  none" }
+
+$label = @{ GRANTED = 'USED BY PERMISSION'; ATTRIB = 'ATTRIBUTION ONLY'; drop = 'REMOVE FROM BOOK' }
+$color = @{ GRANTED = 'Green'; ATTRIB = 'Cyan'; drop = 'Yellow' }
+
+if ($actions.Count -eq 0) { Write-Host "Nothing to change. Continuing to credits and build." -ForegroundColor Green }
+foreach ($a in $actions) {
+    Write-Host ("  {0}  {1,-18}  ({2} -> {3})" -f $a.Id, $label[$a.To], $a.From, $a.To) -ForegroundColor $color[$a.To]
+}
 Write-Host ""
 
 if (-not $Execute) {
@@ -139,20 +137,15 @@ if (-not $Execute) {
     exit 0
 }
 
-# ------------------------------------------------------------
-# Backup
-# ------------------------------------------------------------
-
 $stamp = (Get-Date).ToString('yyyyMMdd_HHmmss')
 $bak = Join-Path $RepoRoot ".build\html_backup\finalize_$stamp"
 New-Item -ItemType Directory -Path $bak -Force | Out-Null
 $books = @(Get-ChildItem -LiteralPath $RepoRoot -Filter "LSE_*.html" -File)
 foreach ($b in $books) { Copy-Item -LiteralPath $b.FullName -Destination $bak -Force }
-foreach ($t in @('Get-LseRights.ps1', 'Build-LseFrontBack.ps1')) {
-    $tp = Join-Path $tools $t
-    if (Test-Path -LiteralPath $tp) { Copy-Item -LiteralPath $tp -Destination $bak -Force }
-}
+$rightsTool = Join-Path $tools 'Get-LseRights.ps1'
+if (Test-Path -LiteralPath $rightsTool) { Copy-Item -LiteralPath $rightsTool -Destination $bak -Force }
 if (-not (Test-Path -LiteralPath $ArchiveDir)) { New-Item -ItemType Directory -Path $ArchiveDir -Force | Out-Null }
+
 $moved = New-Object System.Collections.Generic.List[object]
 $renamed = New-Object System.Collections.Generic.List[object]
 
@@ -162,56 +155,45 @@ function Restore-All {
     foreach ($b in (Get-ChildItem -LiteralPath $bak -Filter "LSE_*.html" -File)) {
         Copy-Item -LiteralPath $b.FullName -Destination (Join-Path $RepoRoot $b.Name) -Force
     }
-    foreach ($t in @('Get-LseRights.ps1', 'Build-LseFrontBack.ps1')) {
-        $tb = Join-Path $bak $t
-        if (Test-Path -LiteralPath $tb) { Copy-Item -LiteralPath $tb -Destination (Join-Path $tools $t) -Force }
-    }
+    $rb = Join-Path $bak 'Get-LseRights.ps1'
+    if (Test-Path -LiteralPath $rb) { Copy-Item -LiteralPath $rb -Destination $rightsTool -Force }
     foreach ($m in $moved)   { Move-Item -LiteralPath $m.To -Destination $m.From -Force }
     foreach ($r in $renamed) { Rename-Item -LiteralPath $r.NewPath -NewName $r.OldName -Force }
-    Write-Host "Restored. Paste the verify output above back to Claude." -ForegroundColor Red
+    Write-Host "Restored. Paste the output above back to Claude." -ForegroundColor Red
     Write-Host ""
 }
 
-# ------------------------------------------------------------
-# Rename approved
-# ------------------------------------------------------------
+$dropped = 0
+foreach ($a in $actions) {
+    $old = $a.File.Name
 
-foreach ($k in $keep) {
-    $old = $k.File.Name
-    Rename-Item -LiteralPath $k.File.FullName -NewName $k.NewName
-    $renamed.Add([pscustomobject]@{ NewPath = (Join-Path $k.File.DirectoryName $k.NewName); OldName = $old })
+    if ($a.To -eq 'drop') {
+        $esc = [regex]::Escape($old)
+        $sectionRx = '(?s)<section\b[^>]*\blse-figure\b[^>]*>(?:(?!</section>).)*?' + $esc + '(?:(?!</section>).)*?</section>\s*'
+        $imgRx = '(?i)<img\b[^>]*' + $esc + '[^>]*>\s*'
+        foreach ($b in $books) {
+            $t = Get-Content -LiteralPath $b.FullName -Raw
+            if (-not $t.Contains($old)) { continue }
+            $n = [regex]::Replace($t, $sectionRx, '')
+            if ($n.Contains($old)) { $n = [regex]::Replace($n, $imgRx, '') }
+            Set-Content -LiteralPath $b.FullName -Value $n -Encoding UTF8 -NoNewline
+        }
+        $to = Join-Path $ArchiveDir $old
+        Move-Item -LiteralPath $a.File.FullName -Destination $to -Force
+        $moved.Add([pscustomobject]@{ From = $a.File.FullName; To = $to })
+        $dropped++
+        Write-Host "  removed    $($a.Id)" -ForegroundColor Yellow
+        continue
+    }
+
+    Rename-Item -LiteralPath $a.File.FullName -NewName $a.NewName
+    $renamed.Add([pscustomobject]@{ NewPath = (Join-Path $a.File.DirectoryName $a.NewName); OldName = $old })
     foreach ($b in $books) {
         $t = Get-Content -LiteralPath $b.FullName -Raw
-        if ($t.Contains($old)) { Set-Content -LiteralPath $b.FullName -Value $t.Replace($old, $k.NewName) -Encoding UTF8 -NoNewline }
+        if ($t.Contains($old)) { Set-Content -LiteralPath $b.FullName -Value $t.Replace($old, $a.NewName) -Encoding UTF8 -NoNewline }
     }
-    Write-Host "  kept    $($k.Spec.Id)" -ForegroundColor Green
+    Write-Host "  $(if ($a.To -eq 'GRANTED') { 'permission' } else { 'attributed' }) $($a.Id)" -ForegroundColor $color[$a.To]
 }
-
-# ------------------------------------------------------------
-# Drop the rest
-# ------------------------------------------------------------
-
-foreach ($x in $drop) {
-    $name = $x.File.Name
-    $esc = [regex]::Escape($name)
-    $sectionRx = '(?s)<section\b[^>]*\blse-figure\b[^>]*>(?:(?!</section>).)*?' + $esc + '(?:(?!</section>).)*?</section>\s*'
-    $imgRx = '(?i)<img\b[^>]*' + $esc + '[^>]*>\s*'
-    foreach ($b in $books) {
-        $t = Get-Content -LiteralPath $b.FullName -Raw
-        if (-not $t.Contains($name)) { continue }
-        $n = [regex]::Replace($t, $sectionRx, '')
-        if ($n.Contains($name)) { $n = [regex]::Replace($n, $imgRx, '') }
-        Set-Content -LiteralPath $b.FullName -Value $n -Encoding UTF8 -NoNewline
-    }
-    $to = Join-Path $ArchiveDir $name
-    Move-Item -LiteralPath $x.File.FullName -Destination $to -Force
-    $moved.Add([pscustomobject]@{ From = $x.File.FullName; To = $to })
-    Write-Host "  dropped $($x.Id)" -ForegroundColor Yellow
-}
-
-# ------------------------------------------------------------
-# Verify, re-baselining only if figures were dropped
-# ------------------------------------------------------------
 
 Write-Host ""
 Write-Host "Running verify.py..." -ForegroundColor Yellow
@@ -219,10 +201,10 @@ Push-Location $RepoRoot
 try {
     & python verify.py
     $code = $LASTEXITCODE
-    if ($code -ne 0 -and $drop.Count -gt 0 -and (Test-Path -LiteralPath 'generate_baseline.py')) {
+    if ($code -ne 0 -and $dropped -gt 0 -and (Test-Path -LiteralPath 'generate_baseline.py')) {
         Write-Host ""
-        Write-Host "Dropped figures removed baseline caption paragraphs. That is intentional." -ForegroundColor Yellow
-        Write-Host "Re-baselining with generate_baseline.py, then verifying again..." -ForegroundColor Yellow
+        Write-Host "Removed figures took baseline caption paragraphs with them. Intentional." -ForegroundColor Yellow
+        Write-Host "Re-baselining, then verifying again..." -ForegroundColor Yellow
         & python generate_baseline.py
         if ($LASTEXITCODE -eq 0) { & python verify.py; $code = $LASTEXITCODE }
     }
@@ -231,41 +213,46 @@ finally { Pop-Location }
 
 if ($code -ne 0) { Restore-All; exit 1 }
 
-# ------------------------------------------------------------
-# Register approvals with the rights parser and credits
-# ------------------------------------------------------------
-
-$rights = Join-Path $tools 'Get-LseRights.ps1'
-if ((Test-Path -LiteralPath $rights) -and $keep.Count -gt 0) {
-    $r = Get-Content -LiteralPath $rights -Raw
-    foreach ($tok in ($keep | ForEach-Object { $_.Spec.Token } | Select-Object -Unique)) {
+if (Test-Path -LiteralPath $rightsTool) {
+    $r = Get-Content -LiteralPath $rightsTool -Raw
+    $notes = @{
+        'GRANTED-NCSU'  = 'permission granted, NC State Extension'
+        'GRANTED-UMass' = 'permission granted, UMass Extension'
+        'GRANTED-MSU'   = 'permission granted, MSU Plant & Pest Diagnostics'
+        'ATTRIB-NCSU'   = 'permission requested 2026-09-19, no reply'
+        'ATTRIB-UMass'  = 'permission requested 2026-09-22, no reply'
+        'ATTRIB-MSU'    = 'permission requested 2026-09-22, no reply'
+    }
+    foreach ($tok in $notes.Keys) {
         if (-not $r.Contains("'$tok'")) {
+            $cls = if ($tok -like 'GRANTED*') { 'GRANTED' } else { 'ATTRIB' }
             $r = $r.Replace('$LicenseTokens = [ordered]@{',
-                "`$LicenseTokens = [ordered]@{`r`n    '$tok' = @{ Class = 'GRANTED'; Note = '$($TokenNotes[$tok])' }")
+                "`$LicenseTokens = [ordered]@{`r`n    '$tok' = @{ Class = '$cls'; Note = '$($notes[$tok])' }")
         }
     }
+    $anchor = "else { `$verdict = 'clear'; `$ledger = 'open licence' }"
     if (-not $r.Contains("`$lclass -eq 'GRANTED'")) {
-        $r = $r.Replace("else { `$verdict = 'clear'; `$ledger = 'open licence' }",
-            "elseif (`$lclass -eq 'GRANTED') { `$verdict = 'clear'; `$ledger = 'granted, ' + `$lnote }`r`n        else { `$verdict = 'clear'; `$ledger = 'open licence' }")
+        $r = $r.Replace($anchor, "elseif (`$lclass -eq 'GRANTED') { `$verdict = 'clear'; `$ledger = 'granted, ' + `$lnote }`r`n        $anchor")
     }
-    Set-Content -LiteralPath $rights -Value $r -Encoding UTF8
+    if (-not $r.Contains("`$lclass -eq 'ATTRIB'")) {
+        $r = $r.Replace($anchor, "elseif (`$lclass -eq 'ATTRIB') { `$verdict = 'clear'; `$ledger = 'attribution only, ' + `$lnote }`r`n        $anchor")
+    }
+    Set-Content -LiteralPath $rightsTool -Value $r -Encoding UTF8
 }
 
-$front = Join-Path $tools 'Build-LseFrontBack.ps1'
-if ((Test-Path -LiteralPath $front) -and $keep.Count -gt 0) {
-    $f = Get-Content -LiteralPath $front -Raw
-    foreach ($k in $keep) {
-        $s = $k.Spec
-        if ($f.Contains("'$($s.Match)'")) { continue }
-        $entry = "`$Agreed = @(`r`n    @{ Match = '$($s.Match)'`r`n       Credit = '$($s.Credit)'`r`n       Holder = '$($s.Holder)'; Status = 'granted' }`r`n"
-        $f = $f.Replace('$Agreed = @(', $entry.TrimEnd())
+if ($actions.Count -gt 0) {
+    $lines = @("", "## Finalized $((Get-Date).ToString('yyyy-MM-dd'))", "",
+               "| Image | Outcome | Source |", "|---|---|---|")
+    foreach ($a in $actions) {
+        $outcome = switch ($a.To) {
+            'GRANTED' { 'Used by permission' }
+            'ATTRIB'  { "Attribution only. Permission requested $($a.Asked), no reply at publication. Takedown offered in credits." }
+            'drop'    { 'Removed from book' }
+        }
+        $lines += "| $($a.Id) | $outcome | $($a.Who) |"
     }
-    Set-Content -LiteralPath $front -Value $f -Encoding UTF8
+    Add-Content -LiteralPath (Join-Path $RepoRoot 'LSE_RIGHTS_LEDGER.md') -Value ($lines -join "`r`n") -Encoding UTF8
 }
-
-# ------------------------------------------------------------
-# Regenerate inventory, rights, credits
-# ------------------------------------------------------------
 
 Push-Location $RepoRoot
 try {
@@ -276,21 +263,16 @@ try {
 finally { Pop-Location }
 
 $todoFile = Join-Path $RepoRoot 'frontback\_TODO.md'
-$todos = if (Test-Path -LiteralPath $todoFile) {
-    @(Get-Content -LiteralPath $todoFile | Where-Object { $_ -match '^- Book' }).Count
-} else { 0 }
+$todos = @()
+if (Test-Path -LiteralPath $todoFile) { $todos = @(Get-Content -LiteralPath $todoFile | Where-Object { $_ -match '^- Book' }) }
 
-if ($todos -gt 0) {
+if ($todos.Count -gt 0) {
     Write-Host ""
-    Write-Host "$todos credit TODO(s) remain. Not injecting." -ForegroundColor Red
-    Get-Content -LiteralPath $todoFile | Where-Object { $_ -match '^- Book' }
+    Write-Host "$($todos.Count) credit TODO(s) remain. Not injecting." -ForegroundColor Red
+    $todos | ForEach-Object { Write-Host "  $_" }
     Write-Host "Paste the list above back to Claude." -ForegroundColor Red
     exit 1
 }
-
-# ------------------------------------------------------------
-# Inject front and back matter, build the final PDFs
-# ------------------------------------------------------------
 
 Write-Host ""
 Write-Host "Zero TODOs. Injecting front matter and credits..." -ForegroundColor Green
@@ -304,8 +286,11 @@ try {
 }
 finally { Pop-Location }
 
+$g = @($actions | Where-Object { $_.To -eq 'GRANTED' }).Count
+$t = @($actions | Where-Object { $_.To -eq 'ATTRIB' }).Count
+$x = @($actions | Where-Object { $_.To -eq 'drop' }).Count
 Write-Host ""
 Write-Host "================================================================" -ForegroundColor Green
-Write-Host " DONE. Kept $($keep.Count), dropped $($drop.Count). PDFs are in dist\" -ForegroundColor Green
+Write-Host " DONE. Permission $g, attribution only $t, removed $x. PDFs in dist\" -ForegroundColor Green
 Write-Host "================================================================" -ForegroundColor Green
 Write-Host ""
