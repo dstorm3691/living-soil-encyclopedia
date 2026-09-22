@@ -57,6 +57,7 @@ foreach ($r in $refs) {
 # ------------------------------------------------------------
 
 $LicenseTokens = [ordered]@{
+    'BW194939'      = @{ Class = 'GRANTED'; Note = 'Bugwood image request 194939, approved 2026-09-22' }
     'BW194930'      = @{ Class = 'GRANTED'; Note = 'Bugwood image request 194930, approved' }
     'CC-BY-NC-SA'   = @{ Class = 'NC-SA'; Note = 'NonCommercial + ShareAlike' }
     'CC-BY-NC'      = @{ Class = 'NC';    Note = 'NonCommercial' }
@@ -305,4 +306,5 @@ if ($stale.Count -gt 0) {
 }
 Write-Host "Report: $InventoryDir\rights_blockers.md" -ForegroundColor Cyan
 Write-Host ""
+
 

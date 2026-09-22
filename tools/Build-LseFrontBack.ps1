@@ -45,6 +45,12 @@ $refs = @(Import-Csv -LiteralPath $refsCsv | Where-Object { $_.from_loc -eq 'rep
 # ------------------------------------------------------------
 
 $Agreed = @(
+    @{ Match = 'GlyphosateInjury.*BW194939'
+       Credit = 'Photo: Nathan Howard, University of Kentucky, Bugwood.org. Used by permission (Bugwood image request 194939).'
+       Holder = 'Bugwood Image Database, University of Georgia'; Status = 'granted' }
+    @{ Match = '2-4DDrift.*BW194939'
+       Credit = 'Photo: Mary Ann Hansen, Virginia Polytechnic Institute and State University, Bugwood.org. Used by permission (Bugwood image request 194939).'
+       Holder = 'Bugwood Image Database, University of Georgia'; Status = 'granted' }
     @{ Match = 'CowpeaCurculio.*BW194930'
        Credit = 'Photo: Brantlee Spakes Richter, University of Florida, Bugwood.org. Used by permission (Bugwood image request 194930).'
        Holder = 'Bugwood Image Database, University of Georgia'; Status = 'granted' }
@@ -302,6 +308,7 @@ Write-Host "Output: $out" -ForegroundColor Cyan
 Write-Host ""
 Write-Host "Nothing was injected. Read the files, fix the TODOs, then paste." -ForegroundColor Cyan
 Write-Host ""
+
 
 
 
