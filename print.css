@@ -155,3 +155,6 @@ nav.functional-navigation,
 
 .toc { break-after: page; }
 
+
+/* lse-hide-production-meta */
+.imgmarker, .figure-placement-meta { display: none !important; }
