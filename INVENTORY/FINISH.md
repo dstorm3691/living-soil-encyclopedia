@@ -244,8 +244,9 @@ The Living Soil Encyclopedia v1.0
 
 ```
 The first complete edition of The Living Soil Encyclopedia: a five-book
-regenerative gardening reference written for North Texas, Zone 8b,
-Blackland Prairie clay, alkaline pH, and chloraminated municipal water.
+regenerative gardening reference built around soil biology. Many sections
+close with a North Texas note applying the topic to hot summers, alkaline
+clay, and chloraminated water.
 
 Download the five books below.
 
