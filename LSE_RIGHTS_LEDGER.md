@@ -135,3 +135,19 @@ B30_024 (P. Bacchi, 2,4-D twisted shoot) dropped. Not available on
 Bugwood; B30_022 (Hansen, 2,4-D) covers the same diagnosis.
 
 Kill date for all outstanding requests: 2026-10-03.
+
+## Permission requests sent 2026-09-22
+
+| Image | Institution | To | Status |
+|---|---|---|---|
+| B30_026 pepper damping off | UMass Extension | jdl@umass.edu, cc tsmith@umext.umass.edu | SENT |
+| B30_080 basil Rhizoctonia root rot | MSU Plant & Pest Diagnostics | byrnejm@msu.edu | SENT |
+
+Photographer identified: B30_026 is Tina Smith, former UMass Floriculture
+Specialist. B30_080 is Jan Byrne, now Director of MSU Plant & Pest
+Diagnostics. Source article states the lab isolated Rhizoctonia.
+
+B30_024 (P. Bacchi, 2,4-D twisted shoot) dropped. Not available on
+Bugwood; B30_022 (Hansen, 2,4-D) covers the same diagnosis.
+
+Kill date for all outstanding requests: 2026-10-03.
