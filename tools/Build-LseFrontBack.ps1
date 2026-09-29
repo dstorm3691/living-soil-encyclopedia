@@ -293,8 +293,8 @@ foreach ($book in $books) {
     $sb = New-Object System.Text.StringBuilder
     [void]$sb.AppendLine("<!-- ============ IMAGE CREDITS, Book ${num} ============ -->")
     [void]$sb.AppendLine()
+    [void]$sb.AppendLine('<h1 class="image-credits-title" id="image-credits">Image Credits</h1>')
     [void]$sb.AppendLine('<section class="image-credits">')
-    [void]$sb.AppendLine("  <h1>Image Credits</h1>")
     [void]$sb.AppendLine()
     [void]$sb.AppendLine("  <p>Figures and diagrams are by the author unless credited below.</p>")
     [void]$sb.AppendLine()
@@ -363,4 +363,5 @@ Write-Host ""
 Write-Host "TODOs: $(@($allTodos | Select-Object -Unique).Count)" -ForegroundColor $(if ($allTodos.Count) { 'Yellow' } else { 'Green' })
 Write-Host "Review: $todoPath" -ForegroundColor Cyan
 Write-Host ""
+
 
