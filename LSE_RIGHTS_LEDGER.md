@@ -176,3 +176,12 @@ UMass request withdrawn 2026-09-22.
 
 Still pending, kill date 2026-10-03, attribution only if no reply:
 B30_025 and B30_081 (Frank Louws, NC State).
+
+## Finalized 2026-09-29
+
+| Image | Outcome | Source |
+|---|---|---|
+| B30_025 | Attribution only. Permission requested 2026-09-19, no reply at publication. Takedown offered in credits. | Frank Louws, NC State Extension |
+| B30_081 | Attribution only. Permission requested 2026-09-19, no reply at publication. Takedown offered in credits. | Frank Louws, NC State Extension |
+| B30_080 | Used by permission | Jan Byrne, MSU Plant & Pest Diagnostics |
+| B30_024 | Removed from book |  |

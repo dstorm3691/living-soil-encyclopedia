@@ -57,6 +57,12 @@ foreach ($r in $refs) {
 # ------------------------------------------------------------
 
 $LicenseTokens = [ordered]@{
+    'ATTRIB-MSU' = @{ Class = 'ATTRIB'; Note = 'permission requested 2026-09-22, no reply' }
+    'ATTRIB-UMass' = @{ Class = 'ATTRIB'; Note = 'permission requested 2026-09-22, no reply' }
+    'GRANTED-MSU' = @{ Class = 'GRANTED'; Note = 'permission granted, MSU Plant & Pest Diagnostics' }
+    'GRANTED-NCSU' = @{ Class = 'GRANTED'; Note = 'permission granted, NC State Extension' }
+    'GRANTED-UMass' = @{ Class = 'GRANTED'; Note = 'permission granted, UMass Extension' }
+    'ATTRIB-NCSU' = @{ Class = 'ATTRIB'; Note = 'permission requested 2026-09-19, no reply' }
     'BW194941'      = @{ Class = 'GRANTED'; Note = 'Bugwood image request 194941, approved 2026-09-22' }
     'BW194939'      = @{ Class = 'GRANTED'; Note = 'Bugwood image request 194939, approved 2026-09-22' }
     'BW194930'      = @{ Class = 'GRANTED'; Note = 'Bugwood image request 194930, approved' }
@@ -168,6 +174,7 @@ foreach ($im in $imgs) {
         # carries its own licence
         if ($lclass -eq 'SA' -or $lclass -eq 'NC-SA') { $verdict = 'clear'; $ledger = 'open licence, ShareAlike noted' }
         elseif ($lclass -eq 'GRANTED') { $verdict = 'clear'; $ledger = 'granted, ' + $lnote }
+        elseif ($lclass -eq 'ATTRIB') { $verdict = 'clear'; $ledger = 'attribution only, ' + $lnote }
         else { $verdict = 'clear'; $ledger = 'open licence' }
         if ($status -and $status -ne 'HOLD' -and $status -ne 'LOWRES') {
             $ledger += ", filename still flagged $status"
@@ -307,6 +314,7 @@ if ($stale.Count -gt 0) {
 }
 Write-Host "Report: $InventoryDir\rights_blockers.md" -ForegroundColor Cyan
 Write-Host ""
+
 
 
 
