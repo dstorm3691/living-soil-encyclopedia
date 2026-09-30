@@ -6,6 +6,8 @@
   Removes every <section class="lse-figure" id="fig-ID">...</section> for the
   given ids, in every book, so mirrored sections and figures placed in two
   books stay in sync. The image files stay on disk for the v1.1 redraw.
+  The figure's hidden "Placement:" metadata line is left in place, because
+  verify.py fingerprints it; both stylesheets hide it.
 
   Dry run by default. For each figure it reports where it sits, and anything
   that will be left pointing at it:
@@ -95,7 +97,12 @@ foreach ($id in $Ids) {
         }
 
         if ($ms.Count) {
-            $f.Text = $secRx.Replace($f.Text, '')
+            # Keep the hidden placement-meta lines: verify.py fingerprints long ones,
+            # and both stylesheets hide them.
+            $f.Text = $secRx.Replace($f.Text, {
+                param($m)
+                ([regex]::Matches($m.Value, '(?s)<p class="figure-placement-meta">.*?</p>') | ForEach-Object { $_.Value }) -join ''
+            })
             $f.Changed = $true
         }
     }

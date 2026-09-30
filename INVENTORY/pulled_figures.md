@@ -11,3 +11,13 @@ Image files are kept on disk for redraw.
 | LSE_D19 | 1 | assets/lse_figures/LSE_D19_Powdery_Mildew_vs_Downy_Mildew_Ch42.jpg | Photoreal AI diagnostic imagery | 2026-09-29 |
 | LSE_D20 | 1 | assets/lse_figures/LSE_D20_Basil_Downy_Mildew_vs_Nutrient_Yellowing_Ch31_42.jpg | Photoreal AI diagnostic imagery | 2026-09-29 |
 | LSE_B03 | 1 | assets/lse_figures/LSE_B03_Nematode_Mouthpart_Comparison_Ch05_44.png | Photoreal AI diagnostic imagery | 2026-09-29 |
+| LSE_D04 | 1 | assets/lse_figures/LSE_D04_Root_Knot_Nematode_Diagnosis_Workflow_Ch05_Ch29_Ch42_Ch44.png | Triage 01: photoreal diagnostic imagery or production text in image | 2026-09-29 |
+| LSE_D18 | 1 | assets/lse_figures/LSE_D18_Root_Inspection_Nodules_Galls_Root_Disease_Ch05_Ch29_Ch44.jpg | Triage 01: photoreal diagnostic imagery or production text in image | 2026-09-29 |
+| LSE_B08 | 1 | assets/lse_figures/LSE_B08_Thermal_Compost_Process_Ch09_Ch13.jpg | Triage 01: photoreal diagnostic imagery or production text in image | 2026-09-29 |
+| LSE_A05 | 1 | assets/lse_figures/LSE_A05_Regenerative_Permaculture_Garden_System_Ch08.jpg | Triage 01: photoreal diagnostic imagery or production text in image | 2026-09-29 |
+| LSE_A04 | 1 | assets/lse_figures/LSE_A04_Mycorrhizal_Exchange_Defense_Priming_Ch06.jpg | Triage 01: photoreal diagnostic imagery or production text in image | 2026-09-29 |
+| LSE_B11 | 1 | assets/lse_figures/LSE_B11_Plant_Health_Pyramid_Evidence_Boundary_Ch11_Ch41.jpg | Triage 01: figure content factually wrong | 2026-09-29 |
+| UCI_002 | 1 | assets/user_created_web/UCI_002_Bacterial_vs_Fungal_Soil_Dominance.jpg | Triage 01: figure content factually wrong | 2026-09-29 |
+| LSE_A02 | 1 | assets/lse_figures/LSE_A02_Soil_Food_Web_Functional_Map_Ch02.png | Triage 01: figure content factually wrong | 2026-09-29 |
+| UCI_003 | 1 | assets/user_created_web/UCI_003_The_Nutrient_Mineralization_Loop.jpg | Triage 01: figure content factually wrong | 2026-09-29 |
+| UCI_007 | 1 | assets/user_created_web/UCI_007_Composite_Method_Reference.png | Triage 01: figure content factually wrong | 2026-09-29 |
