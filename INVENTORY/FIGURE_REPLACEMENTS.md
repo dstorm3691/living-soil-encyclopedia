@@ -5,7 +5,7 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 
 **Pull rule:** photoreal AI diagnostic imagery, production text printed in the image, or content that teaches something false. Typos alone do not pull a figure.
 
-**Pulled so far:** 17 (Tier 1 batch 1: 7, Triage batch 1: 10)
+**Pulled so far:** 24
 **Last updated:** 2026-09-29
 
 ---
@@ -42,6 +42,13 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 | LSE_A02 Soil Food Web Functional Map | 1 | Trophic Levels Defined | Earthworms shown as top predators | REPLACE |
 | UCI_003 Nutrient Mineralization Loop | 1 | The Nutrient Loop: Predation and Mineralization | Nitrite labeled plant-available | FIX IMAGE or DROP |
 | UCI_007 Composite Method Reference | 1 | Regenerative and Permaculture Foundations | Contested claims stated as fact | DROP |
+| LSE_B23 Cover Crop Selector (North Texas) | 1 | The Functions of Cover Crops | Photoreal crop ID images; cowpea in early spring | REDRAW |
+| LSE_B13 JADAM Safety Plate | 1 | JADAM Organic Farming | Wrong JMS and JLF timing | REDRAW or DROP |
+| UCI_018 Comparing Irrigation Systems for Home Gardens | 1 | Chapter 12: Irrigation Systems Compared | Duplicate of LSE_B30 | DROP |
+| LSE_A13 Cover Crop Function and Root Architecture Plate | 1 | The Functions of Cover Crops | Production text in image | FIX IMAGE |
+| UCI_022 Irrigation Systems Comparison | 1 | Chapter 12: Irrigation Systems Compared | Duplicate of LSE_B30 | DROP |
+| LSE_B22 Top-Dress Layer Cake | 1 | The Layering Strategy | Layer order wrong in image | REDRAW |
+| LSE_B12 KNF IMO 1-4 Workflow | 1 | Korean Natural Farming (KNF) | Photoreal good/spoiled ferment images | FIX IMAGE |
 
 **Quick wins:** LSE_A05, LSE_A04 and UCI_003 are three image edits, not a search. Each is a sound figure with one bad text element.
 
@@ -188,6 +195,80 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 - **A replacement must show:** Real cucurbit powdery mildew (upper surface) and real cucurbit downy mildew (angular lesions on top, sporulation underneath).
 - **Source leads:** Bugwood. Cornell and NC State vegetable pathology pages.
 - **Decision:** [ ] Replace  [ ] Drop
+
+---
+
+## Added during triage
+
+### LSE_B23 Cover Crop Selector (North Texas)
+- **Book / section:** Book 1, The Functions of Cover Crops
+- **Showed:** Four planting windows with candidate cover crops, functions, cautions and photo cues for each crop.
+- **Why pulled:** The photo cues are photoreal AI images used to identify crops. It also lists cowpea for the early spring window; cowpea needs warm soil and belongs in late spring or summer.
+- **A replacement must show:** The window table (text only is fine) with cowpea moved out of early spring. Optional real photos of cowpea, buckwheat, cereal rye, oats, Austrian winter pea, tillage radish, clover.
+- **Source leads:** USDA NRCS Plant Materials Program and PLANTS database (public domain); Wikimedia Commons. The table can be redrawn without photos.
+- **Recommended:** REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_B13 JADAM Safety Plate
+- **Book / section:** Book 1, JADAM Organic Farming
+- **Showed:** Safety rules for JMS, JLF and JWA (KOH soap), plus a toxic-botanical warning for JHS.
+- **Why pulled:** Storage timing is wrong: it says use JMS within 1 to 3 months and JLF within 3 to 6 months. In JADAM practice JMS is used within days of peak activity, and JLF is aged for months or longer before use.
+- **A replacement must show:** The correct safety points: KOH handling (goggles, gloves, add KOH to water), venting fermentation pressure, labeling, and the toxic-plant warning.
+- **Source leads:** Redraw from the book's own JADAM text. No outside source needed.
+- **Recommended:** REDRAW or DROP
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### UCI_018 Comparing Irrigation Systems for Home Gardens
+- **Book / section:** Book 1, Chapter 12: Irrigation Systems Compared
+- **Showed:** Drip, soaker hose, wicking bed and overhead watering with efficiency ranges and a quick-guide table.
+- **Why pulled:** Duplicate. Book 1 carried three irrigation comparisons; LSE_B30 (kept) is the most complete and has North Texas notes.
+- **A replacement must show:** Not needed.
+- **Source leads:** None.
+- **Recommended:** DROP
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_A13 Cover Crop Function and Root Architecture Plate
+- **Book / section:** Book 1, The Functions of Cover Crops
+- **Showed:** Cereal rye, daikon radish, vetch/pea and buckwheat with root patterns and functions. Illustrated, content sound.
+- **Why pulled:** Production text printed in the image: 'NTX NOTE (OPTIONAL)', a 'CAPTION:' label on the bottom band, and '(Book rule: if nodulated.)'.
+- **A replacement must show:** The same figure with '(OPTIONAL)', 'CAPTION:' and 'Book rule:' removed.
+- **Source leads:** Edit the author's own image.
+- **Recommended:** FIX IMAGE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### UCI_022 Irrigation Systems Comparison
+- **Book / section:** Book 1, Chapter 12: Irrigation Systems Compared
+- **Showed:** Drip, overhead, wicking bed and olla, with best-for and not-ideal-for notes.
+- **Why pulled:** Duplicate of LSE_B30, which is kept.
+- **A replacement must show:** Not needed.
+- **Source leads:** None.
+- **Recommended:** DROP
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_B22 Top-Dress Layer Cake
+- **Book / section:** Book 1, The Layering Strategy
+- **Showed:** No-till top-dress system: dry amendments, compost, mulch, with worms and fungi carrying nutrients down.
+- **Why pulled:** The picture puts the mulch layer at the bottom of the cross-section, under the soil, while labeling it the armor layer. A reader following the image would bury the mulch.
+- **A replacement must show:** Amendments on the soil surface, compost over them, mulch on top as the outermost layer, biology moving material down.
+- **Source leads:** Redraw. A simple layered diagram is enough.
+- **Recommended:** REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_B12 KNF IMO 1-4 Workflow
+- **Book / section:** Book 1, Korean Natural Farming (KNF)
+- **Showed:** Four-stage indigenous microorganism process with cautions and a North Texas note.
+- **Why pulled:** The 'what to look for' and 'discard moldy material' insets are photoreal AI images used to judge whether a ferment is good or spoiled. The rest of the figure shows process steps.
+- **A replacement must show:** The same figure with the two judgment insets removed, or replaced by real photos of healthy IMO-1 white growth and of spoiled material.
+- **Source leads:** Edit the author's own image. Real IMO photos exist in KNF practitioner material but would need permission.
+- **Recommended:** FIX IMAGE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+
+
+
+
+
+
 
 ---
 

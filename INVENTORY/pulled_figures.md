@@ -21,3 +21,10 @@ Image files are kept on disk for redraw.
 | LSE_A02 | 1 | assets/lse_figures/LSE_A02_Soil_Food_Web_Functional_Map_Ch02.png | Triage 01: figure content factually wrong | 2026-09-29 |
 | UCI_003 | 1 | assets/user_created_web/UCI_003_The_Nutrient_Mineralization_Loop.jpg | Triage 01: figure content factually wrong | 2026-09-29 |
 | UCI_007 | 1 | assets/user_created_web/UCI_007_Composite_Method_Reference.png | Triage 01: figure content factually wrong | 2026-09-29 |
+| LSE_B13 | 1 | assets/lse_figures/LSE_B13_JADAM_Safety_Plate_Ch12_19_41.jpg | Triage 02 | 2026-09-29 |
+| LSE_B22 | 1 | assets/lse_figures/LSE_B22_Top_Dress_Layer_Cake_Ch24.jpg | Triage 02 | 2026-09-29 |
+| LSE_B23 | 1 | assets/lse_figures/LSE_B23_Cover_Crop_Selector_North_Texas_Ch25.png | Triage 02 | 2026-09-29 |
+| LSE_A13 | 1 | assets/lse_figures/LSE_A13_Cover_Crop_Function_Root_Architecture_Plate_Ch25.jpg | Triage 02 | 2026-09-29 |
+| LSE_B12 | 1 | assets/lse_figures/LSE_B12_KNF_IMO_1_4_Workflow_Ch12_Ch19.png | Triage 02 | 2026-09-29 |
+| UCI_018 | 1 | assets/user_created_web/UCI_018_Comparing_Irrigation_Systems_for_Home_Gardens.jpg | Triage 02 | 2026-09-29 |
+| UCI_022 | 1 | assets/user_created_web/UCI_022_Irrigation_Systems_Comparison.png | Triage 02 | 2026-09-29 |
