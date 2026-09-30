@@ -5,7 +5,7 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 
 **Pull rule:** photoreal AI diagnostic imagery, production text printed in the image, or content that teaches something false. Typos alone do not pull a figure.
 
-**Pulled so far:** 34
+**Pulled so far:** 43
 **Last updated:** 2026-09-29
 
 ---
@@ -59,6 +59,15 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 | LSE_E16 Light Metrics: PPFD and DLI Concept | 1 | Lighting: DLI and PPFD | [VERIFY] printed in image | FIX IMAGE |
 | LSE_C12 Soil-Test Report Decoder | 1 | What Soil Testing Cannot Tell You | Chemistry wrong at pH 8.2; points to pulled D.3 | REDRAW |
 | LSE_E12 Trap Crop Decision: Nasturtium Aphids | 3 | The Push-Pull Strategy | Photoreal pest and beneficial ID; garbled text | REPLACE |
+| LSE_D17 Okra Pod Injury and Hidden Pest Damage | 3 | Surviving the Texas Summer | Photoreal pest and damage ID | DROP |
+| LSE_C17 Basil Pruning and Downy Mildew Scouting | 3 | The Medicinal Garden Block | Photoreal downy mildew diagnosis; points to pulled D.20 | FIX IMAGE + REPLACE |
+| LSE_B26 Flower Architecture for Beneficial Insects | 3 | Floral Architecture and Nectar Accessibility | Photoreal beneficial insect ID | FIX IMAGE |
+| LSE_D14 Cucumber Beetle to Bacterial Wilt Vector Diagram | 3 | Surviving the Texas Summer | Photoreal pest and disease ID | REPLACE or DROP |
+| LSE_B29 Herb Grouping Matrix | 3 | The Ecological Function of Herbs | Quadrants contradict the axes | REDRAW |
+| UCI_013 Beneficial Insectary Bloom Calendar | 3 | Continuous Bloom and Habitat | Bloom windows wrong for several plants | DROP or REDRAW |
+| LSE_D13 Squash Vine Borer Scouting Plate | 3 | Surviving the Texas Summer | Photoreal pest ID; wrong moth and egg | REPLACE |
+| LSE_E10 Pollinator-Safe Spray Timing | 3 | Floral Architecture and Nectar Accessibility | Spray timing inverted | REDRAW |
+| LSE_C18 Cilantro and Dill Cool-Season Succession | 3 | Strategic Placement of Culinary Herbs | Wrong North Texas bolting timing | REDRAW |
 
 **Quick wins:** LSE_A05, LSE_A04 and UCI_003 are three image edits, not a search. Each is a sound figure with one bad text element.
 
@@ -362,6 +371,96 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 - **Source leads:** Bugwood (aphids, mummies, syrphid larvae); Wikimedia Commons; iNaturalist CC BY.
 - **Recommended:** REPLACE
 - **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_D17 Okra Pod Injury and Hidden Pest Damage
+- **Book / section:** Book 3, Surviving the Texas Summer
+- **Showed:** Five steps from pod punctures to split-pod inspection, stink bug and leaf-footed bug, larva in pod.
+- **Why pulled:** Pods, bugs and larva are photoreal AI images used for identification.
+- **A replacement must show:** Not needed: the real Clemson okra stink bug damage photo (permission granted) already carries this section.
+- **Source leads:** None needed.
+- **Recommended:** DROP
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_C17 Basil Pruning and Downy Mildew Scouting
+- **Book / section:** Book 3, The Medicinal Garden Block
+- **Showed:** Where to cut basil above a node, plus a downy mildew check with top-yellowing and underside-sporulation photos.
+- **Why pulled:** The downy mildew photos are photoreal AI images used for diagnosis. The figure also refers twice to D.20, which was pulled.
+- **A replacement must show:** The pruning half as is. Real photos of a basil leaf top (yellowing) and underside (gray-purple sporulation). No D.20 references.
+- **Source leads:** Edit the author's image to replace the two leaf photos and remove D.20 references. Same photo sources as LSE_D20: Michigan State (existing permission contact), Rutgers, Bugwood.
+- **Recommended:** FIX IMAGE + REPLACE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_B26 Flower Architecture for Beneficial Insects
+- **Book / section:** Book 3, Floral Architecture and Nectar Accessibility
+- **Showed:** Flower shapes (umbels, composites, tubular, dense doubles) and which beneficials can use them.
+- **Why pulled:** The 'who benefits' row and the flower insets use photoreal AI insect images for identification, including Trichogramma shown as a visible wasp on a flower when it is about half a millimetre long.
+- **A replacement must show:** The four flower-shape panels. Beneficial insects either illustrated or as real licensed photos at a truthful scale.
+- **Source leads:** Edit the author's image to remove or redraw the insect photos. Real photos: Bugwood, iNaturalist CC BY.
+- **Recommended:** FIX IMAGE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_D14 Cucumber Beetle to Bacterial Wilt Vector Diagram
+- **Book / section:** Book 3, Surviving the Texas Summer
+- **Showed:** Beetle feeding, bacterial entry, wilt, beetle moving to the next plant; streaming test reference.
+- **Why pulled:** Beetles and wilting plants are photoreal AI images used for identification.
+- **A replacement must show:** Real photos of striped and spotted cucumber beetles and of a wilted cucurbit. The vector sequence can be a simple diagram.
+- **Source leads:** Bugwood; extension entomology pages. The UADA streaming-test photo already in Book 4 covers confirmation.
+- **Recommended:** REPLACE or DROP
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_B29 Herb Grouping Matrix
+- **Book / section:** Book 3, The Ecological Function of Herbs
+- **Showed:** Four herb groups placed on a water-need by sun-exposure grid, with container warnings.
+- **Why pulled:** The quadrants contradict the axes: Mediterranean herbs sit in the cooler / part-shade quadrant and mint in full sun / heat. Basil sits on the dry row while its text says keep evenly moist.
+- **A replacement must show:** The same four groups placed correctly: Mediterranean dry in full sun / drier, mint and lemon balm in moist / part shade tolerant, cool-season succession in cooler / moist, basil in warm / moist.
+- **Source leads:** Redraw. Content is otherwise sound.
+- **Recommended:** REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### UCI_013 Beneficial Insectary Bloom Calendar
+- **Book / section:** Book 3, Continuous Bloom and Habitat
+- **Showed:** Thirteen plants with month-by-month bloom bars for North Texas zone 8a to 8b.
+- **Why pulled:** Several bloom windows are wrong: blue mistflower shown blooming January to April (it blooms late summer to fall); pansies and sweet alyssum shown blooming July to October, which North Texas summer heat does not allow; firecracker penstemon shown blooming nearly all year.
+- **A replacement must show:** A bloom calendar with corrected windows, checked against a Texas source. LSE_E11 (kept) already covers the seasonal bloom succession more simply.
+- **Source leads:** Texas A&M AgriLife Earth-Kind plant database; Lady Bird Johnson Wildflower Center plant database (both give bloom months). Or drop in favour of LSE_E11.
+- **Recommended:** DROP or REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_D13 Squash Vine Borer Scouting Plate
+- **Book / section:** Book 3, Surviving the Texas Summer
+- **Showed:** Adult moth, egg, frass, larva in stem, vine collapse, prevention and resistant varieties.
+- **Why pulled:** All stages are photoreal AI images used for identification. The adult moth shown is not a squash vine borer (the real moth has an orange abdomen and dark metallic forewings), and the egg is shown as a white pearl when SVB eggs are flat and brown.
+- **A replacement must show:** Real photos of the adult squash vine borer moth, frass at the stem base, and the larva inside a split stem.
+- **Source leads:** Bugwood (Melittia cucurbitae is well covered); university extension entomology pages; iNaturalist CC BY.
+- **Recommended:** REPLACE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_E10 Pollinator-Safe Spray Timing
+- **Book / section:** Book 3, Floral Architecture and Nectar Accessibility
+- **Showed:** Daily timeline from dawn to dusk marking pollinator activity and spray windows.
+- **Why pulled:** The timing is inverted. It marks dusk 'avoid' and 7 to 10 AM 'safest', but bees forage heavily by mid-morning; extension guidance, and LSE_B25 in this book, say to spray in the evening when pollinators are inactive. It also says 'dawn to early morning is the safest window' under a dawn panel marked avoid.
+- **A replacement must show:** Late evening or dusk as the preferred window, very early morning before foraging as second, midday and mid-morning as avoid, plus the label and open-flower rules.
+- **Source leads:** Redraw. Check against a state extension pollinator protection guide.
+- **Recommended:** REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_C18 Cilantro and Dill Cool-Season Succession
+- **Book / section:** Book 3, Strategic Placement of Culinary Herbs
+- **Showed:** Five-stage cilantro/dill cycle from direct sow to dry seed, with a North Texas cue.
+- **Why pulled:** The North Texas cue says cilantro and dill bolt and decline in August; the figure's own panel 3 says late spring. In DFW cilantro bolts around April to May. It also claims their bolted flowers fill the August nectar gap, which LSE_E11 (kept) says their decline creates.
+- **A replacement must show:** The same five stages with the North Texas cue corrected: bolting and flowering in late spring, finished before August.
+- **Source leads:** Redraw from the author's image with corrected text.
+- **Recommended:** REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+
+
+
+
+
+
+
+
 
 
 
