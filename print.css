@@ -158,3 +158,11 @@ nav.functional-navigation,
 
 /* lse-hide-production-meta */
 .imgmarker, .figure-placement-meta { display: none !important; }
+
+/* lse-hide-production-text */
+.production-note,
+.mirror-notice,
+.lse-figure > h3, .lse-figure > h4, .lse-figure > h5, .lse-figure > h6,
+.inline-figure > h3, .inline-figure > h4, .inline-figure > h5, .inline-figure > h6,
+.user-created-figure > h3, .user-created-figure > h4, .user-created-figure > h5, .user-created-figure > h6 { display: none !important; }
+/* end lse-hide-production-text */
