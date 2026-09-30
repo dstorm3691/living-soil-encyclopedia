@@ -18,6 +18,13 @@
   -Execute: backs up the books to .build\html_backup_figures\<timestamp>,
   removes the figures, appends to INVENTORY\pulled_figures.md, runs verify.py.
 
+  -NotesCsv: replacement notes for the worklist. Columns:
+    id, title, showed, why, short_why, must_show, sources, recommend
+  Only if verify.py passes, each pulled figure is added to
+  INVENTORY\FIGURE_REPLACEMENTS.md (summary row, full entry, count). Book and
+  section are filled in automatically. A figure already in the worklist is skipped.
+  A pulled figure with no notes row still gets a stub entry.
+
 .EXAMPLE
   .\tools\Remove-LseFigures.ps1 -Ids LSE_D02,LSE_D03 -Reason "Photoreal AI imagery"
   .\tools\Remove-LseFigures.ps1 -Ids LSE_D02,LSE_D03 -Reason "Photoreal AI imagery" -Execute
@@ -25,6 +32,7 @@
 param(
     [Parameter(Mandatory)][string[]]$Ids,
     [Parameter(Mandatory)][string]$Reason,
+    [string]$NotesCsv,
     [switch]$Execute,
     [string]$Repo = (Split-Path $PSScriptRoot -Parent)
 )
@@ -48,6 +56,7 @@ foreach ($b in $books) {
 }
 
 $log = [System.Collections.Generic.List[string]]::new()
+$where = @{}
 $notFound = @(); $warnLinks = 0
 
 foreach ($id in $Ids) {
@@ -75,6 +84,9 @@ foreach ($id in $Ids) {
                        ForEach-Object { Get-CleanText $_.Groups[2].Value } | Where-Object { $_ -notmatch '^Figure ' })
             $heading = if ($heads.Count) { $heads[$heads.Count-1] } else { '(no heading found)' }
             Write-Host "  remove from $($f.Name), under: $heading"
+            $bn = [regex]::Match($f.Name, 'LSE_BOOK_(\d)').Groups[1].Value
+            if (-not $where.ContainsKey($id)) { $where[$id] = [System.Collections.Generic.List[object]]::new() }
+            $where[$id].Add([pscustomobject]@{ Book = $bn; Section = $heading })
         }
 
         # Links that will dangle
@@ -120,6 +132,14 @@ Write-Host "Figures to remove: $($log.Count)   Not found: $($notFound.Count)" -F
 if ($notFound) { Write-Host "Not found: $($notFound -join ', ')" -ForegroundColor Yellow }
 if ($warnLinks) { Write-Host "Links that will break: $warnLinks. Tell Claude before running -Execute." -ForegroundColor Red }
 
+$notes = @{}
+if ($NotesCsv) {
+    if (-not (Test-Path $NotesCsv)) { throw "Notes file not found: $NotesCsv" }
+    foreach ($row in (Import-Csv $NotesCsv -Encoding UTF8)) { if ($row.id) { $notes[$row.id.Trim()] = $row } }
+    $noNote = @($where.Keys | Where-Object { -not $notes.ContainsKey($_) })
+    Write-Host "Worklist notes: $($notes.Count) row(s)$(if ($noNote) { "; no notes for $($noNote -join ', ') (stub entries)" })"
+}
+
 if (-not $Execute) {
     Write-Host ""
     Write-Host "Dry run. Nothing written. Yellow PROSE lines are text that mentions a pulled figure;" -ForegroundColor Cyan
@@ -148,4 +168,82 @@ Write-Host "Logged: $ledger"
 Write-Host ""
 
 Push-Location $Repo
-try { python verify.py } finally { Pop-Location }
+try { python verify.py; $code = $LASTEXITCODE } finally { Pop-Location }
+
+if ($code -ne 0) {
+    Write-Host "verify.py failed: worklist not updated." -ForegroundColor Red
+    exit $code
+}
+
+# ---- Add pulled figures to the replacement worklist ----
+$wl = Join-Path $Repo 'INVENTORY\FIGURE_REPLACEMENTS.md'
+if (-not (Test-Path $wl)) {
+    Write-Host "No INVENTORY\FIGURE_REPLACEMENTS.md, worklist not updated." -ForegroundColor Yellow
+    exit 0
+}
+$raw = [IO.File]::ReadAllText($wl)
+$nl = if ($raw.Contains("`r`n")) { "`r`n" } else { "`n" }
+$lines = [System.Collections.Generic.List[string]]::new([string[]]($raw -split '\r?\n'))
+
+$added = @()
+foreach ($id in $where.Keys) {
+    if ($raw -match ('(?m)^### ' + [regex]::Escape($id) + '\b')) { Write-Host "Worklist: $id already listed, skipped"; continue }
+    $n = $notes[$id]
+    $books = ($where[$id] | ForEach-Object { $_.Book } | Select-Object -Unique) -join ', '
+    $secs  = ($where[$id] | ForEach-Object { $_.Section } | Select-Object -Unique) -join '; '
+    $title = if ($n -and $n.title) { $n.title } else { '' }
+    $short = if ($n -and $n.short_why) { $n.short_why } else { $Reason }
+    $rec   = if ($n -and $n.recommend) { $n.recommend } else { 'UNDECIDED' }
+
+    # Summary row: after the last table row under "## Summary"
+    $si = $lines.IndexOf('## Summary')
+    if ($si -ge 0) {
+        $i = $si + 1
+        while ($i -lt $lines.Count -and -not $lines[$i].StartsWith('|')) { $i++ }
+        while ($i -lt $lines.Count -and $lines[$i].StartsWith('|')) { $i++ }
+        $lines.Insert($i, "| $id $title | $books | $secs | $short | $rec |")
+    }
+
+    # Full entry: before "## To restore a figure"
+    $entry = @(
+        "### $id $title"
+        "- **Book / section:** Book $books, $secs"
+        "- **Showed:** $(if ($n) { $n.showed } else { '(not recorded)' })"
+        "- **Why pulled:** $(if ($n -and $n.why) { $n.why } else { $Reason })"
+        "- **A replacement must show:** $(if ($n) { $n.must_show } else { '(not recorded)' })"
+        "- **Source leads:** $(if ($n) { $n.sources } else { '(not recorded)' })"
+        "- **Recommended:** $rec"
+        "- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop"
+        ""
+    )
+    $ri = $lines.IndexOf('## To restore a figure after a fix')
+    if ($ri -lt 0) { $ri = $lines.Count }
+    $hi = $lines.IndexOf('## Added during triage')
+    if ($hi -lt 0) {
+        $lines.InsertRange($ri, [string[]]@('## Added during triage', '', '---', ''))
+        $ri = $lines.IndexOf('## To restore a figure after a fix'); if ($ri -lt 0) { $ri = $lines.Count }
+    }
+    # insert just above the '---' that precedes the restore section
+    $ins = $ri
+    while ($ins -gt 0 -and ($lines[$ins-1] -eq '' -or $lines[$ins-1] -eq '---')) { $ins-- }
+    $lines.InsertRange($ins, [string[]](@('') + $entry))
+    $added += $id
+}
+
+if ($added) {
+    # Refresh the count from the summary table
+    $si = $lines.IndexOf('## Summary'); $cnt = 0
+    if ($si -ge 0) {
+        $i = $si + 1
+        while ($i -lt $lines.Count -and -not $lines[$i].StartsWith('|')) { $i++ }
+        $i += 2
+        while ($i -lt $lines.Count -and $lines[$i].StartsWith('|')) { $cnt++; $i++ }
+    }
+    for ($k = 0; $k -lt $lines.Count; $k++) {
+        if ($lines[$k].StartsWith('**Pulled so far:**')) { $lines[$k] = "**Pulled so far:** $cnt" }
+        if ($lines[$k].StartsWith('**Last updated:**')) { $lines[$k] = "**Last updated:** $(Get-Date -Format 'yyyy-MM-dd')" }
+    }
+    [IO.File]::WriteAllText($wl, ($lines -join $nl), [Text.UTF8Encoding]::new($false))
+    Write-Host "Worklist: added $($added -join ', ')" -ForegroundColor Green
+}
+exit 0
