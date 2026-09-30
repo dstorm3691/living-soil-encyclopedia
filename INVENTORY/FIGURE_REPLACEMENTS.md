@@ -5,7 +5,7 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 
 **Pull rule:** photoreal AI diagnostic imagery, production text printed in the image, or content that teaches something false. Typos alone do not pull a figure.
 
-**Pulled so far:** 24
+**Pulled so far:** 34
 **Last updated:** 2026-09-29
 
 ---
@@ -49,6 +49,16 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 | UCI_022 Irrigation Systems Comparison | 1 | Chapter 12: Irrigation Systems Compared | Duplicate of LSE_B30 | DROP |
 | LSE_B22 Top-Dress Layer Cake | 1 | The Layering Strategy | Layer order wrong in image | REDRAW |
 | LSE_B12 KNF IMO 1-4 Workflow | 1 | Korean Natural Farming (KNF) | Photoreal good/spoiled ferment images | FIX IMAGE |
+| LSE_A20 Soil Microscopy Workflow | 1 | Identification Protocols by Trophic Level | Refers to a figure that does not exist | FIX IMAGE |
+| UCI_023 Soil Test Results: How to Read Them | 1 | Reading the Report: The Albrecht Framework | Fake report under a real lab's branding; chemistry inconsistent | REDRAW |
+| UCI_031 Home-Brew Feed Quick Reference Card | 2 | Chapter 5: Brews, Teas, and Ferments | Contradicts the book's food-safety rule | REDRAW or DROP |
+| UCI_015 The Three Sisters Guild | 3 | Chapter 2: Polyculture, Edge Effect, and Guild Design | Pest-deterrence folklore contradicts LSE_B24 | DROP or REDRAW |
+| LSE_A09 Compost Maturity and Contamination Inspection | 2 | Chapter 1: Composts | Photoreal compost and bioassay diagnosis | REPLACE |
+| LSE_C02 Seed Starting and Hardening-Off Workflow | 1 | Scale and Application | Photoreal seedling diagnosis; points to pulled D.3 | FIX IMAGE |
+| LSE_A10 Brews, Teas, and Ferments Safety Station | 2 | Chapter 5: Brews, Teas, and Ferments | FFJ mislabeled as fish ferment | FIX IMAGE |
+| LSE_E16 Light Metrics: PPFD and DLI Concept | 1 | Lighting: DLI and PPFD | [VERIFY] printed in image | FIX IMAGE |
+| LSE_C12 Soil-Test Report Decoder | 1 | What Soil Testing Cannot Tell You | Chemistry wrong at pH 8.2; points to pulled D.3 | REDRAW |
+| LSE_E12 Trap Crop Decision: Nasturtium Aphids | 3 | The Push-Pull Strategy | Photoreal pest and beneficial ID; garbled text | REPLACE |
 
 **Quick wins:** LSE_A05, LSE_A04 and UCI_003 are three image edits, not a search. Each is a sound figure with one bad text element.
 
@@ -262,6 +272,106 @@ Mark a decision on each one. `pulled_figures.md` is the machine log; this file i
 - **Source leads:** Edit the author's own image. Real IMO photos exist in KNF practitioner material but would need permission.
 - **Recommended:** FIX IMAGE
 - **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_A20 Soil Microscopy Workflow
+- **Book / section:** Book 1, Identification Protocols by Trophic Level
+- **Showed:** Six-step sample-to-notebook workflow and healthy vs struggling trend comparison.
+- **Why pulled:** A box sends readers to an 'Organism identification grid (B.35 / F.3)' that does not exist in the books.
+- **A replacement must show:** The same figure with the B.35 / F.3 box removed.
+- **Source leads:** Edit the author's own image.
+- **Recommended:** FIX IMAGE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### UCI_023 Soil Test Results: How to Read Them
+- **Book / section:** Book 1, Reading the Report: The Albrecht Framework
+- **Showed:** Mock soil test report with pH, CEC and base saturation callouts.
+- **Why pulled:** The mock report carries Texas A&M AgriLife Extension's logo, lab name, address, phone and website. Base saturation also sums to about 82% at pH 8.1, which is inconsistent for a calcareous soil.
+- **A replacement must show:** The same three callouts (pH, CEC, base saturation) on an unbranded, internally consistent example report.
+- **Source leads:** Redraw unbranded. Could merge with the LSE_C12 redraw into one figure.
+- **Recommended:** REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### UCI_031 Home-Brew Feed Quick Reference Card
+- **Book / section:** Book 2, Chapter 5: Brews, Teas, and Ferments
+- **Showed:** Eight kitchen-ingredient feeds with ratios, application and frequency.
+- **Why pulled:** Recommends foliar compost tea with molasses and foliar fish emulsion on vegetables and leafy greens, which breaks the book's own rule: soil drench only, keep brews off edible foliage.
+- **A replacement must show:** If kept: soil-drench-only application for every brew, and only feeds the book's text supports.
+- **Source leads:** Redraw from the book's own brew chapter.
+- **Recommended:** REDRAW or DROP
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### UCI_015 The Three Sisters Guild
+- **Book / section:** Book 3, Chapter 2: Polyculture, Edge Effect, and Guild Design
+- **Showed:** Corn, beans, squash layout, planting pattern, root zones, grower tips.
+- **Why pulled:** Claims the guild deters squash bugs and corn borers and that prickly squash leaves deter pests. That is the vague companion-planting folklore LSE_B24 (kept) tells readers to distrust.
+- **A replacement must show:** Structure only: corn as trellis, beans climbing, squash as ground cover, planting sequence. No pest claims.
+- **Source leads:** Redraw, or drop. LSE_B24 already uses the Three Sisters as its resource-partitioning example.
+- **Recommended:** DROP or REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_A09 Compost Maturity and Contamination Inspection
+- **Book / section:** Book 2, Chapter 1: Composts
+- **Showed:** Finished, immature, anaerobic compost, and a herbicide bioassay with control and test seedlings.
+- **Why pulled:** All four panels are photoreal AI images used to judge compost condition, including fake herbicide-injured seedlings.
+- **A replacement must show:** A real herbicide bioassay photo (control vs cupped test seedlings) is the most valuable part. The maturity checks can be text.
+- **Source leads:** Extension publications on persistent herbicides in compost often show real bioassay photos (Penn State, WSU, NC State); Bugwood.
+- **Recommended:** REPLACE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_C02 Seed Starting and Hardening-Off Workflow
+- **Book / section:** Book 1, Scale and Application
+- **Showed:** Seven-step seed starting process, a common seedling problems row, key principles.
+- **Why pulled:** The seedling problems row (damping-off, leggy, cold shock, sunscald) is photoreal AI images used for diagnosis. It also refers readers to D.3 Damping-Off Lookalikes, which was pulled.
+- **A replacement must show:** The seven workflow steps. Seedling problems only with real photos, or as text.
+- **Source leads:** Edit the author's own image to remove the problems row and the D.3 box. Real damping-off photo B30_026 already in Book 4.
+- **Recommended:** FIX IMAGE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_A10 Brews, Teas, and Ferments Safety Station
+- **Book / section:** Book 2, Chapter 5: Brews, Teas, and Ferments
+- **Showed:** AACT, compost extract, KNF ferments and JADAM/KOH stations with safety rules.
+- **Why pulled:** A KNF jar labeled 'FFJ' is captioned 'Fish Amino Ferment'. FFJ is fermented fruit juice; the fish input is FAA (fish amino acid).
+- **A replacement must show:** The same figure with the jar label corrected to FFJ Fermented Fruit Juice (or a separate FAA jar).
+- **Source leads:** Edit the author's own image.
+- **Recommended:** FIX IMAGE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_E16 Light Metrics: PPFD and DLI Concept
+- **Book / section:** Book 1, Lighting: DLI and PPFD
+- **Showed:** PPFD x photoperiod = DLI, fixture to plant, quick reference.
+- **Why pulled:** Production text printed in the image: '[VERIFY] targets in text' and '[VERIFY in text.]'.
+- **A replacement must show:** The same figure with both [VERIFY] markers removed.
+- **Source leads:** Edit the author's own image.
+- **Recommended:** FIX IMAGE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_C12 Soil-Test Report Decoder
+- **Book / section:** Book 1, What Soil Testing Cannot Tell You
+- **Showed:** Example soil report with parameter explanations, extraction-method notes, North Texas note.
+- **Why pulled:** The example shows 26% hydrogen saturation at pH 8.2. Alkaline soils carry essentially no exchangeable hydrogen, so the example teaches readers to misread their report. It also refers to pulled figure D.3 in a damping-off box that does not belong on a soil test.
+- **A replacement must show:** An internally consistent example report for a calcareous North Texas soil: pH around 8, base saturation near 100%, no exchangeable H, with the same parameter explanations.
+- **Source leads:** Redraw. Check numbers against a real Texas A&M or Waypoint sample report format.
+- **Recommended:** REDRAW
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+### LSE_E12 Trap Crop Decision: Nasturtium Aphids
+- **Book / section:** Book 3, The Push-Pull Strategy
+- **Showed:** Nasturtium trap crop workflow: plant at bed edge, aphid colony, beneficials check, decision tree.
+- **Why pulled:** Aphids, lady beetle, hoverfly larva and mummified aphids are photoreal AI images used for identification. Garbled text in the subtitle ('Bif you manage').
+- **A replacement must show:** Real photos of an aphid colony on nasturtium and of aphid mummies. The decision logic can be text.
+- **Source leads:** Bugwood (aphids, mummies, syrphid larvae); Wikimedia Commons; iNaturalist CC BY.
+- **Recommended:** REPLACE
+- **Decision:** [ ] Replace  [ ] Fix image  [ ] Redraw  [ ] Drop
+
+
+
+
+
+
+
+
+
+
 
 
 
