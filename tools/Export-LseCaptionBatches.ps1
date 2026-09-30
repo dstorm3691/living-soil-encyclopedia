@@ -12,12 +12,17 @@
 
   Read-only against the books. Safe to run any number of times.
 
+.PARAMETER Triage
+  Photoreal check: every author figure, images only, 20 per folder,
+  1000 px, no manifest. Output: INVENTORY\caption_batches\triage_NN\
+
 .PARAMETER Set
   Tier1  the 22 high-risk figures (default)
   Rest   every author figure not in Tier 1
   All    all author figures
 
 .EXAMPLE
+  .\tools\Export-LseCaptionBatches.ps1 -Triage
   .\tools\Export-LseCaptionBatches.ps1
   .\tools\Export-LseCaptionBatches.ps1 -Set Rest
   .\tools\Export-LseCaptionBatches.ps1 -Ids LSE_D02,UCI_029
@@ -27,11 +32,16 @@ param(
     [string[]]$Ids,
     [int]$BatchSize = 8,
     [int]$MaxPx = 1600,
+    [switch]$Triage,
     [string]$Repo = (Split-Path $PSScriptRoot -Parent)
 )
 
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.Drawing
+if ($Triage) { $Set = 'All'; $BatchSize = 20; $MaxPx = 1000 }
+
+# Books use fig-UC-004 for the file UCI_004_*. Everything in this script uses the UCI_ form.
+function ConvertTo-FigId($htmlId) { if ($htmlId -match '^UC-(\d+)$') { "UCI_$($Matches[1])" } else { $htmlId } }
 
 $Tier1 = [ordered]@{
     'LSE_D02'='Organism/disease discrimination'; 'LSE_D03'='Organism/disease discrimination'
@@ -74,18 +84,19 @@ foreach ($b in $books) {
 }
 
 # Collect every author figure occurrence
-$secRx = [regex]'(?s)<section class="lse-figure" id="fig-((?:LSE_[A-Z]\d+|UCI_\d+))">(.*?)</section>'
+$secRx = [regex]'(?s)<section class="(?:lse-figure|user-created-figure)" id="fig-((?:LSE_[A-Z]\d+|UC-\d+))">(.*?)</section>'
 $figs = [ordered]@{}
 foreach ($book in ($html.Keys | Sort-Object)) {
     $text = $html[$book]
     foreach ($m in $secRx.Matches($text)) {
-        $id = $m.Groups[1].Value
+        $id = ConvertTo-FigId $m.Groups[1].Value
         $body = $m.Groups[2].Value
         $before = $text.Substring([math]::Max(0, $m.Index - 6000), [math]::Min(6000, $m.Index))
         $after  = $text.Substring($m.Index + $m.Length, [math]::Min(6000, $text.Length - $m.Index - $m.Length))
 
-        $heads = [regex]::Matches($before, '(?s)<h[1-4][^>]*>(.*?)</h[1-4]>')
-        $heading = if ($heads.Count) { Get-CleanText $heads[$heads.Count-1].Groups[1].Value } else { '' }
+        $heads = @([regex]::Matches($before, '(?s)<h([1-4])[^>]*>(.*?)</h\1>') |
+                   ForEach-Object { Get-CleanText $_.Groups[2].Value } | Where-Object { $_ -notmatch '^Figure ' })
+        $heading = if ($heads.Count) { $heads[$heads.Count-1] } else { '' }
 
         $pb = @([regex]::Matches($before, '(?s)<p(?![^>]*figure-placement-meta)[^>]*>(.*?)</p>') |
                 ForEach-Object { Get-CleanText $_.Groups[1].Value } | Where-Object { $_ })
@@ -121,7 +132,7 @@ $missing = @($want | Where-Object { -not $figs.Contains($_) })
 if ($missing) { Write-Host "Not found in any book: $($missing -join ', ')" -ForegroundColor Yellow }
 $want = @($want | Where-Object { $figs.Contains($_) })
 
-$label = if ($Ids) { 'custom' } else { $Set.ToLower() }
+$label = if ($Triage) { 'triage' } elseif ($Ids) { 'custom' } else { $Set.ToLower() }
 $root = Join-Path $Repo "INVENTORY\caption_batches"
 New-Item -ItemType Directory -Force -Path $root | Out-Null
 
@@ -181,7 +192,7 @@ for ($i = 0; $i -lt $want.Count; $i += $BatchSize) {
         }
         [void]$md.AppendLine()
     }
-    [IO.File]::WriteAllText((Join-Path $dir 'manifest.md'), $md.ToString(), [Text.UTF8Encoding]::new($false))
+    if (-not $Triage) { [IO.File]::WriteAllText((Join-Path $dir 'manifest.md'), $md.ToString(), [Text.UTF8Encoding]::new($false)) }
     Write-Host ("Batch {0:D2}: {1}" -f $n, ($chunk -join ', ')) -ForegroundColor Green
 }
 

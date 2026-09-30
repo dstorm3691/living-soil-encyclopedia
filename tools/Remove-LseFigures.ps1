@@ -50,7 +50,8 @@ $notFound = @(); $warnLinks = 0
 
 foreach ($id in $Ids) {
     $id = $id.Trim()
-    $secRx = [regex]('(?s)<section class="lse-figure" id="fig-' + [regex]::Escape($id) + '">.*?</section>')
+    $htmlId = if ($id -match '^UCI_(\d+)$') { "UC-$($Matches[1])" } else { $id }
+    $secRx = [regex]('(?s)<section class="(?:lse-figure|user-created-figure)" id="fig-' + [regex]::Escape($htmlId) + '">.*?</section>')
 
     # Short label: LSE_D03 -> D.3 / D3 / D03
     $short = $null
@@ -68,21 +69,22 @@ foreach ($id in $Ids) {
             $found++
             if (-not $src) { $src = [regex]::Match($m.Value, 'src="([^"]+)"').Groups[1].Value }
             $before = $f.Text.Substring([math]::Max(0, $m.Index - 6000), [math]::Min(6000, $m.Index))
-            $heads = [regex]::Matches($before, '(?s)<h[1-4][^>]*>(.*?)</h[1-4]>')
-            $heading = if ($heads.Count) { Get-CleanText $heads[$heads.Count-1].Groups[1].Value } else { '(no heading found)' }
+            $heads = @([regex]::Matches($before, '(?s)<h([1-4])[^>]*>(.*?)</h\1>') |
+                       ForEach-Object { Get-CleanText $_.Groups[2].Value } | Where-Object { $_ -notmatch '^Figure ' })
+            $heading = if ($heads.Count) { $heads[$heads.Count-1] } else { '(no heading found)' }
             Write-Host "  remove from $($f.Name), under: $heading"
         }
 
         # Links that will dangle
-        $links = [regex]::Matches($f.Text, 'href="[^"]*#fig-' + [regex]::Escape($id) + '"')
+        $links = [regex]::Matches($f.Text, 'href="[^"]*#fig-' + [regex]::Escape($htmlId) + '"')
         if ($links.Count) {
             $warnLinks += $links.Count
-            Write-Host "  LINK: $($links.Count) link(s) to #fig-$id in $($f.Name). verify.py will fail until these are handled." -ForegroundColor Red
+            Write-Host "  LINK: $($links.Count) link(s) to #fig-$htmlId in $($f.Name). verify.py will fail until these are handled." -ForegroundColor Red
         }
 
         # Prose mentions outside the figure itself
         $prose = $secRx.Replace($f.Text, '')
-        $pats = @([regex]::Escape($id))
+        $pats = @([regex]::Escape($id), [regex]::Escape($htmlId)) | Select-Object -Unique
         if ($short) { $pats += "(?<![\w.])(?:Figure\s+|Fig\.\s*|see\s+)?$short(?![\w.]*\d)" }
         foreach ($p in $pats) {
             foreach ($pm in [regex]::Matches($prose, $p)) {
@@ -100,7 +102,7 @@ foreach ($id in $Ids) {
 
     if (-not $found) {
         $notFound += $id
-        Write-Host "  not found as <section class=""lse-figure"">. Different markup, or already removed." -ForegroundColor Yellow
+        Write-Host "  not found. Different markup, or already removed." -ForegroundColor Yellow
     } else {
         $log.Add("| $id | $found | $src | $Reason | $(Get-Date -Format yyyy-MM-dd) |")
     }

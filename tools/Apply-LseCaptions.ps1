@@ -52,7 +52,8 @@ foreach ($b in $books) {
 $applied = 0; $skipped = @()
 foreach ($r in $rows) {
     $id = $r.id.Trim()
-    $rx = [regex]('(?s)(<section class="lse-figure" id="fig-' + [regex]::Escape($id) + '">)(.*?)(</section>)')
+    $htmlId = if ($id -match '^UCI_(\d+)$') { "UC-$($Matches[1])" } else { $id }
+    $rx = [regex]('(?s)(<section class="(?:lse-figure|user-created-figure)" id="fig-' + [regex]::Escape($htmlId) + '">)(.*?)(</section>)')
     $hits = 0
     foreach ($k in @($files.Keys)) {
         $f = $files[$k]
